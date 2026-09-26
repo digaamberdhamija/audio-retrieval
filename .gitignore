@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local-only files
+.claude/
+~$*
+
+# Over GitHub's 100 MB file limit
+audios/quantum_podcast_2.wav

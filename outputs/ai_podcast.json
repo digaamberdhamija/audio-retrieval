@@ -1,0 +1,5320 @@
+{
+  "audio_file": "audios\\ai_podcast.wav",
+  "model": "gemini-3.5-transcribe",
+  "speakers": {
+    "Speaker 1": "spk:0",
+    "Speaker 2": "spk:1"
+  },
+  "segments": [
+    {
+      "speaker": "Speaker 1",
+      "raw_speaker": "spk:0",
+      "start": 4.1,
+      "end": 5.1,
+      "text": "Thank you so much for doing this.",
+      "language_code": null,
+      "words": [
+        {
+          "text": "Thank",
+          "start": 4.1,
+          "end": 4.3
+        },
+        {
+          "text": "you",
+          "start": 4.3,
+          "end": 4.4
+        },
+        {
+          "text": "so",
+          "start": 4.4,
+          "end": 4.5
+        },
+        {
+          "text": "much",
+          "start": 4.5,
+          "end": 4.7
+        },
+        {
+          "text": "for",
+          "start": 4.7,
+          "end": 4.8
+        },
+        {
+          "text": "doing",
+          "start": 4.8,
+          "end": 5.0
+        },
+        {
+          "text": "this.",
+          "start": 5.0,
+          "end": 5.1
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 2",
+      "raw_speaker": "spk:1",
+      "start": 5.1,
+      "end": 6.3,
+      "text": "I'm so happy to do it.",
+      "language_code": null,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 5.1,
+          "end": 5.2
+        },
+        {
+          "text": "so",
+          "start": 5.2,
+          "end": 5.5
+        },
+        {
+          "text": "happy",
+          "start": 5.5,
+          "end": 5.8
+        },
+        {
+          "text": "to",
+          "start": 5.8,
+          "end": 5.9
+        },
+        {
+          "text": "do",
+          "start": 5.9,
+          "end": 6.2
+        },
+        {
+          "text": "it.",
+          "start": 6.2,
+          "end": 6.3
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 1",
+      "raw_speaker": "spk:0",
+      "start": 7.6,
+      "end": 13.8,
+      "text": "Before we dive in, I wanted to tell you how this interview is going to be a little bit different than other interviews I've seen you do or something.",
+      "language_code": null,
+      "words": [
+        {
+          "text": "Before",
+          "start": 7.6,
+          "end": 7.8
+        },
+        {
+          "text": "we",
+          "start": 7.8,
+          "end": 7.9
+        },
+        {
+          "text": "dive",
+          "start": 7.9,
+          "end": 8.2
+        },
+        {
+          "text": "in,",
+          "start": 8.2,
+          "end": 8.4
+        },
+        {
+          "text": "I",
+          "start": 8.4,
+          "end": 8.5
+        },
+        {
+          "text": "wanted",
+          "start": 8.5,
+          "end": 8.7
+        },
+        {
+          "text": "to",
+          "start": 8.7,
+          "end": 8.8
+        },
+        {
+          "text": "tell",
+          "start": 8.8,
+          "end": 9.1
+        },
+        {
+          "text": "you",
+          "start": 9.1,
+          "end": 9.6
+        },
+        {
+          "text": "how",
+          "start": 9.8,
+          "end": 10.0
+        },
+        {
+          "text": "this",
+          "start": 10.0,
+          "end": 10.2
+        },
+        {
+          "text": "interview",
+          "start": 10.2,
+          "end": 10.6
+        },
+        {
+          "text": "is",
+          "start": 10.6,
+          "end": 10.6
+        },
+        {
+          "text": "going",
+          "start": 10.6,
+          "end": 10.8
+        },
+        {
+          "text": "to",
+          "start": 10.8,
+          "end": 10.8
+        },
+        {
+          "text": "be",
+          "start": 10.8,
+          "end": 10.9
+        },
+        {
+          "text": "a",
+          "start": 10.9,
+          "end": 10.9
+        },
+        {
+          "text": "little",
+          "start": 10.9,
+          "end": 11.1
+        },
+        {
+          "text": "bit",
+          "start": 11.1,
+          "end": 11.2
+        },
+        {
+          "text": "different",
+          "start": 11.2,
+          "end": 11.8
+        },
+        {
+          "text": "than",
+          "start": 11.9,
+          "end": 12.1
+        },
+        {
+          "text": "other",
+          "start": 12.1,
+          "end": 12.4
+        },
+        {
+          "text": "interviews",
+          "start": 12.4,
+          "end": 12.8
+        },
+        {
+          "text": "I've",
+          "start": 12.8,
+          "end": 13.0
+        },
+        {
+          "text": "seen",
+          "start": 13.0,
+          "end": 13.2
+        },
+        {
+          "text": "you",
+          "start": 13.2,
+          "end": 13.3
+        },
+        {
+          "text": "do",
+          "start": 13.3,
+          "end": 13.4
+        },
+        {
+          "text": "or",
+          "start": 13.4,
+          "end": 13.5
+        },
+        {
+          "text": "something.",
+          "start": 13.5,
+          "end": 13.8
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 2",
+      "raw_speaker": "spk:1",
+      "start": 13.0,
+      "end": 14.5,
+      "text": "Okay. Okay.",
+      "language_code": null,
+      "words": [
+        {
+          "text": "Okay.",
+          "start": 13.0,
+          "end": 13.6
+        },
+        {
+          "text": "Okay.",
+          "start": 14.1,
+          "end": 14.5
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 1",
+      "raw_speaker": "spk:0",
+      "start": 15.2,
+      "end": 17.1,
+      "text": "I'm not going to ask you any questions about",
+      "language_code": null,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 15.2,
+          "end": 15.3
+        },
+        {
+          "text": "not",
+          "start": 15.3,
+          "end": 15.4
+        },
+        {
+          "text": "going",
+          "start": 15.4,
+          "end": 15.5
+        },
+        {
+          "text": "to",
+          "start": 15.5,
+          "end": 15.6
+        },
+        {
+          "text": "ask",
+          "start": 15.6,
+          "end": 15.8
+        },
+        {
+          "text": "you",
+          "start": 15.8,
+          "end": 15.9
+        },
+        {
+          "text": "any",
+          "start": 15.9,
+          "end": 16.1
+        },
+        {
+          "text": "questions",
+          "start": 16.1,
+          "end": 16.6
+        },
+        {
+          "text": "about",
+          "start": 16.6,
+          "end": 17.1
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 2",
+      "raw_speaker": "spk:1",
+      "start": 17.8,
+      "end": 19.1,
+      "text": "You could ask me anything you want.",
+      "language_code": null,
+      "words": [
+        {
+          "text": "You",
+          "start": 17.8,
+          "end": 17.9
+        },
+        {
+          "text": "could",
+          "start": 17.9,
+          "end": 18.0
+        },
+        {
+          "text": "ask",
+          "start": 18.0,
+          "end": 18.2
+        },
+        {
+          "text": "me",
+          "start": 18.2,
+          "end": 18.3
+        },
+        {
+          "text": "anything",
+          "start": 18.3,
+          "end": 18.6
+        },
+        {
+          "text": "you",
+          "start": 18.6,
+          "end": 18.7
+        },
+        {
+          "text": "want.",
+          "start": 18.7,
+          "end": 19.1
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 1",
+      "raw_speaker": "spk:0",
+      "start": 18.3,
+      "end": 33.7,
+      "text": "company finances. Thank you. I'm not going to ask you questions about your management style or why you don't like one-on-ones. I'm not going to ask you about regulations or politics. I think all of those things are important, but I think that our audience can get them well covered elsewhere.",
+      "language_code": null,
+      "words": [
+        {
+          "text": "company",
+          "start": 18.3,
+          "end": 18.5
+        },
+        {
+          "text": "finances.",
+          "start": 18.5,
+          "end": 19.3
+        },
+        {
+          "text": "Thank",
+          "start": 19.4,
+          "end": 19.6
+        },
+        {
+          "text": "you.",
+          "start": 19.6,
+          "end": 19.8
+        },
+        {
+          "text": "I'm",
+          "start": 20.5,
+          "end": 20.6
+        },
+        {
+          "text": "not",
+          "start": 20.6,
+          "end": 20.7
+        },
+        {
+          "text": "going",
+          "start": 20.7,
+          "end": 20.8
+        },
+        {
+          "text": "to",
+          "start": 20.8,
+          "end": 20.9
+        },
+        {
+          "text": "ask",
+          "start": 20.9,
+          "end": 21.1
+        },
+        {
+          "text": "you",
+          "start": 21.1,
+          "end": 21.2
+        },
+        {
+          "text": "questions",
+          "start": 21.2,
+          "end": 21.6
+        },
+        {
+          "text": "about",
+          "start": 21.6,
+          "end": 21.8
+        },
+        {
+          "text": "your",
+          "start": 21.8,
+          "end": 21.9
+        },
+        {
+          "text": "management",
+          "start": 21.9,
+          "end": 22.4
+        },
+        {
+          "text": "style",
+          "start": 22.4,
+          "end": 22.8
+        },
+        {
+          "text": "or",
+          "start": 22.8,
+          "end": 22.9
+        },
+        {
+          "text": "why",
+          "start": 22.9,
+          "end": 23.0
+        },
+        {
+          "text": "you",
+          "start": 23.0,
+          "end": 23.1
+        },
+        {
+          "text": "don't",
+          "start": 23.1,
+          "end": 23.3
+        },
+        {
+          "text": "like",
+          "start": 23.3,
+          "end": 23.4
+        },
+        {
+          "text": "one-on-ones.",
+          "start": 23.4,
+          "end": 24.3
+        },
+        {
+          "text": "I'm",
+          "start": 24.6,
+          "end": 24.7
+        },
+        {
+          "text": "not",
+          "start": 24.7,
+          "end": 24.8
+        },
+        {
+          "text": "going",
+          "start": 24.8,
+          "end": 24.9
+        },
+        {
+          "text": "to",
+          "start": 24.9,
+          "end": 25.0
+        },
+        {
+          "text": "ask",
+          "start": 25.0,
+          "end": 25.2
+        },
+        {
+          "text": "you",
+          "start": 25.2,
+          "end": 25.6
+        },
+        {
+          "text": "about",
+          "start": 25.6,
+          "end": 26.3
+        },
+        {
+          "text": "regulations",
+          "start": 26.5,
+          "end": 27.4
+        },
+        {
+          "text": "or",
+          "start": 27.4,
+          "end": 27.9
+        },
+        {
+          "text": "politics.",
+          "start": 27.9,
+          "end": 28.7
+        },
+        {
+          "text": "I",
+          "start": 29.0,
+          "end": 29.0
+        },
+        {
+          "text": "think",
+          "start": 29.0,
+          "end": 29.2
+        },
+        {
+          "text": "all",
+          "start": 29.2,
+          "end": 29.4
+        },
+        {
+          "text": "of",
+          "start": 29.4,
+          "end": 29.5
+        },
+        {
+          "text": "those",
+          "start": 29.5,
+          "end": 29.6
+        },
+        {
+          "text": "things",
+          "start": 29.6,
+          "end": 29.8
+        },
+        {
+          "text": "are",
+          "start": 29.8,
+          "end": 29.8
+        },
+        {
+          "text": "important,",
+          "start": 29.8,
+          "end": 30.4
+        },
+        {
+          "text": "but",
+          "start": 30.4,
+          "end": 30.7
+        },
+        {
+          "text": "I",
+          "start": 30.7,
+          "end": 31.2
+        },
+        {
+          "text": "think",
+          "start": 31.7,
+          "end": 31.9
+        },
+        {
+          "text": "that",
+          "start": 31.9,
+          "end": 32.0
+        },
+        {
+          "text": "our",
+          "start": 32.0,
+          "end": 32.1
+        },
+        {
+          "text": "audience",
+          "start": 32.1,
+          "end": 32.4
+        },
+        {
+          "text": "can",
+          "start": 32.4,
+          "end": 32.6
+        },
+        {
+          "text": "get",
+          "start": 32.6,
+          "end": 32.7
+        },
+        {
+          "text": "them",
+          "start": 32.7,
+          "end": 32.9
+        },
+        {
+          "text": "well",
+          "start": 32.9,
+          "end": 33.0
+        },
+        {
+          "text": "covered",
+          "start": 33.0,
+          "end": 33.3
+        },
+        {
+          "text": "elsewhere.",
+          "start": 33.3,
+          "end": 33.7
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 2",
+      "raw_speaker": "spk:1",
+      "start": 33.9,
+      "end": 34.1,
+      "text": "Okay.",
+      "language_code": null,
+      "words": [
+        {
+          "text": "Okay.",
+          "start": 33.9,
+          "end": 34.1
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 1",
+      "raw_speaker": "spk:0",
+      "start": 34.4,
+      "end": 38.8,
+      "text": "What we do on Huge If True is we make optimistic explainer videos.",
+      "language_code": null,
+      "words": [
+        {
+          "text": "What",
+          "start": 34.4,
+          "end": 34.5
+        },
+        {
+          "text": "we",
+          "start": 34.5,
+          "end": 34.6
+        },
+        {
+          "text": "do",
+          "start": 34.6,
+          "end": 35.0
+        },
+        {
+          "text": "on",
+          "start": 35.0,
+          "end": 35.2
+        },
+        {
+          "text": "Huge",
+          "start": 35.2,
+          "end": 35.4
+        },
+        {
+          "text": "If",
+          "start": 35.4,
+          "end": 35.5
+        },
+        {
+          "text": "True",
+          "start": 35.5,
+          "end": 35.9
+        },
+        {
+          "text": "is",
+          "start": 35.9,
+          "end": 36.4
+        },
+        {
+          "text": "we",
+          "start": 36.7,
+          "end": 36.8
+        },
+        {
+          "text": "make",
+          "start": 36.8,
+          "end": 37.4
+        },
+        {
+          "text": "optimistic",
+          "start": 37.4,
+          "end": 38.0
+        },
+        {
+          "text": "explainer",
+          "start": 38.0,
+          "end": 38.4
+        },
+        {
+          "text": "videos.",
+          "start": 38.4,
+          "end": 38.8
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 2",
+      "raw_speaker": "spk:1",
+      "start": 38.9,
+      "end": 39.1,
+      "text": "Mhm.",
+      "language_code": null,
+      "words": [
+        {
+          "text": "Mhm.",
+          "start": 38.9,
+          "end": 39.1
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 1",
+      "raw_speaker": "spk:0",
+      "start": 39.3,
+      "end": 41.2,
+      "text": "And we've covered",
+      "language_code": null,
+      "words": [
+        {
+          "text": "And",
+          "start": 39.3,
+          "end": 40.0
+        },
+        {
+          "text": "we've",
+          "start": 40.3,
+          "end": 40.6
+        },
+        {
+          "text": "covered",
+          "start": 40.6,
+          "end": 41.2
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 2",
+      "raw_speaker": "spk:1",
+      "start": 40.7,
+      "end": 43.2,
+      "text": "Kind of. I'm the worst person to be an explainer video.",
+      "language_code": null,
+      "words": [
+        {
+          "text": "Kind",
+          "start": 40.7,
+          "end": 40.9
+        },
+        {
+          "text": "of.",
+          "start": 40.9,
+          "end": 41.0
+        },
+        {
+          "text": "I'm",
+          "start": 41.2,
+          "end": 41.3
+        },
+        {
+          "text": "the",
+          "start": 41.3,
+          "end": 41.4
+        },
+        {
+          "text": "worst",
+          "start": 41.4,
+          "end": 41.7
+        },
+        {
+          "text": "person",
+          "start": 41.7,
+          "end": 42.1
+        },
+        {
+          "text": "to",
+          "start": 42.1,
+          "end": 42.1
+        },
+        {
+          "text": "be",
+          "start": 42.1,
+          "end": 42.2
+        },
+        {
+          "text": "an",
+          "start": 42.2,
+          "end": 42.3
+        },
+        {
+          "text": "explainer",
+          "start": 42.3,
+          "end": 42.8
+        },
+        {
+          "text": "video.",
+          "start": 42.8,
+          "end": 43.2
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 1",
+      "raw_speaker": "spk:0",
+      "start": 43.5,
+      "end": 55.0,
+      "text": "I think you might be the best. And I think I'm that's what I'm really hoping that we can do together is make a joint explainer video about how can we actually use technology to make the future better.",
+      "language_code": null,
+      "words": [
+        {
+          "text": "I",
+          "start": 43.5,
+          "end": 43.7
+        },
+        {
+          "text": "think",
+          "start": 43.7,
+          "end": 43.9
+        },
+        {
+          "text": "you",
+          "start": 43.9,
+          "end": 44.0
+        },
+        {
+          "text": "might",
+          "start": 44.0,
+          "end": 44.2
+        },
+        {
+          "text": "be",
+          "start": 44.2,
+          "end": 44.2
+        },
+        {
+          "text": "the",
+          "start": 44.2,
+          "end": 44.3
+        },
+        {
+          "text": "best.",
+          "start": 44.3,
+          "end": 44.9
+        },
+        {
+          "text": "And",
+          "start": 44.9,
+          "end": 45.3
+        },
+        {
+          "text": "I",
+          "start": 45.3,
+          "end": 45.5
+        },
+        {
+          "text": "think",
+          "start": 45.5,
+          "end": 45.7
+        },
+        {
+          "text": "I'm",
+          "start": 45.7,
+          "end": 45.9
+        },
+        {
+          "text": "that's",
+          "start": 45.9,
+          "end": 46.2
+        },
+        {
+          "text": "what",
+          "start": 46.2,
+          "end": 46.3
+        },
+        {
+          "text": "I'm",
+          "start": 46.3,
+          "end": 46.4
+        },
+        {
+          "text": "really",
+          "start": 46.4,
+          "end": 46.7
+        },
+        {
+          "text": "hoping",
+          "start": 46.7,
+          "end": 47.0
+        },
+        {
+          "text": "that",
+          "start": 47.0,
+          "end": 47.1
+        },
+        {
+          "text": "we",
+          "start": 47.1,
+          "end": 47.2
+        },
+        {
+          "text": "can",
+          "start": 47.2,
+          "end": 47.4
+        },
+        {
+          "text": "do",
+          "start": 47.4,
+          "end": 47.6
+        },
+        {
+          "text": "together",
+          "start": 47.6,
+          "end": 48.1
+        },
+        {
+          "text": "is",
+          "start": 48.1,
+          "end": 48.2
+        },
+        {
+          "text": "make",
+          "start": 48.2,
+          "end": 48.8
+        },
+        {
+          "text": "a",
+          "start": 49.0,
+          "end": 49.2
+        },
+        {
+          "text": "joint",
+          "start": 49.2,
+          "end": 49.6
+        },
+        {
+          "text": "explainer",
+          "start": 49.6,
+          "end": 50.0
+        },
+        {
+          "text": "video",
+          "start": 50.0,
+          "end": 50.5
+        },
+        {
+          "text": "about",
+          "start": 50.5,
+          "end": 51.1
+        },
+        {
+          "text": "how",
+          "start": 51.1,
+          "end": 51.4
+        },
+        {
+          "text": "can",
+          "start": 51.4,
+          "end": 51.6
+        },
+        {
+          "text": "we",
+          "start": 51.6,
+          "end": 52.0
+        },
+        {
+          "text": "actually",
+          "start": 52.3,
+          "end": 53.0
+        },
+        {
+          "text": "use",
+          "start": 53.1,
+          "end": 53.5
+        },
+        {
+          "text": "technology",
+          "start": 53.5,
+          "end": 54.0
+        },
+        {
+          "text": "to",
+          "start": 54.0,
+          "end": 54.1
+        },
+        {
+          "text": "make",
+          "start": 54.1,
+          "end": 54.3
+        },
+        {
+          "text": "the",
+          "start": 54.3,
+          "end": 54.4
+        },
+        {
+          "text": "future",
+          "start": 54.4,
+          "end": 54.6
+        },
+        {
+          "text": "better.",
+          "start": 54.6,
+          "end": 55.0
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 2",
+      "raw_speaker": "spk:1",
+      "start": 48.1,
+      "end": 55.5,
+      "text": "Yeah. Yeah.",
+      "language_code": null,
+      "words": [
+        {
+          "text": "Yeah.",
+          "start": 48.1,
+          "end": 48.2
+        },
+        {
+          "text": "Yeah.",
+          "start": 55.3,
+          "end": 55.5
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 1",
+      "raw_speaker": "spk:0",
+      "start": 55.7,
+      "end": 83.2,
+      "text": "And we do it because we believe that when people see those better futures, they help build them. So the people that you're going to be talking to are awesome. They are optimists who want to build those better features. But because we cover so many different topics, we've covered supersonic planes and quantum computers and particle colliders, it means that millions of people come into every episode without any prior knowledge whatsoever. You might be talking to an expert in their field who doesn't know the difference between a CPU and a GPU.",
+      "language_code": null,
+      "words": [
+        {
+          "text": "And",
+          "start": 55.7,
+          "end": 55.8
+        },
+        {
+          "text": "we",
+          "start": 55.8,
+          "end": 55.9
+        },
+        {
+          "text": "do",
+          "start": 55.9,
+          "end": 56.0
+        },
+        {
+          "text": "it",
+          "start": 56.0,
+          "end": 56.1
+        },
+        {
+          "text": "because",
+          "start": 56.1,
+          "end": 56.4
+        },
+        {
+          "text": "we",
+          "start": 56.4,
+          "end": 56.6
+        },
+        {
+          "text": "believe",
+          "start": 56.6,
+          "end": 57.0
+        },
+        {
+          "text": "that",
+          "start": 57.0,
+          "end": 57.2
+        },
+        {
+          "text": "when",
+          "start": 57.2,
+          "end": 57.3
+        },
+        {
+          "text": "people",
+          "start": 57.3,
+          "end": 57.6
+        },
+        {
+          "text": "see",
+          "start": 57.6,
+          "end": 57.7
+        },
+        {
+          "text": "those",
+          "start": 57.7,
+          "end": 57.9
+        },
+        {
+          "text": "better",
+          "start": 57.9,
+          "end": 58.2
+        },
+        {
+          "text": "futures,",
+          "start": 58.2,
+          "end": 58.6
+        },
+        {
+          "text": "they",
+          "start": 58.6,
+          "end": 58.7
+        },
+        {
+          "text": "help",
+          "start": 58.7,
+          "end": 59.0
+        },
+        {
+          "text": "build",
+          "start": 59.0,
+          "end": 59.2
+        },
+        {
+          "text": "them.",
+          "start": 59.2,
+          "end": 59.5
+        },
+        {
+          "text": "So",
+          "start": 59.9,
+          "end": 60.1
+        },
+        {
+          "text": "the",
+          "start": 60.1,
+          "end": 60.2
+        },
+        {
+          "text": "people",
+          "start": 60.2,
+          "end": 60.5
+        },
+        {
+          "text": "that",
+          "start": 60.5,
+          "end": 60.6
+        },
+        {
+          "text": "you're",
+          "start": 60.6,
+          "end": 60.7
+        },
+        {
+          "text": "going",
+          "start": 60.7,
+          "end": 60.8
+        },
+        {
+          "text": "to",
+          "start": 60.8,
+          "end": 60.8
+        },
+        {
+          "text": "be",
+          "start": 60.8,
+          "end": 60.9
+        },
+        {
+          "text": "talking",
+          "start": 60.9,
+          "end": 61.3
+        },
+        {
+          "text": "to",
+          "start": 61.3,
+          "end": 61.5
+        },
+        {
+          "text": "are",
+          "start": 61.5,
+          "end": 61.8
+        },
+        {
+          "text": "awesome.",
+          "start": 61.9,
+          "end": 62.4
+        },
+        {
+          "text": "They",
+          "start": 62.5,
+          "end": 62.7
+        },
+        {
+          "text": "are",
+          "start": 62.7,
+          "end": 63.1
+        },
+        {
+          "text": "optimists",
+          "start": 63.2,
+          "end": 63.8
+        },
+        {
+          "text": "who",
+          "start": 63.8,
+          "end": 64.0
+        },
+        {
+          "text": "want",
+          "start": 64.1,
+          "end": 64.4
+        },
+        {
+          "text": "to",
+          "start": 64.4,
+          "end": 64.6
+        },
+        {
+          "text": "build",
+          "start": 64.6,
+          "end": 64.8
+        },
+        {
+          "text": "those",
+          "start": 64.8,
+          "end": 65.0
+        },
+        {
+          "text": "better",
+          "start": 65.0,
+          "end": 65.2
+        },
+        {
+          "text": "features.",
+          "start": 65.2,
+          "end": 65.7
+        },
+        {
+          "text": "But",
+          "start": 66.2,
+          "end": 66.4
+        },
+        {
+          "text": "because",
+          "start": 66.4,
+          "end": 66.7
+        },
+        {
+          "text": "we",
+          "start": 66.7,
+          "end": 66.8
+        },
+        {
+          "text": "cover",
+          "start": 66.8,
+          "end": 67.1
+        },
+        {
+          "text": "so",
+          "start": 67.1,
+          "end": 67.3
+        },
+        {
+          "text": "many",
+          "start": 67.3,
+          "end": 67.5
+        },
+        {
+          "text": "different",
+          "start": 67.5,
+          "end": 67.8
+        },
+        {
+          "text": "topics,",
+          "start": 67.8,
+          "end": 68.1
+        },
+        {
+          "text": "we've",
+          "start": 68.1,
+          "end": 68.3
+        },
+        {
+          "text": "covered",
+          "start": 68.3,
+          "end": 68.7
+        },
+        {
+          "text": "supersonic",
+          "start": 68.7,
+          "end": 69.1
+        },
+        {
+          "text": "planes",
+          "start": 69.1,
+          "end": 69.6
+        },
+        {
+          "text": "and",
+          "start": 69.6,
+          "end": 69.8
+        },
+        {
+          "text": "quantum",
+          "start": 69.8,
+          "end": 70.2
+        },
+        {
+          "text": "computers",
+          "start": 70.2,
+          "end": 70.9
+        },
+        {
+          "text": "and",
+          "start": 70.9,
+          "end": 71.3
+        },
+        {
+          "text": "particle",
+          "start": 71.7,
+          "end": 72.1
+        },
+        {
+          "text": "colliders,",
+          "start": 72.1,
+          "end": 72.8
+        },
+        {
+          "text": "it",
+          "start": 73.5,
+          "end": 73.7
+        },
+        {
+          "text": "means",
+          "start": 73.7,
+          "end": 73.9
+        },
+        {
+          "text": "that",
+          "start": 73.9,
+          "end": 74.3
+        },
+        {
+          "text": "millions",
+          "start": 74.3,
+          "end": 74.7
+        },
+        {
+          "text": "of",
+          "start": 74.7,
+          "end": 74.8
+        },
+        {
+          "text": "people",
+          "start": 74.8,
+          "end": 75.0
+        },
+        {
+          "text": "come",
+          "start": 75.0,
+          "end": 75.2
+        },
+        {
+          "text": "into",
+          "start": 75.2,
+          "end": 75.4
+        },
+        {
+          "text": "every",
+          "start": 75.4,
+          "end": 75.6
+        },
+        {
+          "text": "episode",
+          "start": 75.6,
+          "end": 76.2
+        },
+        {
+          "text": "without",
+          "start": 76.2,
+          "end": 76.6
+        },
+        {
+          "text": "any",
+          "start": 76.6,
+          "end": 77.0
+        },
+        {
+          "text": "prior",
+          "start": 77.0,
+          "end": 77.4
+        },
+        {
+          "text": "knowledge",
+          "start": 77.4,
+          "end": 77.7
+        },
+        {
+          "text": "whatsoever.",
+          "start": 77.7,
+          "end": 78.4
+        },
+        {
+          "text": "You",
+          "start": 78.7,
+          "end": 78.8
+        },
+        {
+          "text": "might",
+          "start": 78.8,
+          "end": 79.0
+        },
+        {
+          "text": "be",
+          "start": 79.0,
+          "end": 79.1
+        },
+        {
+          "text": "talking",
+          "start": 79.1,
+          "end": 79.5
+        },
+        {
+          "text": "to",
+          "start": 79.5,
+          "end": 79.9
+        },
+        {
+          "text": "an",
+          "start": 79.9,
+          "end": 80.0
+        },
+        {
+          "text": "expert",
+          "start": 80.0,
+          "end": 80.4
+        },
+        {
+          "text": "in",
+          "start": 80.4,
+          "end": 80.5
+        },
+        {
+          "text": "their",
+          "start": 80.5,
+          "end": 80.7
+        },
+        {
+          "text": "field",
+          "start": 80.7,
+          "end": 80.9
+        },
+        {
+          "text": "who",
+          "start": 80.9,
+          "end": 81.1
+        },
+        {
+          "text": "doesn't",
+          "start": 81.1,
+          "end": 81.5
+        },
+        {
+          "text": "know",
+          "start": 81.5,
+          "end": 81.6
+        },
+        {
+          "text": "the",
+          "start": 81.6,
+          "end": 81.7
+        },
+        {
+          "text": "difference",
+          "start": 81.7,
+          "end": 82.0
+        },
+        {
+          "text": "between",
+          "start": 82.0,
+          "end": 82.3
+        },
+        {
+          "text": "a",
+          "start": 82.3,
+          "end": 82.3
+        },
+        {
+          "text": "CPU",
+          "start": 82.3,
+          "end": 82.7
+        },
+        {
+          "text": "and",
+          "start": 82.7,
+          "end": 82.8
+        },
+        {
+          "text": "a",
+          "start": 82.8,
+          "end": 82.8
+        },
+        {
+          "text": "GPU.",
+          "start": 82.8,
+          "end": 83.2
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 2",
+      "raw_speaker": "spk:1",
+      "start": 82.6,
+      "end": 83.6,
+      "text": "Big trouble. Yeah.",
+      "language_code": null,
+      "words": [
+        {
+          "text": "Big",
+          "start": 82.6,
+          "end": 82.7
+        },
+        {
+          "text": "trouble.",
+          "start": 82.7,
+          "end": 83.1
+        },
+        {
+          "text": "Yeah.",
+          "start": 83.3,
+          "end": 83.6
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 1",
+      "raw_speaker": "spk:0",
+      "start": 83.7,
+      "end": 147.5,
+      "text": "Yeah. Or a 12-year-old who might grow up one day to be you, but is just starting to learn. Um for my part, I've now been preparing for this interview for several months. I've including doing background conversations with many members of your team, but I'm not an engineer. So my goal is to help that audience see the future that you see. So I'm going to ask about three areas. The first is how did we get here? What were the key insights that led to this big fundamental shift in computing that we're in now? The second is what's actually happening right now? How did those insights lead to the world that we're now living in that seems like so much is going on all at once? And the third is what is the vision for what you see coming next? In order to talk about this big moment we're in with AI, I think we need to go back to video games in the '90s. At the time, I know game developers wanted to create more realistic-looking graphics, but the hardware couldn't keep up with all of that necessary math.",
+      "language_code": null,
+      "words": [
+        {
+          "text": "Yeah.",
+          "start": 83.7,
+          "end": 83.8
+        },
+        {
+          "text": "Or",
+          "start": 84.2,
+          "end": 84.7
+        },
+        {
+          "text": "a",
+          "start": 84.7,
+          "end": 84.8
+        },
+        {
+          "text": "12-year-old",
+          "start": 84.8,
+          "end": 85.6
+        },
+        {
+          "text": "who",
+          "start": 85.6,
+          "end": 85.8
+        },
+        {
+          "text": "might",
+          "start": 85.8,
+          "end": 86.0
+        },
+        {
+          "text": "grow",
+          "start": 86.0,
+          "end": 86.2
+        },
+        {
+          "text": "up",
+          "start": 86.2,
+          "end": 86.3
+        },
+        {
+          "text": "one",
+          "start": 86.3,
+          "end": 86.5
+        },
+        {
+          "text": "day",
+          "start": 86.5,
+          "end": 86.7
+        },
+        {
+          "text": "to",
+          "start": 86.7,
+          "end": 86.8
+        },
+        {
+          "text": "be",
+          "start": 86.8,
+          "end": 87.0
+        },
+        {
+          "text": "you,",
+          "start": 87.0,
+          "end": 87.5
+        },
+        {
+          "text": "but",
+          "start": 87.8,
+          "end": 88.2
+        },
+        {
+          "text": "is",
+          "start": 88.2,
+          "end": 88.4
+        },
+        {
+          "text": "just",
+          "start": 88.4,
+          "end": 88.6
+        },
+        {
+          "text": "starting",
+          "start": 88.6,
+          "end": 88.9
+        },
+        {
+          "text": "to",
+          "start": 88.9,
+          "end": 89.0
+        },
+        {
+          "text": "learn.",
+          "start": 89.0,
+          "end": 89.2
+        },
+        {
+          "text": "Um",
+          "start": 90.0,
+          "end": 90.4
+        },
+        {
+          "text": "for",
+          "start": 90.9,
+          "end": 91.0
+        },
+        {
+          "text": "my",
+          "start": 91.0,
+          "end": 91.2
+        },
+        {
+          "text": "part,",
+          "start": 91.2,
+          "end": 91.7
+        },
+        {
+          "text": "I've",
+          "start": 91.7,
+          "end": 92.3
+        },
+        {
+          "text": "now",
+          "start": 92.4,
+          "end": 92.6
+        },
+        {
+          "text": "been",
+          "start": 92.6,
+          "end": 92.7
+        },
+        {
+          "text": "preparing",
+          "start": 92.7,
+          "end": 93.1
+        },
+        {
+          "text": "for",
+          "start": 93.1,
+          "end": 93.2
+        },
+        {
+          "text": "this",
+          "start": 93.2,
+          "end": 93.3
+        },
+        {
+          "text": "interview",
+          "start": 93.3,
+          "end": 93.7
+        },
+        {
+          "text": "for",
+          "start": 93.7,
+          "end": 93.8
+        },
+        {
+          "text": "several",
+          "start": 93.8,
+          "end": 94.1
+        },
+        {
+          "text": "months.",
+          "start": 94.1,
+          "end": 94.5
+        },
+        {
+          "text": "I've",
+          "start": 94.5,
+          "end": 95.0
+        },
+        {
+          "text": "including",
+          "start": 95.4,
+          "end": 95.8
+        },
+        {
+          "text": "doing",
+          "start": 95.8,
+          "end": 96.3
+        },
+        {
+          "text": "background",
+          "start": 96.3,
+          "end": 96.8
+        },
+        {
+          "text": "conversations",
+          "start": 96.8,
+          "end": 97.4
+        },
+        {
+          "text": "with",
+          "start": 97.4,
+          "end": 97.5
+        },
+        {
+          "text": "many",
+          "start": 97.5,
+          "end": 97.7
+        },
+        {
+          "text": "members",
+          "start": 97.7,
+          "end": 98.0
+        },
+        {
+          "text": "of",
+          "start": 98.0,
+          "end": 98.1
+        },
+        {
+          "text": "your",
+          "start": 98.1,
+          "end": 98.2
+        },
+        {
+          "text": "team,",
+          "start": 98.2,
+          "end": 98.7
+        },
+        {
+          "text": "but",
+          "start": 99.1,
+          "end": 99.2
+        },
+        {
+          "text": "I'm",
+          "start": 99.2,
+          "end": 99.3
+        },
+        {
+          "text": "not",
+          "start": 99.3,
+          "end": 99.5
+        },
+        {
+          "text": "an",
+          "start": 99.5,
+          "end": 99.5
+        },
+        {
+          "text": "engineer.",
+          "start": 99.5,
+          "end": 100.0
+        },
+        {
+          "text": "So",
+          "start": 100.4,
+          "end": 100.6
+        },
+        {
+          "text": "my",
+          "start": 100.6,
+          "end": 100.8
+        },
+        {
+          "text": "goal",
+          "start": 100.8,
+          "end": 101.0
+        },
+        {
+          "text": "is",
+          "start": 101.0,
+          "end": 101.3
+        },
+        {
+          "text": "to",
+          "start": 101.3,
+          "end": 101.7
+        },
+        {
+          "text": "help",
+          "start": 101.7,
+          "end": 102.4
+        },
+        {
+          "text": "that",
+          "start": 102.4,
+          "end": 102.7
+        },
+        {
+          "text": "audience",
+          "start": 102.7,
+          "end": 103.4
+        },
+        {
+          "text": "see",
+          "start": 104.0,
+          "end": 104.2
+        },
+        {
+          "text": "the",
+          "start": 104.2,
+          "end": 104.3
+        },
+        {
+          "text": "future",
+          "start": 104.3,
+          "end": 104.9
+        },
+        {
+          "text": "that",
+          "start": 104.9,
+          "end": 105.0
+        },
+        {
+          "text": "you",
+          "start": 105.0,
+          "end": 105.2
+        },
+        {
+          "text": "see.",
+          "start": 105.2,
+          "end": 105.5
+        },
+        {
+          "text": "So",
+          "start": 105.7,
+          "end": 105.8
+        },
+        {
+          "text": "I'm",
+          "start": 105.8,
+          "end": 105.9
+        },
+        {
+          "text": "going",
+          "start": 105.9,
+          "end": 106.0
+        },
+        {
+          "text": "to",
+          "start": 106.0,
+          "end": 106.0
+        },
+        {
+          "text": "ask",
+          "start": 106.0,
+          "end": 106.1
+        },
+        {
+          "text": "about",
+          "start": 106.1,
+          "end": 106.4
+        },
+        {
+          "text": "three",
+          "start": 106.4,
+          "end": 106.9
+        },
+        {
+          "text": "areas.",
+          "start": 106.9,
+          "end": 107.4
+        },
+        {
+          "text": "The",
+          "start": 107.5,
+          "end": 107.6
+        },
+        {
+          "text": "first",
+          "start": 107.6,
+          "end": 107.8
+        },
+        {
+          "text": "is",
+          "start": 107.8,
+          "end": 108.3
+        },
+        {
+          "text": "how",
+          "start": 108.6,
+          "end": 108.7
+        },
+        {
+          "text": "did",
+          "start": 108.7,
+          "end": 108.9
+        },
+        {
+          "text": "we",
+          "start": 108.9,
+          "end": 109.0
+        },
+        {
+          "text": "get",
+          "start": 109.0,
+          "end": 109.2
+        },
+        {
+          "text": "here?",
+          "start": 109.2,
+          "end": 109.6
+        },
+        {
+          "text": "What",
+          "start": 109.8,
+          "end": 110.0
+        },
+        {
+          "text": "were",
+          "start": 110.0,
+          "end": 110.1
+        },
+        {
+          "text": "the",
+          "start": 110.1,
+          "end": 110.2
+        },
+        {
+          "text": "key",
+          "start": 110.2,
+          "end": 110.5
+        },
+        {
+          "text": "insights",
+          "start": 110.5,
+          "end": 111.1
+        },
+        {
+          "text": "that",
+          "start": 111.1,
+          "end": 111.3
+        },
+        {
+          "text": "led",
+          "start": 111.3,
+          "end": 111.6
+        },
+        {
+          "text": "to",
+          "start": 111.6,
+          "end": 111.7
+        },
+        {
+          "text": "this",
+          "start": 111.7,
+          "end": 112.0
+        },
+        {
+          "text": "big",
+          "start": 112.0,
+          "end": 112.4
+        },
+        {
+          "text": "fundamental",
+          "start": 112.4,
+          "end": 112.8
+        },
+        {
+          "text": "shift",
+          "start": 112.8,
+          "end": 113.2
+        },
+        {
+          "text": "in",
+          "start": 113.2,
+          "end": 113.5
+        },
+        {
+          "text": "computing",
+          "start": 113.5,
+          "end": 114.0
+        },
+        {
+          "text": "that",
+          "start": 114.0,
+          "end": 114.1
+        },
+        {
+          "text": "we're",
+          "start": 114.1,
+          "end": 114.2
+        },
+        {
+          "text": "in",
+          "start": 114.2,
+          "end": 114.3
+        },
+        {
+          "text": "now?",
+          "start": 114.3,
+          "end": 114.6
+        },
+        {
+          "text": "The",
+          "start": 114.8,
+          "end": 114.9
+        },
+        {
+          "text": "second",
+          "start": 114.9,
+          "end": 115.2
+        },
+        {
+          "text": "is",
+          "start": 115.2,
+          "end": 115.5
+        },
+        {
+          "text": "what's",
+          "start": 115.8,
+          "end": 116.0
+        },
+        {
+          "text": "actually",
+          "start": 116.0,
+          "end": 116.3
+        },
+        {
+          "text": "happening",
+          "start": 116.3,
+          "end": 116.7
+        },
+        {
+          "text": "right",
+          "start": 116.7,
+          "end": 117.0
+        },
+        {
+          "text": "now?",
+          "start": 117.0,
+          "end": 117.3
+        },
+        {
+          "text": "How",
+          "start": 117.6,
+          "end": 117.8
+        },
+        {
+          "text": "did",
+          "start": 117.8,
+          "end": 117.9
+        },
+        {
+          "text": "those",
+          "start": 117.9,
+          "end": 118.1
+        },
+        {
+          "text": "insights",
+          "start": 118.1,
+          "end": 118.7
+        },
+        {
+          "text": "lead",
+          "start": 118.7,
+          "end": 119.1
+        },
+        {
+          "text": "to",
+          "start": 119.1,
+          "end": 119.6
+        },
+        {
+          "text": "the",
+          "start": 119.6,
+          "end": 119.7
+        },
+        {
+          "text": "world",
+          "start": 119.7,
+          "end": 120.0
+        },
+        {
+          "text": "that",
+          "start": 120.0,
+          "end": 120.2
+        },
+        {
+          "text": "we're",
+          "start": 120.2,
+          "end": 120.3
+        },
+        {
+          "text": "now",
+          "start": 120.3,
+          "end": 120.5
+        },
+        {
+          "text": "living",
+          "start": 120.5,
+          "end": 120.8
+        },
+        {
+          "text": "in",
+          "start": 120.8,
+          "end": 121.1
+        },
+        {
+          "text": "that",
+          "start": 121.1,
+          "end": 121.5
+        },
+        {
+          "text": "seems",
+          "start": 121.5,
+          "end": 121.9
+        },
+        {
+          "text": "like",
+          "start": 121.9,
+          "end": 122.1
+        },
+        {
+          "text": "so",
+          "start": 122.1,
+          "end": 122.3
+        },
+        {
+          "text": "much",
+          "start": 122.3,
+          "end": 122.5
+        },
+        {
+          "text": "is",
+          "start": 122.5,
+          "end": 122.6
+        },
+        {
+          "text": "going",
+          "start": 122.6,
+          "end": 122.8
+        },
+        {
+          "text": "on",
+          "start": 122.8,
+          "end": 123.0
+        },
+        {
+          "text": "all",
+          "start": 123.0,
+          "end": 123.1
+        },
+        {
+          "text": "at",
+          "start": 123.1,
+          "end": 123.2
+        },
+        {
+          "text": "once?",
+          "start": 123.2,
+          "end": 123.6
+        },
+        {
+          "text": "And",
+          "start": 124.0,
+          "end": 124.1
+        },
+        {
+          "text": "the",
+          "start": 124.1,
+          "end": 124.2
+        },
+        {
+          "text": "third",
+          "start": 124.2,
+          "end": 124.6
+        },
+        {
+          "text": "is",
+          "start": 124.6,
+          "end": 125.0
+        },
+        {
+          "text": "what",
+          "start": 125.3,
+          "end": 125.4
+        },
+        {
+          "text": "is",
+          "start": 125.4,
+          "end": 125.5
+        },
+        {
+          "text": "the",
+          "start": 125.5,
+          "end": 125.6
+        },
+        {
+          "text": "vision",
+          "start": 125.6,
+          "end": 126.0
+        },
+        {
+          "text": "for",
+          "start": 126.0,
+          "end": 126.2
+        },
+        {
+          "text": "what",
+          "start": 126.2,
+          "end": 126.4
+        },
+        {
+          "text": "you",
+          "start": 126.4,
+          "end": 126.6
+        },
+        {
+          "text": "see",
+          "start": 126.6,
+          "end": 126.7
+        },
+        {
+          "text": "coming",
+          "start": 126.7,
+          "end": 127.0
+        },
+        {
+          "text": "next?",
+          "start": 127.0,
+          "end": 127.4
+        },
+        {
+          "text": "In",
+          "start": 129.8,
+          "end": 129.9
+        },
+        {
+          "text": "order",
+          "start": 129.9,
+          "end": 130.2
+        },
+        {
+          "text": "to",
+          "start": 130.2,
+          "end": 130.5
+        },
+        {
+          "text": "talk",
+          "start": 130.5,
+          "end": 131.0
+        },
+        {
+          "text": "about",
+          "start": 131.0,
+          "end": 131.4
+        },
+        {
+          "text": "this",
+          "start": 131.4,
+          "end": 131.6
+        },
+        {
+          "text": "big",
+          "start": 131.6,
+          "end": 132.0
+        },
+        {
+          "text": "moment",
+          "start": 132.0,
+          "end": 132.3
+        },
+        {
+          "text": "we're",
+          "start": 132.3,
+          "end": 132.4
+        },
+        {
+          "text": "in",
+          "start": 132.4,
+          "end": 132.5
+        },
+        {
+          "text": "with",
+          "start": 132.5,
+          "end": 132.7
+        },
+        {
+          "text": "AI,",
+          "start": 132.7,
+          "end": 133.1
+        },
+        {
+          "text": "I",
+          "start": 134.3,
+          "end": 134.4
+        },
+        {
+          "text": "think",
+          "start": 134.4,
+          "end": 134.5
+        },
+        {
+          "text": "we",
+          "start": 134.5,
+          "end": 134.6
+        },
+        {
+          "text": "need",
+          "start": 134.6,
+          "end": 134.8
+        },
+        {
+          "text": "to",
+          "start": 134.8,
+          "end": 134.9
+        },
+        {
+          "text": "go",
+          "start": 134.9,
+          "end": 135.0
+        },
+        {
+          "text": "back",
+          "start": 135.0,
+          "end": 135.4
+        },
+        {
+          "text": "to",
+          "start": 135.4,
+          "end": 135.5
+        },
+        {
+          "text": "video",
+          "start": 135.5,
+          "end": 135.8
+        },
+        {
+          "text": "games",
+          "start": 135.8,
+          "end": 136.1
+        },
+        {
+          "text": "in",
+          "start": 136.1,
+          "end": 136.2
+        },
+        {
+          "text": "the",
+          "start": 136.2,
+          "end": 136.3
+        },
+        {
+          "text": "'90s.",
+          "start": 136.3,
+          "end": 136.7
+        },
+        {
+          "text": "At",
+          "start": 140.5,
+          "end": 140.6
+        },
+        {
+          "text": "the",
+          "start": 140.6,
+          "end": 140.7
+        },
+        {
+          "text": "time,",
+          "start": 140.7,
+          "end": 141.0
+        },
+        {
+          "text": "I",
+          "start": 141.0,
+          "end": 141.1
+        },
+        {
+          "text": "know",
+          "start": 141.1,
+          "end": 141.3
+        },
+        {
+          "text": "game",
+          "start": 141.3,
+          "end": 141.5
+        },
+        {
+          "text": "developers",
+          "start": 141.5,
+          "end": 142.1
+        },
+        {
+          "text": "wanted",
+          "start": 142.1,
+          "end": 142.3
+        },
+        {
+          "text": "to",
+          "start": 142.3,
+          "end": 142.4
+        },
+        {
+          "text": "create",
+          "start": 142.4,
+          "end": 142.7
+        },
+        {
+          "text": "more",
+          "start": 142.7,
+          "end": 142.9
+        },
+        {
+          "text": "realistic-looking",
+          "start": 142.9,
+          "end": 143.6
+        },
+        {
+          "text": "graphics,",
+          "start": 143.6,
+          "end": 144.1
+        },
+        {
+          "text": "but",
+          "start": 144.1,
+          "end": 144.4
+        },
+        {
+          "text": "the",
+          "start": 144.4,
+          "end": 144.7
+        },
+        {
+          "text": "hardware",
+          "start": 144.7,
+          "end": 145.2
+        },
+        {
+          "text": "couldn't",
+          "start": 145.2,
+          "end": 145.5
+        },
+        {
+          "text": "keep",
+          "start": 145.5,
+          "end": 145.7
+        },
+        {
+          "text": "up",
+          "start": 145.7,
+          "end": 146.0
+        },
+        {
+          "text": "with",
+          "start": 146.0,
+          "end": 146.2
+        },
+        {
+          "text": "all",
+          "start": 146.2,
+          "end": 146.4
+        },
+        {
+          "text": "of",
+          "start": 146.4,
+          "end": 146.5
+        },
+        {
+          "text": "that",
+          "start": 146.5,
+          "end": 146.7
+        },
+        {
+          "text": "necessary",
+          "start": 146.7,
+          "end": 147.2
+        },
+        {
+          "text": "math.",
+          "start": 147.2,
+          "end": 147.5
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 2",
+      "raw_speaker": "spk:1",
+      "start": 147.8,
+      "end": 148.7,
+      "text": "Not enough math.",
+      "language_code": null,
+      "words": [
+        {
+          "text": "Not",
+          "start": 147.8,
+          "end": 148.0
+        },
+        {
+          "text": "enough",
+          "start": 148.0,
+          "end": 148.3
+        },
+        {
+          "text": "math.",
+          "start": 148.3,
+          "end": 148.7
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 1",
+      "raw_speaker": "spk:0",
+      "start": 149.8,
+      "end": 165.0,
+      "text": "NVIDIA came up with a solution that would change not just games, but computing itself. Could you take us back there and explain what was happening and what were the insights that led you and the NVIDIA team to create the first modern GPU?",
+      "language_code": null,
+      "words": [
+        {
+          "text": "NVIDIA",
+          "start": 149.8,
+          "end": 150.4
+        },
+        {
+          "text": "came",
+          "start": 150.4,
+          "end": 150.6
+        },
+        {
+          "text": "up",
+          "start": 150.6,
+          "end": 150.7
+        },
+        {
+          "text": "with",
+          "start": 150.7,
+          "end": 150.8
+        },
+        {
+          "text": "a",
+          "start": 150.8,
+          "end": 150.9
+        },
+        {
+          "text": "solution",
+          "start": 150.9,
+          "end": 151.5
+        },
+        {
+          "text": "that",
+          "start": 151.5,
+          "end": 151.6
+        },
+        {
+          "text": "would",
+          "start": 151.6,
+          "end": 151.8
+        },
+        {
+          "text": "change",
+          "start": 151.8,
+          "end": 152.3
+        },
+        {
+          "text": "not",
+          "start": 152.3,
+          "end": 152.4
+        },
+        {
+          "text": "just",
+          "start": 152.4,
+          "end": 152.7
+        },
+        {
+          "text": "games,",
+          "start": 152.7,
+          "end": 153.3
+        },
+        {
+          "text": "but",
+          "start": 153.4,
+          "end": 153.5
+        },
+        {
+          "text": "computing",
+          "start": 153.5,
+          "end": 154.0
+        },
+        {
+          "text": "itself.",
+          "start": 154.0,
+          "end": 154.6
+        },
+        {
+          "text": "Could",
+          "start": 156.5,
+          "end": 156.6
+        },
+        {
+          "text": "you",
+          "start": 156.6,
+          "end": 156.7
+        },
+        {
+          "text": "take",
+          "start": 156.7,
+          "end": 156.9
+        },
+        {
+          "text": "us",
+          "start": 156.9,
+          "end": 157.0
+        },
+        {
+          "text": "back",
+          "start": 157.0,
+          "end": 157.2
+        },
+        {
+          "text": "there",
+          "start": 157.2,
+          "end": 157.4
+        },
+        {
+          "text": "and",
+          "start": 157.4,
+          "end": 157.6
+        },
+        {
+          "text": "explain",
+          "start": 157.6,
+          "end": 158.2
+        },
+        {
+          "text": "what",
+          "start": 158.3,
+          "end": 158.5
+        },
+        {
+          "text": "was",
+          "start": 158.5,
+          "end": 158.6
+        },
+        {
+          "text": "happening",
+          "start": 158.6,
+          "end": 159.2
+        },
+        {
+          "text": "and",
+          "start": 159.2,
+          "end": 159.6
+        },
+        {
+          "text": "what",
+          "start": 160.3,
+          "end": 160.4
+        },
+        {
+          "text": "were",
+          "start": 160.4,
+          "end": 160.5
+        },
+        {
+          "text": "the",
+          "start": 160.5,
+          "end": 160.7
+        },
+        {
+          "text": "insights",
+          "start": 160.7,
+          "end": 161.3
+        },
+        {
+          "text": "that",
+          "start": 161.3,
+          "end": 161.5
+        },
+        {
+          "text": "led",
+          "start": 161.5,
+          "end": 161.8
+        },
+        {
+          "text": "you",
+          "start": 161.8,
+          "end": 162.2
+        },
+        {
+          "text": "and",
+          "start": 162.2,
+          "end": 162.5
+        },
+        {
+          "text": "the",
+          "start": 162.5,
+          "end": 162.7
+        },
+        {
+          "text": "NVIDIA",
+          "start": 162.7,
+          "end": 163.1
+        },
+        {
+          "text": "team",
+          "start": 163.1,
+          "end": 163.4
+        },
+        {
+          "text": "to",
+          "start": 163.4,
+          "end": 163.5
+        },
+        {
+          "text": "create",
+          "start": 163.5,
+          "end": 163.9
+        },
+        {
+          "text": "the",
+          "start": 163.9,
+          "end": 164.0
+        },
+        {
+          "text": "first",
+          "start": 164.0,
+          "end": 164.3
+        },
+        {
+          "text": "modern",
+          "start": 164.3,
+          "end": 164.6
+        },
+        {
+          "text": "GPU?",
+          "start": 164.6,
+          "end": 165.0
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 2",
+      "raw_speaker": "spk:1",
+      "start": 165.4,
+      "end": 206.6,
+      "text": "So in the early '90s when we first started the company, we observed that in a software program inside it, there are just a few lines of code, maybe 10% of the code does 99% of the processing. And that 99% of the processing could be done in parallel. However, the other 90% of the code has to be done sequentially. It turns out that the proper computer, the perfect computer is one that could do sequential processing and parallel processing, not just one or the other. That was the big observation. And we set out to build a company to solve computer problems that normal computers can't. And that's really the beginning of NVIDIA.",
+      "language_code": null,
+      "words": [
+        {
+          "text": "So",
+          "start": 165.4,
+          "end": 165.7
+        },
+        {
+          "text": "in",
+          "start": 165.7,
+          "end": 165.9
+        },
+        {
+          "text": "the",
+          "start": 165.9,
+          "end": 166.0
+        },
+        {
+          "text": "early",
+          "start": 166.0,
+          "end": 166.2
+        },
+        {
+          "text": "'90s",
+          "start": 166.2,
+          "end": 166.5
+        },
+        {
+          "text": "when",
+          "start": 166.5,
+          "end": 166.7
+        },
+        {
+          "text": "we",
+          "start": 166.7,
+          "end": 166.8
+        },
+        {
+          "text": "first",
+          "start": 166.8,
+          "end": 167.0
+        },
+        {
+          "text": "started",
+          "start": 167.0,
+          "end": 167.2
+        },
+        {
+          "text": "the",
+          "start": 167.2,
+          "end": 167.3
+        },
+        {
+          "text": "company,",
+          "start": 167.3,
+          "end": 167.8
+        },
+        {
+          "text": "we",
+          "start": 167.9,
+          "end": 168.0
+        },
+        {
+          "text": "observed",
+          "start": 168.0,
+          "end": 168.7
+        },
+        {
+          "text": "that",
+          "start": 168.8,
+          "end": 169.2
+        },
+        {
+          "text": "in",
+          "start": 169.2,
+          "end": 169.7
+        },
+        {
+          "text": "a",
+          "start": 169.8,
+          "end": 170.0
+        },
+        {
+          "text": "software",
+          "start": 170.0,
+          "end": 170.5
+        },
+        {
+          "text": "program",
+          "start": 170.5,
+          "end": 171.3
+        },
+        {
+          "text": "inside",
+          "start": 171.3,
+          "end": 171.9
+        },
+        {
+          "text": "it,",
+          "start": 171.9,
+          "end": 172.3
+        },
+        {
+          "text": "there",
+          "start": 172.4,
+          "end": 172.6
+        },
+        {
+          "text": "are",
+          "start": 172.6,
+          "end": 172.9
+        },
+        {
+          "text": "just",
+          "start": 173.0,
+          "end": 173.2
+        },
+        {
+          "text": "a",
+          "start": 173.2,
+          "end": 173.3
+        },
+        {
+          "text": "few",
+          "start": 173.3,
+          "end": 173.6
+        },
+        {
+          "text": "lines",
+          "start": 173.6,
+          "end": 173.8
+        },
+        {
+          "text": "of",
+          "start": 173.8,
+          "end": 174.0
+        },
+        {
+          "text": "code,",
+          "start": 174.0,
+          "end": 174.6
+        },
+        {
+          "text": "maybe",
+          "start": 174.6,
+          "end": 174.9
+        },
+        {
+          "text": "10%",
+          "start": 174.9,
+          "end": 175.4
+        },
+        {
+          "text": "of",
+          "start": 175.4,
+          "end": 175.5
+        },
+        {
+          "text": "the",
+          "start": 175.5,
+          "end": 175.6
+        },
+        {
+          "text": "code",
+          "start": 175.6,
+          "end": 176.2
+        },
+        {
+          "text": "does",
+          "start": 176.6,
+          "end": 176.9
+        },
+        {
+          "text": "99%",
+          "start": 176.9,
+          "end": 177.8
+        },
+        {
+          "text": "of",
+          "start": 177.8,
+          "end": 177.8
+        },
+        {
+          "text": "the",
+          "start": 177.8,
+          "end": 177.9
+        },
+        {
+          "text": "processing.",
+          "start": 177.9,
+          "end": 178.7
+        },
+        {
+          "text": "And",
+          "start": 178.8,
+          "end": 179.0
+        },
+        {
+          "text": "that",
+          "start": 179.0,
+          "end": 179.2
+        },
+        {
+          "text": "99%",
+          "start": 179.2,
+          "end": 179.9
+        },
+        {
+          "text": "of",
+          "start": 179.9,
+          "end": 180.0
+        },
+        {
+          "text": "the",
+          "start": 180.0,
+          "end": 180.0
+        },
+        {
+          "text": "processing",
+          "start": 180.0,
+          "end": 180.7
+        },
+        {
+          "text": "could",
+          "start": 180.8,
+          "end": 181.0
+        },
+        {
+          "text": "be",
+          "start": 181.0,
+          "end": 181.1
+        },
+        {
+          "text": "done",
+          "start": 181.1,
+          "end": 181.3
+        },
+        {
+          "text": "in",
+          "start": 181.3,
+          "end": 181.4
+        },
+        {
+          "text": "parallel.",
+          "start": 181.4,
+          "end": 181.8
+        },
+        {
+          "text": "However,",
+          "start": 182.2,
+          "end": 182.9
+        },
+        {
+          "text": "the",
+          "start": 183.1,
+          "end": 183.3
+        },
+        {
+          "text": "other",
+          "start": 183.3,
+          "end": 183.8
+        },
+        {
+          "text": "90%",
+          "start": 183.8,
+          "end": 184.5
+        },
+        {
+          "text": "of",
+          "start": 184.5,
+          "end": 184.6
+        },
+        {
+          "text": "the",
+          "start": 184.6,
+          "end": 184.7
+        },
+        {
+          "text": "code",
+          "start": 184.7,
+          "end": 185.2
+        },
+        {
+          "text": "has",
+          "start": 185.3,
+          "end": 185.5
+        },
+        {
+          "text": "to",
+          "start": 185.5,
+          "end": 185.6
+        },
+        {
+          "text": "be",
+          "start": 185.6,
+          "end": 185.7
+        },
+        {
+          "text": "done",
+          "start": 185.7,
+          "end": 186.0
+        },
+        {
+          "text": "sequentially.",
+          "start": 186.0,
+          "end": 186.6
+        },
+        {
+          "text": "It",
+          "start": 187.1,
+          "end": 187.2
+        },
+        {
+          "text": "turns",
+          "start": 187.2,
+          "end": 187.5
+        },
+        {
+          "text": "out",
+          "start": 187.5,
+          "end": 187.9
+        },
+        {
+          "text": "that",
+          "start": 187.9,
+          "end": 188.1
+        },
+        {
+          "text": "the",
+          "start": 188.1,
+          "end": 188.2
+        },
+        {
+          "text": "proper",
+          "start": 188.2,
+          "end": 188.6
+        },
+        {
+          "text": "computer,",
+          "start": 188.6,
+          "end": 189.0
+        },
+        {
+          "text": "the",
+          "start": 189.0,
+          "end": 189.2
+        },
+        {
+          "text": "perfect",
+          "start": 189.2,
+          "end": 189.4
+        },
+        {
+          "text": "computer",
+          "start": 189.4,
+          "end": 189.9
+        },
+        {
+          "text": "is",
+          "start": 189.9,
+          "end": 190.1
+        },
+        {
+          "text": "one",
+          "start": 190.1,
+          "end": 190.3
+        },
+        {
+          "text": "that",
+          "start": 190.3,
+          "end": 190.5
+        },
+        {
+          "text": "could",
+          "start": 190.5,
+          "end": 190.6
+        },
+        {
+          "text": "do",
+          "start": 190.6,
+          "end": 191.0
+        },
+        {
+          "text": "sequential",
+          "start": 191.2,
+          "end": 191.6
+        },
+        {
+          "text": "processing",
+          "start": 191.6,
+          "end": 192.4
+        },
+        {
+          "text": "and",
+          "start": 192.7,
+          "end": 193.1
+        },
+        {
+          "text": "parallel",
+          "start": 193.1,
+          "end": 193.5
+        },
+        {
+          "text": "processing,",
+          "start": 193.5,
+          "end": 194.2
+        },
+        {
+          "text": "not",
+          "start": 194.4,
+          "end": 194.7
+        },
+        {
+          "text": "just",
+          "start": 194.7,
+          "end": 194.9
+        },
+        {
+          "text": "one",
+          "start": 194.9,
+          "end": 195.1
+        },
+        {
+          "text": "or",
+          "start": 195.1,
+          "end": 195.1
+        },
+        {
+          "text": "the",
+          "start": 195.1,
+          "end": 195.3
+        },
+        {
+          "text": "other.",
+          "start": 195.3,
+          "end": 195.5
+        },
+        {
+          "text": "That",
+          "start": 196.2,
+          "end": 196.3
+        },
+        {
+          "text": "was",
+          "start": 196.3,
+          "end": 196.4
+        },
+        {
+          "text": "the",
+          "start": 196.4,
+          "end": 196.5
+        },
+        {
+          "text": "big",
+          "start": 196.5,
+          "end": 196.7
+        },
+        {
+          "text": "observation.",
+          "start": 196.7,
+          "end": 197.3
+        },
+        {
+          "text": "And",
+          "start": 197.6,
+          "end": 198.1
+        },
+        {
+          "text": "we",
+          "start": 198.2,
+          "end": 198.5
+        },
+        {
+          "text": "set",
+          "start": 198.5,
+          "end": 198.8
+        },
+        {
+          "text": "out",
+          "start": 198.8,
+          "end": 199.1
+        },
+        {
+          "text": "to",
+          "start": 199.1,
+          "end": 199.3
+        },
+        {
+          "text": "build",
+          "start": 199.3,
+          "end": 199.5
+        },
+        {
+          "text": "a",
+          "start": 199.5,
+          "end": 199.5
+        },
+        {
+          "text": "company",
+          "start": 199.5,
+          "end": 200.0
+        },
+        {
+          "text": "to",
+          "start": 200.0,
+          "end": 200.2
+        },
+        {
+          "text": "solve",
+          "start": 200.2,
+          "end": 200.6
+        },
+        {
+          "text": "computer",
+          "start": 200.9,
+          "end": 201.2
+        },
+        {
+          "text": "problems",
+          "start": 201.2,
+          "end": 201.8
+        },
+        {
+          "text": "that",
+          "start": 202.2,
+          "end": 202.8
+        },
+        {
+          "text": "normal",
+          "start": 202.8,
+          "end": 203.2
+        },
+        {
+          "text": "computers",
+          "start": 203.2,
+          "end": 203.7
+        },
+        {
+          "text": "can't.",
+          "start": 203.7,
+          "end": 204.0
+        },
+        {
+          "text": "And",
+          "start": 204.6,
+          "end": 204.9
+        },
+        {
+          "text": "that's",
+          "start": 204.9,
+          "end": 205.4
+        },
+        {
+          "text": "really",
+          "start": 205.4,
+          "end": 205.6
+        },
+        {
+          "text": "the",
+          "start": 205.6,
+          "end": 205.7
+        },
+        {
+          "text": "beginning",
+          "start": 205.7,
+          "end": 206.1
+        },
+        {
+          "text": "of",
+          "start": 206.1,
+          "end": 206.2
+        },
+        {
+          "text": "NVIDIA.",
+          "start": 206.2,
+          "end": 206.6
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 1",
+      "raw_speaker": "spk:0",
+      "start": 208.0,
+      "end": 237.2,
+      "text": "My favorite visual of why a CPU versus a GPU really matters so much is a 15-year-old video on the NVIDIA YouTube channel where the mythbusters, they use a little robot shooting paintballs one by one to show solving problems one at a time or sequential processing on a CPU. But then they roll out this huge robot that shoots all of the paintballs at once, doing smaller problems all at the same time or parallel processing on a GPU.",
+      "language_code": null,
+      "words": [
+        {
+          "text": "My",
+          "start": 208.0,
+          "end": 208.1
+        },
+        {
+          "text": "favorite",
+          "start": 208.1,
+          "end": 208.4
+        },
+        {
+          "text": "visual",
+          "start": 208.4,
+          "end": 208.8
+        },
+        {
+          "text": "of",
+          "start": 208.8,
+          "end": 209.1
+        },
+        {
+          "text": "why",
+          "start": 209.1,
+          "end": 209.4
+        },
+        {
+          "text": "a",
+          "start": 209.4,
+          "end": 209.5
+        },
+        {
+          "text": "CPU",
+          "start": 209.5,
+          "end": 210.0
+        },
+        {
+          "text": "versus",
+          "start": 210.0,
+          "end": 210.5
+        },
+        {
+          "text": "a",
+          "start": 210.5,
+          "end": 210.6
+        },
+        {
+          "text": "GPU",
+          "start": 210.6,
+          "end": 211.1
+        },
+        {
+          "text": "really",
+          "start": 211.1,
+          "end": 211.4
+        },
+        {
+          "text": "matters",
+          "start": 211.4,
+          "end": 211.8
+        },
+        {
+          "text": "so",
+          "start": 211.8,
+          "end": 212.0
+        },
+        {
+          "text": "much",
+          "start": 212.0,
+          "end": 212.4
+        },
+        {
+          "text": "is",
+          "start": 212.4,
+          "end": 212.8
+        },
+        {
+          "text": "a",
+          "start": 212.8,
+          "end": 212.9
+        },
+        {
+          "text": "15-year-old",
+          "start": 212.9,
+          "end": 213.7
+        },
+        {
+          "text": "video",
+          "start": 213.7,
+          "end": 214.1
+        },
+        {
+          "text": "on",
+          "start": 214.1,
+          "end": 214.2
+        },
+        {
+          "text": "the",
+          "start": 214.2,
+          "end": 214.4
+        },
+        {
+          "text": "NVIDIA",
+          "start": 214.4,
+          "end": 214.8
+        },
+        {
+          "text": "YouTube",
+          "start": 214.8,
+          "end": 215.2
+        },
+        {
+          "text": "channel",
+          "start": 215.2,
+          "end": 215.6
+        },
+        {
+          "text": "where",
+          "start": 216.0,
+          "end": 216.1
+        },
+        {
+          "text": "the",
+          "start": 216.1,
+          "end": 216.3
+        },
+        {
+          "text": "mythbusters,",
+          "start": 216.3,
+          "end": 217.0
+        },
+        {
+          "text": "they",
+          "start": 217.0,
+          "end": 217.2
+        },
+        {
+          "text": "use",
+          "start": 217.2,
+          "end": 217.6
+        },
+        {
+          "text": "a",
+          "start": 217.6,
+          "end": 217.6
+        },
+        {
+          "text": "little",
+          "start": 217.6,
+          "end": 217.9
+        },
+        {
+          "text": "robot",
+          "start": 217.9,
+          "end": 218.5
+        },
+        {
+          "text": "shooting",
+          "start": 218.6,
+          "end": 219.0
+        },
+        {
+          "text": "paintballs",
+          "start": 219.0,
+          "end": 219.7
+        },
+        {
+          "text": "one",
+          "start": 219.7,
+          "end": 220.0
+        },
+        {
+          "text": "by",
+          "start": 220.0,
+          "end": 220.2
+        },
+        {
+          "text": "one",
+          "start": 220.2,
+          "end": 220.6
+        },
+        {
+          "text": "to",
+          "start": 220.7,
+          "end": 220.8
+        },
+        {
+          "text": "show",
+          "start": 220.8,
+          "end": 221.1
+        },
+        {
+          "text": "solving",
+          "start": 221.1,
+          "end": 221.5
+        },
+        {
+          "text": "problems",
+          "start": 221.5,
+          "end": 222.0
+        },
+        {
+          "text": "one",
+          "start": 222.0,
+          "end": 222.1
+        },
+        {
+          "text": "at",
+          "start": 222.1,
+          "end": 222.2
+        },
+        {
+          "text": "a",
+          "start": 222.2,
+          "end": 222.3
+        },
+        {
+          "text": "time",
+          "start": 222.3,
+          "end": 222.6
+        },
+        {
+          "text": "or",
+          "start": 222.6,
+          "end": 222.8
+        },
+        {
+          "text": "sequential",
+          "start": 222.8,
+          "end": 223.4
+        },
+        {
+          "text": "processing",
+          "start": 223.4,
+          "end": 224.0
+        },
+        {
+          "text": "on",
+          "start": 224.1,
+          "end": 224.2
+        },
+        {
+          "text": "a",
+          "start": 224.2,
+          "end": 224.3
+        },
+        {
+          "text": "CPU.",
+          "start": 224.3,
+          "end": 224.9
+        },
+        {
+          "text": "But",
+          "start": 228.1,
+          "end": 228.2
+        },
+        {
+          "text": "then",
+          "start": 228.2,
+          "end": 228.3
+        },
+        {
+          "text": "they",
+          "start": 228.3,
+          "end": 228.4
+        },
+        {
+          "text": "roll",
+          "start": 228.4,
+          "end": 228.7
+        },
+        {
+          "text": "out",
+          "start": 228.7,
+          "end": 228.9
+        },
+        {
+          "text": "this",
+          "start": 228.9,
+          "end": 229.2
+        },
+        {
+          "text": "huge",
+          "start": 229.2,
+          "end": 229.8
+        },
+        {
+          "text": "robot",
+          "start": 229.8,
+          "end": 230.5
+        },
+        {
+          "text": "that",
+          "start": 230.6,
+          "end": 230.7
+        },
+        {
+          "text": "shoots",
+          "start": 230.7,
+          "end": 231.2
+        },
+        {
+          "text": "all",
+          "start": 231.3,
+          "end": 231.5
+        },
+        {
+          "text": "of",
+          "start": 231.5,
+          "end": 231.6
+        },
+        {
+          "text": "the",
+          "start": 231.6,
+          "end": 231.7
+        },
+        {
+          "text": "paintballs",
+          "start": 231.7,
+          "end": 232.1
+        },
+        {
+          "text": "at",
+          "start": 232.1,
+          "end": 232.2
+        },
+        {
+          "text": "once,",
+          "start": 232.2,
+          "end": 232.6
+        },
+        {
+          "text": "doing",
+          "start": 232.8,
+          "end": 233.2
+        },
+        {
+          "text": "smaller",
+          "start": 233.2,
+          "end": 233.5
+        },
+        {
+          "text": "problems",
+          "start": 233.5,
+          "end": 234.0
+        },
+        {
+          "text": "all",
+          "start": 234.1,
+          "end": 234.2
+        },
+        {
+          "text": "at",
+          "start": 234.2,
+          "end": 234.3
+        },
+        {
+          "text": "the",
+          "start": 234.3,
+          "end": 234.4
+        },
+        {
+          "text": "same",
+          "start": 234.4,
+          "end": 234.6
+        },
+        {
+          "text": "time",
+          "start": 234.6,
+          "end": 234.9
+        },
+        {
+          "text": "or",
+          "start": 234.9,
+          "end": 235.0
+        },
+        {
+          "text": "parallel",
+          "start": 235.0,
+          "end": 235.6
+        },
+        {
+          "text": "processing",
+          "start": 235.6,
+          "end": 236.3
+        },
+        {
+          "text": "on",
+          "start": 236.4,
+          "end": 236.5
+        },
+        {
+          "text": "a",
+          "start": 236.5,
+          "end": 236.6
+        },
+        {
+          "text": "GPU.",
+          "start": 236.6,
+          "end": 237.2
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 1",
+      "raw_speaker": "spk:2",
+      "start": 237.8,
+      "end": 240.5,
+      "text": "3 2 1",
+      "language_code": null,
+      "words": [
+        {
+          "text": "3",
+          "start": 237.8,
+          "end": 238.3
+        },
+        {
+          "text": "2",
+          "start": 239.0,
+          "end": 239.5
+        },
+        {
+          "text": "1",
+          "start": 239.9,
+          "end": 240.5
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 1",
+      "raw_speaker": "spk:0",
+      "start": 242.4,
+      "end": 247.6,
+      "text": "So NVIDIA unlocks all of this new power for video games. Why gaming first?",
+      "language_code": null,
+      "words": [
+        {
+          "text": "So",
+          "start": 242.4,
+          "end": 242.6
+        },
+        {
+          "text": "NVIDIA",
+          "start": 242.6,
+          "end": 243.1
+        },
+        {
+          "text": "unlocks",
+          "start": 243.1,
+          "end": 243.7
+        },
+        {
+          "text": "all",
+          "start": 243.7,
+          "end": 243.8
+        },
+        {
+          "text": "of",
+          "start": 243.8,
+          "end": 243.9
+        },
+        {
+          "text": "this",
+          "start": 243.9,
+          "end": 244.1
+        },
+        {
+          "text": "new",
+          "start": 244.1,
+          "end": 244.3
+        },
+        {
+          "text": "power",
+          "start": 244.3,
+          "end": 244.8
+        },
+        {
+          "text": "for",
+          "start": 244.9,
+          "end": 245.0
+        },
+        {
+          "text": "video",
+          "start": 245.0,
+          "end": 245.4
+        },
+        {
+          "text": "games.",
+          "start": 245.4,
+          "end": 245.8
+        },
+        {
+          "text": "Why",
+          "start": 246.6,
+          "end": 246.7
+        },
+        {
+          "text": "gaming",
+          "start": 246.7,
+          "end": 247.2
+        },
+        {
+          "text": "first?",
+          "start": 247.2,
+          "end": 247.6
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 2",
+      "raw_speaker": "spk:1",
+      "start": 248.1,
+      "end": 292.1,
+      "text": "The video games requires parallel processing for processing 3D graphics. And we chose video games because one, we loved the application. It's a simulation of virtual worlds. And who doesn't want to go to virtual worlds? And And we had the good observation that video games has potential to be the largest market for for entertainment ever. And it turned out to be true. And having it being a large market is important because the technology is complicated. And if we had a large market, our R&D budget could be large. We could create new technology. And that flywheel between technology and market and greater technology was was really the flywheel that got NVIDIA to become one of the most important technology companies in the world. And it was all because of video games.",
+      "language_code": null,
+      "words": [
+        {
+          "text": "The",
+          "start": 248.1,
+          "end": 248.7
+        },
+        {
+          "text": "video",
+          "start": 248.8,
+          "end": 249.0
+        },
+        {
+          "text": "games",
+          "start": 249.0,
+          "end": 249.5
+        },
+        {
+          "text": "requires",
+          "start": 249.7,
+          "end": 250.4
+        },
+        {
+          "text": "parallel",
+          "start": 250.4,
+          "end": 250.7
+        },
+        {
+          "text": "processing",
+          "start": 250.7,
+          "end": 251.3
+        },
+        {
+          "text": "for",
+          "start": 251.3,
+          "end": 251.8
+        },
+        {
+          "text": "processing",
+          "start": 251.9,
+          "end": 252.5
+        },
+        {
+          "text": "3D",
+          "start": 252.5,
+          "end": 252.8
+        },
+        {
+          "text": "graphics.",
+          "start": 252.8,
+          "end": 253.3
+        },
+        {
+          "text": "And",
+          "start": 253.5,
+          "end": 253.8
+        },
+        {
+          "text": "we",
+          "start": 253.8,
+          "end": 253.9
+        },
+        {
+          "text": "chose",
+          "start": 253.9,
+          "end": 254.3
+        },
+        {
+          "text": "video",
+          "start": 254.3,
+          "end": 254.5
+        },
+        {
+          "text": "games",
+          "start": 254.5,
+          "end": 255.0
+        },
+        {
+          "text": "because",
+          "start": 255.1,
+          "end": 255.3
+        },
+        {
+          "text": "one,",
+          "start": 255.3,
+          "end": 255.5
+        },
+        {
+          "text": "we",
+          "start": 255.5,
+          "end": 255.6
+        },
+        {
+          "text": "loved",
+          "start": 255.6,
+          "end": 255.9
+        },
+        {
+          "text": "the",
+          "start": 255.9,
+          "end": 256.1
+        },
+        {
+          "text": "application.",
+          "start": 256.1,
+          "end": 256.8
+        },
+        {
+          "text": "It's",
+          "start": 256.9,
+          "end": 257.2
+        },
+        {
+          "text": "a",
+          "start": 257.2,
+          "end": 257.2
+        },
+        {
+          "text": "simulation",
+          "start": 257.2,
+          "end": 258.0
+        },
+        {
+          "text": "of",
+          "start": 258.0,
+          "end": 258.0
+        },
+        {
+          "text": "virtual",
+          "start": 258.0,
+          "end": 258.5
+        },
+        {
+          "text": "worlds.",
+          "start": 258.5,
+          "end": 259.1
+        },
+        {
+          "text": "And",
+          "start": 259.1,
+          "end": 259.4
+        },
+        {
+          "text": "who",
+          "start": 259.6,
+          "end": 259.8
+        },
+        {
+          "text": "doesn't",
+          "start": 259.8,
+          "end": 260.0
+        },
+        {
+          "text": "want",
+          "start": 260.0,
+          "end": 260.2
+        },
+        {
+          "text": "to",
+          "start": 260.2,
+          "end": 260.2
+        },
+        {
+          "text": "go",
+          "start": 260.2,
+          "end": 260.3
+        },
+        {
+          "text": "to",
+          "start": 260.3,
+          "end": 260.4
+        },
+        {
+          "text": "virtual",
+          "start": 260.4,
+          "end": 260.9
+        },
+        {
+          "text": "worlds?",
+          "start": 260.9,
+          "end": 261.3
+        },
+        {
+          "text": "And",
+          "start": 261.3,
+          "end": 261.5
+        },
+        {
+          "text": "And",
+          "start": 261.6,
+          "end": 261.8
+        },
+        {
+          "text": "we",
+          "start": 261.8,
+          "end": 261.9
+        },
+        {
+          "text": "had",
+          "start": 261.9,
+          "end": 262.1
+        },
+        {
+          "text": "the",
+          "start": 262.1,
+          "end": 262.2
+        },
+        {
+          "text": "good",
+          "start": 262.2,
+          "end": 262.5
+        },
+        {
+          "text": "observation",
+          "start": 262.5,
+          "end": 263.2
+        },
+        {
+          "text": "that",
+          "start": 263.3,
+          "end": 263.7
+        },
+        {
+          "text": "video",
+          "start": 263.8,
+          "end": 264.0
+        },
+        {
+          "text": "games",
+          "start": 264.0,
+          "end": 264.5
+        },
+        {
+          "text": "has",
+          "start": 264.8,
+          "end": 265.1
+        },
+        {
+          "text": "potential",
+          "start": 265.1,
+          "end": 265.8
+        },
+        {
+          "text": "to",
+          "start": 265.8,
+          "end": 266.0
+        },
+        {
+          "text": "be",
+          "start": 266.0,
+          "end": 266.1
+        },
+        {
+          "text": "the",
+          "start": 266.1,
+          "end": 266.2
+        },
+        {
+          "text": "largest",
+          "start": 266.2,
+          "end": 266.7
+        },
+        {
+          "text": "market",
+          "start": 266.7,
+          "end": 267.0
+        },
+        {
+          "text": "for",
+          "start": 267.0,
+          "end": 267.3
+        },
+        {
+          "text": "for",
+          "start": 267.4,
+          "end": 267.6
+        },
+        {
+          "text": "entertainment",
+          "start": 267.6,
+          "end": 268.1
+        },
+        {
+          "text": "ever.",
+          "start": 268.1,
+          "end": 268.4
+        },
+        {
+          "text": "And",
+          "start": 269.3,
+          "end": 269.6
+        },
+        {
+          "text": "it",
+          "start": 269.6,
+          "end": 269.6
+        },
+        {
+          "text": "turned",
+          "start": 269.6,
+          "end": 269.8
+        },
+        {
+          "text": "out",
+          "start": 269.8,
+          "end": 269.9
+        },
+        {
+          "text": "to",
+          "start": 269.9,
+          "end": 270.0
+        },
+        {
+          "text": "be",
+          "start": 270.0,
+          "end": 270.1
+        },
+        {
+          "text": "true.",
+          "start": 270.1,
+          "end": 270.5
+        },
+        {
+          "text": "And",
+          "start": 270.8,
+          "end": 271.0
+        },
+        {
+          "text": "having",
+          "start": 271.0,
+          "end": 271.3
+        },
+        {
+          "text": "it",
+          "start": 271.3,
+          "end": 271.4
+        },
+        {
+          "text": "being",
+          "start": 271.4,
+          "end": 271.6
+        },
+        {
+          "text": "a",
+          "start": 271.6,
+          "end": 271.7
+        },
+        {
+          "text": "large",
+          "start": 271.7,
+          "end": 272.2
+        },
+        {
+          "text": "market",
+          "start": 272.3,
+          "end": 272.7
+        },
+        {
+          "text": "is",
+          "start": 272.7,
+          "end": 272.8
+        },
+        {
+          "text": "important",
+          "start": 272.8,
+          "end": 273.2
+        },
+        {
+          "text": "because",
+          "start": 273.2,
+          "end": 273.5
+        },
+        {
+          "text": "the",
+          "start": 273.5,
+          "end": 273.7
+        },
+        {
+          "text": "technology",
+          "start": 273.7,
+          "end": 274.2
+        },
+        {
+          "text": "is",
+          "start": 274.2,
+          "end": 274.3
+        },
+        {
+          "text": "complicated.",
+          "start": 274.3,
+          "end": 275.0
+        },
+        {
+          "text": "And",
+          "start": 275.8,
+          "end": 276.3
+        },
+        {
+          "text": "if",
+          "start": 276.4,
+          "end": 276.5
+        },
+        {
+          "text": "we",
+          "start": 276.5,
+          "end": 276.6
+        },
+        {
+          "text": "had",
+          "start": 276.6,
+          "end": 276.7
+        },
+        {
+          "text": "a",
+          "start": 276.7,
+          "end": 276.8
+        },
+        {
+          "text": "large",
+          "start": 276.8,
+          "end": 277.0
+        },
+        {
+          "text": "market,",
+          "start": 277.0,
+          "end": 277.5
+        },
+        {
+          "text": "our",
+          "start": 277.6,
+          "end": 277.8
+        },
+        {
+          "text": "R&D",
+          "start": 277.8,
+          "end": 278.1
+        },
+        {
+          "text": "budget",
+          "start": 278.1,
+          "end": 278.4
+        },
+        {
+          "text": "could",
+          "start": 278.4,
+          "end": 278.5
+        },
+        {
+          "text": "be",
+          "start": 278.5,
+          "end": 278.6
+        },
+        {
+          "text": "large.",
+          "start": 278.6,
+          "end": 278.9
+        },
+        {
+          "text": "We",
+          "start": 278.9,
+          "end": 278.9
+        },
+        {
+          "text": "could",
+          "start": 278.9,
+          "end": 279.1
+        },
+        {
+          "text": "create",
+          "start": 279.1,
+          "end": 279.5
+        },
+        {
+          "text": "new",
+          "start": 279.5,
+          "end": 279.6
+        },
+        {
+          "text": "technology.",
+          "start": 279.6,
+          "end": 280.3
+        },
+        {
+          "text": "And",
+          "start": 281.0,
+          "end": 281.1
+        },
+        {
+          "text": "that",
+          "start": 281.1,
+          "end": 281.3
+        },
+        {
+          "text": "flywheel",
+          "start": 281.3,
+          "end": 282.2
+        },
+        {
+          "text": "between",
+          "start": 282.5,
+          "end": 283.0
+        },
+        {
+          "text": "technology",
+          "start": 283.0,
+          "end": 283.8
+        },
+        {
+          "text": "and",
+          "start": 283.8,
+          "end": 283.9
+        },
+        {
+          "text": "market",
+          "start": 283.9,
+          "end": 284.5
+        },
+        {
+          "text": "and",
+          "start": 284.5,
+          "end": 284.8
+        },
+        {
+          "text": "greater",
+          "start": 285.0,
+          "end": 285.3
+        },
+        {
+          "text": "technology",
+          "start": 285.3,
+          "end": 286.0
+        },
+        {
+          "text": "was",
+          "start": 286.3,
+          "end": 286.7
+        },
+        {
+          "text": "was",
+          "start": 286.7,
+          "end": 287.0
+        },
+        {
+          "text": "really",
+          "start": 287.0,
+          "end": 287.2
+        },
+        {
+          "text": "the",
+          "start": 287.2,
+          "end": 287.3
+        },
+        {
+          "text": "flywheel",
+          "start": 287.3,
+          "end": 287.8
+        },
+        {
+          "text": "that",
+          "start": 287.8,
+          "end": 288.0
+        },
+        {
+          "text": "got",
+          "start": 288.0,
+          "end": 288.1
+        },
+        {
+          "text": "NVIDIA",
+          "start": 288.1,
+          "end": 288.5
+        },
+        {
+          "text": "to",
+          "start": 288.5,
+          "end": 288.6
+        },
+        {
+          "text": "become",
+          "start": 288.6,
+          "end": 288.9
+        },
+        {
+          "text": "one",
+          "start": 288.9,
+          "end": 289.0
+        },
+        {
+          "text": "of",
+          "start": 289.0,
+          "end": 289.1
+        },
+        {
+          "text": "the",
+          "start": 289.1,
+          "end": 289.1
+        },
+        {
+          "text": "most",
+          "start": 289.1,
+          "end": 289.3
+        },
+        {
+          "text": "important",
+          "start": 289.3,
+          "end": 289.6
+        },
+        {
+          "text": "technology",
+          "start": 289.6,
+          "end": 290.1
+        },
+        {
+          "text": "companies",
+          "start": 290.1,
+          "end": 290.4
+        },
+        {
+          "text": "in",
+          "start": 290.4,
+          "end": 290.5
+        },
+        {
+          "text": "the",
+          "start": 290.5,
+          "end": 290.6
+        },
+        {
+          "text": "world.",
+          "start": 290.6,
+          "end": 290.8
+        },
+        {
+          "text": "And",
+          "start": 290.8,
+          "end": 290.8
+        },
+        {
+          "text": "it",
+          "start": 290.8,
+          "end": 290.9
+        },
+        {
+          "text": "was",
+          "start": 290.9,
+          "end": 291.0
+        },
+        {
+          "text": "all",
+          "start": 291.0,
+          "end": 291.1
+        },
+        {
+          "text": "because",
+          "start": 291.1,
+          "end": 291.4
+        },
+        {
+          "text": "of",
+          "start": 291.4,
+          "end": 291.5
+        },
+        {
+          "text": "video",
+          "start": 291.5,
+          "end": 291.7
+        },
+        {
+          "text": "games.",
+          "start": 291.7,
+          "end": 292.1
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 1",
+      "raw_speaker": "spk:0",
+      "start": 292.9,
+      "end": 295.8,
+      "text": "I've heard you say that GPUs were a time machine.",
+      "language_code": null,
+      "words": [
+        {
+          "text": "I've",
+          "start": 292.9,
+          "end": 293.0
+        },
+        {
+          "text": "heard",
+          "start": 293.0,
+          "end": 293.3
+        },
+        {
+          "text": "you",
+          "start": 293.3,
+          "end": 293.4
+        },
+        {
+          "text": "say",
+          "start": 293.4,
+          "end": 293.6
+        },
+        {
+          "text": "that",
+          "start": 293.6,
+          "end": 293.8
+        },
+        {
+          "text": "GPUs",
+          "start": 293.8,
+          "end": 294.5
+        },
+        {
+          "text": "were",
+          "start": 294.6,
+          "end": 294.8
+        },
+        {
+          "text": "a",
+          "start": 294.8,
+          "end": 294.9
+        },
+        {
+          "text": "time",
+          "start": 294.9,
+          "end": 295.3
+        },
+        {
+          "text": "machine.",
+          "start": 295.3,
+          "end": 295.8
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 2",
+      "raw_speaker": "spk:1",
+      "start": 296.0,
+      "end": 296.3,
+      "text": "Yeah.",
+      "language_code": null,
+      "words": [
+        {
+          "text": "Yeah.",
+          "start": 296.0,
+          "end": 296.3
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 1",
+      "raw_speaker": "spk:0",
+      "start": 296.3,
+      "end": 297.8,
+      "text": "Could you tell me more about what you meant by that?",
+      "language_code": null,
+      "words": [
+        {
+          "text": "Could",
+          "start": 296.3,
+          "end": 296.4
+        },
+        {
+          "text": "you",
+          "start": 296.4,
+          "end": 296.5
+        },
+        {
+          "text": "tell",
+          "start": 296.5,
+          "end": 296.6
+        },
+        {
+          "text": "me",
+          "start": 296.6,
+          "end": 296.7
+        },
+        {
+          "text": "more",
+          "start": 296.7,
+          "end": 296.8
+        },
+        {
+          "text": "about",
+          "start": 296.8,
+          "end": 297.1
+        },
+        {
+          "text": "what",
+          "start": 297.1,
+          "end": 297.2
+        },
+        {
+          "text": "you",
+          "start": 297.2,
+          "end": 297.3
+        },
+        {
+          "text": "meant",
+          "start": 297.3,
+          "end": 297.4
+        },
+        {
+          "text": "by",
+          "start": 297.4,
+          "end": 297.6
+        },
+        {
+          "text": "that?",
+          "start": 297.6,
+          "end": 297.8
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 2",
+      "raw_speaker": "spk:1",
+      "start": 298.3,
+      "end": 344.3,
+      "text": "A GPU is like a time machine because it lets you see the future sooner. One of the most amazing things anybody's ever said to me was a quantum chemistry scientist. He said, Jensen, because of NVIDIA's work, I can do my life's work in my lifetime. That's time travel. He was able to do something that was beyond his lifetime within his lifetime. And And this because we make applications run so much faster. And you get to see the future. And so when you're doing weather prediction, for example, you're seeing the future. When you're doing a simulation of virtual city with virtual traffic and we're simulating our self-driving car through that virtual city, we're doing time travel.",
+      "language_code": null,
+      "words": [
+        {
+          "text": "A",
+          "start": 298.3,
+          "end": 298.4
+        },
+        {
+          "text": "GPU",
+          "start": 298.4,
+          "end": 298.7
+        },
+        {
+          "text": "is",
+          "start": 298.7,
+          "end": 298.8
+        },
+        {
+          "text": "like",
+          "start": 298.8,
+          "end": 299.0
+        },
+        {
+          "text": "a",
+          "start": 299.0,
+          "end": 299.0
+        },
+        {
+          "text": "time",
+          "start": 299.0,
+          "end": 299.4
+        },
+        {
+          "text": "machine",
+          "start": 299.4,
+          "end": 300.0
+        },
+        {
+          "text": "because",
+          "start": 300.6,
+          "end": 300.9
+        },
+        {
+          "text": "it",
+          "start": 300.9,
+          "end": 301.0
+        },
+        {
+          "text": "lets",
+          "start": 301.0,
+          "end": 301.3
+        },
+        {
+          "text": "you",
+          "start": 301.3,
+          "end": 301.4
+        },
+        {
+          "text": "see",
+          "start": 301.4,
+          "end": 301.7
+        },
+        {
+          "text": "the",
+          "start": 301.7,
+          "end": 301.8
+        },
+        {
+          "text": "future",
+          "start": 301.8,
+          "end": 302.3
+        },
+        {
+          "text": "sooner.",
+          "start": 302.3,
+          "end": 302.8
+        },
+        {
+          "text": "One",
+          "start": 303.1,
+          "end": 303.3
+        },
+        {
+          "text": "of",
+          "start": 303.3,
+          "end": 303.3
+        },
+        {
+          "text": "the",
+          "start": 303.3,
+          "end": 303.4
+        },
+        {
+          "text": "most",
+          "start": 303.4,
+          "end": 303.6
+        },
+        {
+          "text": "amazing",
+          "start": 303.6,
+          "end": 304.0
+        },
+        {
+          "text": "things",
+          "start": 304.0,
+          "end": 304.4
+        },
+        {
+          "text": "anybody's",
+          "start": 304.8,
+          "end": 305.1
+        },
+        {
+          "text": "ever",
+          "start": 305.1,
+          "end": 305.3
+        },
+        {
+          "text": "said",
+          "start": 305.3,
+          "end": 305.6
+        },
+        {
+          "text": "to",
+          "start": 305.6,
+          "end": 305.7
+        },
+        {
+          "text": "me",
+          "start": 305.7,
+          "end": 306.1
+        },
+        {
+          "text": "was",
+          "start": 306.2,
+          "end": 306.7
+        },
+        {
+          "text": "a",
+          "start": 306.7,
+          "end": 307.2
+        },
+        {
+          "text": "quantum",
+          "start": 307.7,
+          "end": 308.3
+        },
+        {
+          "text": "chemistry",
+          "start": 308.3,
+          "end": 309.1
+        },
+        {
+          "text": "scientist.",
+          "start": 309.3,
+          "end": 310.1
+        },
+        {
+          "text": "He",
+          "start": 310.3,
+          "end": 310.6
+        },
+        {
+          "text": "said,",
+          "start": 310.6,
+          "end": 311.1
+        },
+        {
+          "text": "Jensen,",
+          "start": 311.3,
+          "end": 311.8
+        },
+        {
+          "text": "because",
+          "start": 311.8,
+          "end": 312.3
+        },
+        {
+          "text": "of",
+          "start": 312.3,
+          "end": 312.6
+        },
+        {
+          "text": "NVIDIA's",
+          "start": 312.7,
+          "end": 313.2
+        },
+        {
+          "text": "work,",
+          "start": 313.2,
+          "end": 313.7
+        },
+        {
+          "text": "I",
+          "start": 313.9,
+          "end": 314.0
+        },
+        {
+          "text": "can",
+          "start": 314.0,
+          "end": 314.2
+        },
+        {
+          "text": "do",
+          "start": 314.2,
+          "end": 314.4
+        },
+        {
+          "text": "my",
+          "start": 314.4,
+          "end": 314.6
+        },
+        {
+          "text": "life's",
+          "start": 314.6,
+          "end": 315.1
+        },
+        {
+          "text": "work",
+          "start": 315.1,
+          "end": 315.4
+        },
+        {
+          "text": "in",
+          "start": 316.4,
+          "end": 316.5
+        },
+        {
+          "text": "my",
+          "start": 316.5,
+          "end": 316.7
+        },
+        {
+          "text": "lifetime.",
+          "start": 316.7,
+          "end": 317.3
+        },
+        {
+          "text": "That's",
+          "start": 317.8,
+          "end": 318.0
+        },
+        {
+          "text": "time",
+          "start": 318.0,
+          "end": 318.2
+        },
+        {
+          "text": "travel.",
+          "start": 318.2,
+          "end": 318.6
+        },
+        {
+          "text": "He",
+          "start": 318.6,
+          "end": 318.7
+        },
+        {
+          "text": "was",
+          "start": 318.7,
+          "end": 318.8
+        },
+        {
+          "text": "able",
+          "start": 318.8,
+          "end": 319.0
+        },
+        {
+          "text": "to",
+          "start": 319.0,
+          "end": 319.3
+        },
+        {
+          "text": "do",
+          "start": 319.7,
+          "end": 319.8
+        },
+        {
+          "text": "something",
+          "start": 319.8,
+          "end": 320.2
+        },
+        {
+          "text": "that",
+          "start": 320.2,
+          "end": 320.3
+        },
+        {
+          "text": "was",
+          "start": 320.3,
+          "end": 320.4
+        },
+        {
+          "text": "beyond",
+          "start": 320.4,
+          "end": 320.8
+        },
+        {
+          "text": "his",
+          "start": 320.8,
+          "end": 321.0
+        },
+        {
+          "text": "lifetime",
+          "start": 321.0,
+          "end": 321.7
+        },
+        {
+          "text": "within",
+          "start": 322.2,
+          "end": 322.5
+        },
+        {
+          "text": "his",
+          "start": 322.5,
+          "end": 322.7
+        },
+        {
+          "text": "lifetime.",
+          "start": 322.7,
+          "end": 323.2
+        },
+        {
+          "text": "And",
+          "start": 323.8,
+          "end": 324.2
+        },
+        {
+          "text": "And",
+          "start": 324.2,
+          "end": 324.4
+        },
+        {
+          "text": "this",
+          "start": 324.4,
+          "end": 324.6
+        },
+        {
+          "text": "because",
+          "start": 324.6,
+          "end": 324.9
+        },
+        {
+          "text": "we",
+          "start": 324.9,
+          "end": 325.3
+        },
+        {
+          "text": "make",
+          "start": 325.3,
+          "end": 325.6
+        },
+        {
+          "text": "applications",
+          "start": 325.6,
+          "end": 326.2
+        },
+        {
+          "text": "run",
+          "start": 326.2,
+          "end": 326.5
+        },
+        {
+          "text": "so",
+          "start": 326.5,
+          "end": 326.8
+        },
+        {
+          "text": "much",
+          "start": 326.8,
+          "end": 327.0
+        },
+        {
+          "text": "faster.",
+          "start": 327.0,
+          "end": 327.5
+        },
+        {
+          "text": "And",
+          "start": 328.4,
+          "end": 328.8
+        },
+        {
+          "text": "you",
+          "start": 328.8,
+          "end": 329.0
+        },
+        {
+          "text": "get",
+          "start": 329.0,
+          "end": 329.1
+        },
+        {
+          "text": "to",
+          "start": 329.1,
+          "end": 329.2
+        },
+        {
+          "text": "see",
+          "start": 329.2,
+          "end": 329.3
+        },
+        {
+          "text": "the",
+          "start": 329.3,
+          "end": 329.4
+        },
+        {
+          "text": "future.",
+          "start": 329.4,
+          "end": 329.8
+        },
+        {
+          "text": "And",
+          "start": 330.2,
+          "end": 330.3
+        },
+        {
+          "text": "so",
+          "start": 330.3,
+          "end": 330.5
+        },
+        {
+          "text": "when",
+          "start": 330.5,
+          "end": 330.6
+        },
+        {
+          "text": "you're",
+          "start": 330.6,
+          "end": 330.7
+        },
+        {
+          "text": "doing",
+          "start": 330.7,
+          "end": 331.2
+        },
+        {
+          "text": "weather",
+          "start": 331.2,
+          "end": 331.5
+        },
+        {
+          "text": "prediction,",
+          "start": 331.5,
+          "end": 331.9
+        },
+        {
+          "text": "for",
+          "start": 331.9,
+          "end": 332.0
+        },
+        {
+          "text": "example,",
+          "start": 332.0,
+          "end": 332.4
+        },
+        {
+          "text": "you're",
+          "start": 332.4,
+          "end": 332.6
+        },
+        {
+          "text": "seeing",
+          "start": 332.6,
+          "end": 332.8
+        },
+        {
+          "text": "the",
+          "start": 332.8,
+          "end": 332.9
+        },
+        {
+          "text": "future.",
+          "start": 332.9,
+          "end": 333.3
+        },
+        {
+          "text": "When",
+          "start": 334.0,
+          "end": 334.2
+        },
+        {
+          "text": "you're",
+          "start": 334.2,
+          "end": 334.3
+        },
+        {
+          "text": "doing",
+          "start": 334.3,
+          "end": 334.7
+        },
+        {
+          "text": "a",
+          "start": 334.7,
+          "end": 335.0
+        },
+        {
+          "text": "simulation",
+          "start": 335.4,
+          "end": 336.4
+        },
+        {
+          "text": "of",
+          "start": 336.5,
+          "end": 336.7
+        },
+        {
+          "text": "virtual",
+          "start": 336.7,
+          "end": 337.1
+        },
+        {
+          "text": "city",
+          "start": 337.1,
+          "end": 337.7
+        },
+        {
+          "text": "with",
+          "start": 337.7,
+          "end": 337.9
+        },
+        {
+          "text": "virtual",
+          "start": 337.9,
+          "end": 338.3
+        },
+        {
+          "text": "traffic",
+          "start": 338.3,
+          "end": 339.1
+        },
+        {
+          "text": "and",
+          "start": 339.1,
+          "end": 339.2
+        },
+        {
+          "text": "we're",
+          "start": 339.2,
+          "end": 339.5
+        },
+        {
+          "text": "simulating",
+          "start": 339.8,
+          "end": 340.4
+        },
+        {
+          "text": "our",
+          "start": 340.4,
+          "end": 340.6
+        },
+        {
+          "text": "self-driving",
+          "start": 340.6,
+          "end": 341.2
+        },
+        {
+          "text": "car",
+          "start": 341.2,
+          "end": 341.6
+        },
+        {
+          "text": "through",
+          "start": 341.6,
+          "end": 341.8
+        },
+        {
+          "text": "that",
+          "start": 341.8,
+          "end": 341.9
+        },
+        {
+          "text": "virtual",
+          "start": 341.9,
+          "end": 342.3
+        },
+        {
+          "text": "city,",
+          "start": 342.3,
+          "end": 342.7
+        },
+        {
+          "text": "we're",
+          "start": 343.2,
+          "end": 343.4
+        },
+        {
+          "text": "doing",
+          "start": 343.4,
+          "end": 343.7
+        },
+        {
+          "text": "time",
+          "start": 343.7,
+          "end": 344.0
+        },
+        {
+          "text": "travel.",
+          "start": 344.0,
+          "end": 344.3
+        }
+      ]
+    }
+  ]
+}

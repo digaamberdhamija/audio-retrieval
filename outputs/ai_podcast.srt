@@ -1,0 +1,111 @@
+1
+00:00:04,100 --> 00:00:05,100
+Speaker 1: Thank you so much for doing this.
+
+2
+00:00:05,100 --> 00:00:06,300
+Speaker 2: I'm so happy to do it.
+
+3
+00:00:07,600 --> 00:00:13,800
+Speaker 1: Before we dive in, I wanted to tell you how this interview is going to be a little bit different than other interviews I've seen you do or something.
+
+4
+00:00:13,000 --> 00:00:14,500
+Speaker 2: Okay. Okay.
+
+5
+00:00:15,200 --> 00:00:17,100
+Speaker 1: I'm not going to ask you any questions about
+
+6
+00:00:17,800 --> 00:00:19,100
+Speaker 2: You could ask me anything you want.
+
+7
+00:00:18,300 --> 00:00:33,700
+Speaker 1: company finances. Thank you. I'm not going to ask you questions about your management style or why you don't like one-on-ones. I'm not going to ask you about regulations or politics. I think all of those things are important, but I think that our audience can get them well covered elsewhere.
+
+8
+00:00:33,900 --> 00:00:34,100
+Speaker 2: Okay.
+
+9
+00:00:34,400 --> 00:00:38,800
+Speaker 1: What we do on Huge If True is we make optimistic explainer videos.
+
+10
+00:00:38,900 --> 00:00:39,100
+Speaker 2: Mhm.
+
+11
+00:00:39,300 --> 00:00:41,200
+Speaker 1: And we've covered
+
+12
+00:00:40,700 --> 00:00:43,200
+Speaker 2: Kind of. I'm the worst person to be an explainer video.
+
+13
+00:00:43,500 --> 00:00:55,000
+Speaker 1: I think you might be the best. And I think I'm that's what I'm really hoping that we can do together is make a joint explainer video about how can we actually use technology to make the future better.
+
+14
+00:00:48,100 --> 00:00:55,500
+Speaker 2: Yeah. Yeah.
+
+15
+00:00:55,700 --> 00:01:23,200
+Speaker 1: And we do it because we believe that when people see those better futures, they help build them. So the people that you're going to be talking to are awesome. They are optimists who want to build those better features. But because we cover so many different topics, we've covered supersonic planes and quantum computers and particle colliders, it means that millions of people come into every episode without any prior knowledge whatsoever. You might be talking to an expert in their field who doesn't know the difference between a CPU and a GPU.
+
+16
+00:01:22,600 --> 00:01:23,600
+Speaker 2: Big trouble. Yeah.
+
+17
+00:01:23,700 --> 00:02:27,500
+Speaker 1: Yeah. Or a 12-year-old who might grow up one day to be you, but is just starting to learn. Um for my part, I've now been preparing for this interview for several months. I've including doing background conversations with many members of your team, but I'm not an engineer. So my goal is to help that audience see the future that you see. So I'm going to ask about three areas. The first is how did we get here? What were the key insights that led to this big fundamental shift in computing that we're in now? The second is what's actually happening right now? How did those insights lead to the world that we're now living in that seems like so much is going on all at once? And the third is what is the vision for what you see coming next? In order to talk about this big moment we're in with AI, I think we need to go back to video games in the '90s. At the time, I know game developers wanted to create more realistic-looking graphics, but the hardware couldn't keep up with all of that necessary math.
+
+18
+00:02:27,800 --> 00:02:28,700
+Speaker 2: Not enough math.
+
+19
+00:02:29,800 --> 00:02:45,000
+Speaker 1: NVIDIA came up with a solution that would change not just games, but computing itself. Could you take us back there and explain what was happening and what were the insights that led you and the NVIDIA team to create the first modern GPU?
+
+20
+00:02:45,400 --> 00:03:26,600
+Speaker 2: So in the early '90s when we first started the company, we observed that in a software program inside it, there are just a few lines of code, maybe 10% of the code does 99% of the processing. And that 99% of the processing could be done in parallel. However, the other 90% of the code has to be done sequentially. It turns out that the proper computer, the perfect computer is one that could do sequential processing and parallel processing, not just one or the other. That was the big observation. And we set out to build a company to solve computer problems that normal computers can't. And that's really the beginning of NVIDIA.
+
+21
+00:03:28,000 --> 00:03:57,200
+Speaker 1: My favorite visual of why a CPU versus a GPU really matters so much is a 15-year-old video on the NVIDIA YouTube channel where the mythbusters, they use a little robot shooting paintballs one by one to show solving problems one at a time or sequential processing on a CPU. But then they roll out this huge robot that shoots all of the paintballs at once, doing smaller problems all at the same time or parallel processing on a GPU.
+
+22
+00:03:57,800 --> 00:04:00,500
+Speaker 1: 3 2 1
+
+23
+00:04:02,400 --> 00:04:07,600
+Speaker 1: So NVIDIA unlocks all of this new power for video games. Why gaming first?
+
+24
+00:04:08,100 --> 00:04:52,100
+Speaker 2: The video games requires parallel processing for processing 3D graphics. And we chose video games because one, we loved the application. It's a simulation of virtual worlds. And who doesn't want to go to virtual worlds? And And we had the good observation that video games has potential to be the largest market for for entertainment ever. And it turned out to be true. And having it being a large market is important because the technology is complicated. And if we had a large market, our R&D budget could be large. We could create new technology. And that flywheel between technology and market and greater technology was was really the flywheel that got NVIDIA to become one of the most important technology companies in the world. And it was all because of video games.
+
+25
+00:04:52,900 --> 00:04:55,800
+Speaker 1: I've heard you say that GPUs were a time machine.
+
+26
+00:04:56,000 --> 00:04:56,300
+Speaker 2: Yeah.
+
+27
+00:04:56,300 --> 00:04:57,800
+Speaker 1: Could you tell me more about what you meant by that?
+
+28
+00:04:58,300 --> 00:05:44,300
+Speaker 2: A GPU is like a time machine because it lets you see the future sooner. One of the most amazing things anybody's ever said to me was a quantum chemistry scientist. He said, Jensen, because of NVIDIA's work, I can do my life's work in my lifetime. That's time travel. He was able to do something that was beyond his lifetime within his lifetime. And And this because we make applications run so much faster. And you get to see the future. And so when you're doing weather prediction, for example, you're seeing the future. When you're doing a simulation of virtual city with virtual traffic and we're simulating our self-driving car through that virtual city, we're doing time travel.

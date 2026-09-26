@@ -1,0 +1,143 @@
+- query: "Which topics did the interviewer promise not to ask Jensen about?"
+  relevant:
+    - audio_file: audios/ai_podcast.wav
+      start: 15.2
+      end: 33.7
+
+- query: "What kind of videos does Huge If True make?"
+  relevant:
+    - audio_file: audios/ai_podcast.wav
+      start: 34.4
+      end: 38.8
+
+- query: "Why does the show think showing people better futures matters?"
+  relevant:
+    - audio_file: audios/ai_podcast.wav
+      start: 55.7
+      end: 59.5
+
+- query: "What subjects have previous episodes of the show covered?"
+  relevant:
+    - audio_file: audios/ai_podcast.wav
+      start: 66.2
+      end: 72.8
+
+- query: "How much background knowledge does the show's audience have?"
+  relevant:
+    - audio_file: audios/ai_podcast.wav
+      start: 73.5
+      end: 89.2
+
+- query: "What three areas is the interview going to cover?"
+  relevant:
+    - audio_file: audios/ai_podcast.wav
+      start: 105.7
+      end: 127.4
+
+- query: "What was the graphics hardware problem for game developers in the 90s?"
+  relevant:
+    - audio_file: audios/ai_podcast.wav
+      start: 134.3
+      end: 147.5
+
+- query: "What insight about sequential and parallel code led to founding NVIDIA?"
+  relevant:
+    - audio_file: audios/ai_podcast.wav
+      start: 165.4
+      end: 206.6
+
+- query: "Describe the MythBusters paintball robot demo of CPU versus GPU"
+  relevant:
+    - audio_file: audios/ai_podcast.wav
+      start: 208.0
+      end: 237.2
+
+- query: "Why did NVIDIA pick video games as its first market?"
+  relevant:
+    - audio_file: audios/ai_podcast.wav
+      start: 242.4
+      end: 292.1
+
+- query: "How did a big gaming market create a flywheel for R&D?"
+  relevant:
+    - audio_file: audios/ai_podcast.wav
+      start: 270.8
+      end: 290.8
+
+- query: "Why is a GPU called a time machine?"
+  relevant:
+    - audio_file: audios/ai_podcast.wav
+      start: 292.9
+      end: 302.8
+
+- query: "What did a quantum chemistry scientist tell Jensen about NVIDIA's impact?"
+  relevant:
+    - audio_file: audios/ai_podcast.wav
+      start: 303.1
+      end: 323.2
+
+- query: "How are weather forecasting and self-driving car simulation like seeing the future?"
+  relevant:
+    - audio_file: audios/ai_podcast.wav
+      start: 330.2
+      end: 344.3
+
+- query: "Is the guest's background in physics or computer science?"
+  relevant:
+    - audio_file: audios/quantum_podcast_1.wav
+      start: 27.5
+      end: 39.4
+
+- query: "How did the guest first learn about quantum computing as a teenager?"
+  relevant:
+    - audio_file: audios/quantum_podcast_1.wav
+      start: 39.4
+      end: 71.4
+
+- query: "What was the guest's first reaction to the parallel universes explanation?"
+  relevant:
+    - audio_file: audios/quantum_podcast_1.wav
+      start: 71.4
+      end: 90.1
+
+- query: "What did the guest do during the summer at Bell Labs?"
+  relevant:
+    - audio_file: audios/quantum_podcast_1.wav
+      start: 109.7
+      end: 132.1
+
+- query: "Why can quantum computing be understood with just linear algebra?"
+  relevant:
+    - audio_file: audios/quantum_podcast_1.wav
+      start: 143.2
+      end: 173.7
+
+- query: "How did the guest end up working with Lov Grover?"
+  relevant:
+    - audio_file: audios/quantum_podcast_1.wav
+      start: 176.3
+      end: 209.1
+
+- query: "Did the guest originally go to grad school for AI?"
+  relevant:
+    - audio_file: audios/quantum_podcast_1.wav
+      start: 239.2
+      end: 273.0
+
+- query: "Why was it appealing that quantum computing could be studied with math before experiments existed?"
+  relevant:
+    - audio_file: audios/quantum_podcast_1.wav
+      start: 295.1
+      end: 347.1
+
+- query: "How does the P versus NP question connect to the foundations of physics?"
+  relevant:
+    - audio_file: audios/quantum_podcast_1.wav
+      start: 352.2
+      end: 381.2
+
+- query: "Are practical applications the main motivation for the guest?"
+  relevant:
+    - audio_file: audios/quantum_podcast_1.wav
+      start: 391.3
+      end: 411.9

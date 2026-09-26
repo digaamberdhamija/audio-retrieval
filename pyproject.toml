@@ -1,0 +1,26 @@
+[project]
+name = "g2-hackathon"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "asyncpg>=0.31.0",
+    "fastapi>=0.141.1",
+    "google-genai",
+    "httpx>=0.28.1",
+    "pgvector>=0.5.0",
+    "pylate>=1.6.0",
+    "python-dotenv",
+    "pyyaml>=6.0.3",
+    "torch>=2.11.0",
+    "uvicorn>=0.54.0",
+]
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu126", marker = "sys_platform == 'win32' or sys_platform == 'linux'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true

@@ -1,0 +1,56 @@
+database:
+  host: localhost
+  port: 5433
+  name: app
+  user: postgres
+  password: postgres
+
+transcription:
+  model: gemini-3.5-transcribe
+  language_codes: []
+  expected_speakers: 2
+  request_timeout_seconds: 900
+  output_dir: outputs
+
+embedding:
+  model: gemini-embedding-2
+  dimensions: 768
+  batch_size: 50
+  query_prefix: ""
+  document_prefix: ""
+
+windows:
+  - length_seconds: 30
+    stride_seconds: 15
+    merge_overlap_seconds: 5
+    max_merged_seconds: 90
+  - length_seconds: 60
+    stride_seconds: 30
+    merge_overlap_seconds: 15
+    max_merged_seconds: 180
+  - length_seconds: 120
+    stride_seconds: 60
+    merge_overlap_seconds: 30
+    max_merged_seconds: 300
+
+search:
+  text_search_language: english
+  candidates_per_search: 20
+  text_weight: 0.6
+  semantic_weight: 0.4
+  rrf_k: 60
+  dedupe_overlap_seconds: 10
+  top_k: 5
+
+reranker:
+  model: lightonai/GTE-ModernColBERT-v1
+  query_length: 128
+  document_length: 2048
+  batch_size: 8
+  gpu_dtype: float16
+
+eval:
+  api_url: http://localhost:8000
+  dataset_path: evals/dataset.yaml
+  k_values: [1, 3, 5, 10]
+  min_span_coverage: 0.5

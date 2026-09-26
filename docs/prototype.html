@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Audio Retrieval Prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  body { margin: 0; }
+  :root {
+    --bg: #F6F6FB;
+    --surface: #FFFFFF;
+    --surface-2: #F0EFF9;
+    --ink: #1C1D3A;
+    --muted: #5B5D7C;
+    --line: #E1E0F0;
+    --primary: #3B3486;
+    --primary-soft: #ECEAFB;
+    --accent: #E8912A;
+    --accent-ink: #94550A;
+    --accent-soft: #FFF1DD;
+    --ok: #1C7F52;
+    --ok-soft: #E3F4EA;
+    --warn: #B3372B;
+    --warn-soft: #FBE8E5;
+    --code-bg: #17182F;
+    --code-ink: #E7E6F8;
+    --code-key: #B9B3FF;
+    --code-str: #FFCB8A;
+    --code-num: #8EE0BE;
+    --code-muted: #8F90B8;
+    --wave: #CFCBF0;
+    --hot: #E8912A;
+    --mark: #FFE2B8;
+    --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #101124;
+      --surface: #181935;
+      --surface-2: #1F2042;
+      --ink: #ECEBFA;
+      --muted: #A4A5C7;
+      --line: #2D2E56;
+      --primary: #9E97F7;
+      --primary-soft: #26275A;
+      --accent: #F4A548;
+      --accent-ink: #F6B566;
+      --accent-soft: #3A2C17;
+      --ok: #5CCF96;
+      --ok-soft: #173427;
+      --warn: #FF8A7A;
+      --warn-soft: #3E1D1A;
+      --code-bg: #0C0D1E;
+      --wave: #3A3B74;
+      --hot: #F4A548;
+      --mark: #5A4220;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #101124;
+    --surface: #181935;
+    --surface-2: #1F2042;
+    --ink: #ECEBFA;
+    --muted: #A4A5C7;
+    --line: #2D2E56;
+    --primary: #9E97F7;
+    --primary-soft: #26275A;
+    --accent: #F4A548;
+    --accent-ink: #F6B566;
+    --accent-soft: #3A2C17;
+    --ok: #5CCF96;
+    --ok-soft: #173427;
+    --warn: #FF8A7A;
+    --warn-soft: #3E1D1A;
+    --code-bg: #0C0D1E;
+    --wave: #3A3B74;
+    --hot: #F4A548;
+    --mark: #5A4220;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 15.5px;
+    line-height: 1.6;
+    padding-inline: 20px;
+    padding-block: 0 56px;
+  }
+  .page { max-width: 1100px; margin: 0 auto; display: grid; gap: 72px; }
+  h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; letter-spacing: -0.01em; }
+  h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.05; font-weight: 700; }
+  h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); line-height: 1.15; font-weight: 700; }
+  h3 { font-size: 1.3rem; line-height: 1.25; font-weight: 700; }
+  p { margin: 0; }
+  code, pre { font-family: var(--mono); }
+  .eyebrow {
+    font-size: 0.78rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent-ink);
+  }
+  .lede { color: var(--muted); max-width: 62ch; font-size: 1.05rem; }
+  .section-head { display: grid; gap: 10px; max-width: 70ch; }
+  .muted { color: var(--muted); }
+  button { font: inherit; }
+  :focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; border-radius: 6px; }
+
+  /* Hero */
+  .hero {
+    padding-block: 64px 8px;
+    display: grid; grid-template-columns: 1.15fr 1fr; gap: 40px; align-items: center;
+  }
+  .hero-text { display: grid; gap: 18px; }
+  .wave-wrap { display: grid; gap: 10px; }
+  .wave { width: 100%; height: auto; overflow: visible; }
+  .wave .bar { fill: var(--wave); }
+  .wave .hot { fill: var(--hot); }
+  .wave .span { fill: var(--accent-soft); }
+  .wave .span-label { fill: var(--accent-ink); font: 600 13px var(--mono); }
+  .wave-caption { font-size: 0.88rem; color: var(--muted); }
+  .wave-caption q { color: var(--ink); }
+  .stats { display: flex; flex-wrap: wrap; gap: 12px 36px; margin-top: 8px; }
+  .stat { display: grid; gap: 0; }
+  .stat b { font-family: var(--display); font-size: 1.7rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .stat span { font-size: 0.85rem; color: var(--muted); }
+
+  /* Approach */
+  .flow { display: grid; gap: 14px; margin-top: 28px; }
+  .lane { display: grid; grid-template-columns: 130px 1fr; gap: 16px; align-items: center; }
+  .lane-name { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+  .lane ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .lane li {
+    position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+    padding: 12px 14px; display: grid; gap: 2px;
+  }
+  .lane li b { font-size: 0.95rem; }
+  .lane li span { font-size: 0.82rem; color: var(--muted); line-height: 1.4; }
+  .lane li:not(:last-child)::after {
+    content: ""; position: absolute; right: -9px; top: 50%; width: 8px; height: 8px;
+    border-top: 2px solid var(--line); border-right: 2px solid var(--line); transform: translate(0, -50%) rotate(45deg);
+  }
+  .lane.search li { background: var(--accent-soft); border-color: transparent; }
+  .ideas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 22px; }
+  .idea { display: grid; gap: 6px; align-content: start; }
+  .idea h3 { font-size: 1.05rem; }
+  .idea p { font-size: 0.92rem; color: var(--muted); }
+  .idea .tag { font-family: var(--mono); font-size: 0.78rem; color: var(--primary); }
+
+  /* API sections */
+  .apis { display: grid; gap: 28px; }
+  .api {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 18px;
+    padding: 28px; display: grid; gap: 22px;
+  }
+  .api-head { display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; align-items: center; }
+  .step {
+    grid-row: span 2; width: 40px; height: 40px; border-radius: 50%;
+    display: grid; place-items: center; background: var(--primary); color: var(--surface);
+    font-family: var(--display); font-weight: 700; font-size: 1.1rem;
+  }
+  .endpoint { display: flex; flex-wrap: wrap; gap: 10px; align-items: baseline; }
+  .method {
+    font-family: var(--mono); font-size: 0.75rem; font-weight: 500; letter-spacing: 0.06em;
+    padding: 2px 8px; border-radius: 6px; background: var(--primary-soft); color: var(--primary);
+  }
+  .path { font-family: var(--mono); font-size: 1rem; color: var(--muted); }
+  .api-head p { grid-column: 2; color: var(--muted); max-width: 72ch; }
+  .io-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 24px; align-items: start; }
+  .io { display: grid; gap: 14px; }
+  .label-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 6px; }
+  .label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+  .chip {
+    font-family: var(--mono); font-size: 0.76rem; padding: 2px 9px; border-radius: 999px; white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+  .chip.ok { background: var(--ok-soft); color: var(--ok); }
+  .chip.err { background: var(--warn-soft); color: var(--warn); }
+  pre.code {
+    margin: 0; background: var(--code-bg); color: var(--code-ink); border-radius: 12px;
+    padding: 14px 16px; font-size: 0.8rem; line-height: 1.55; overflow-x: auto; white-space: pre;
+  }
+  pre.code.tall { max-height: 360px; overflow: auto; }
+  .k { color: var(--code-key); }
+  .s { color: var(--code-str); }
+  .n { color: var(--code-num); }
+  .c { color: var(--code-muted); }
+  .view { background: var(--surface-2); border-radius: 14px; padding: 18px; display: grid; gap: 14px; }
+  .view h4 { margin: 0; font-size: 0.95rem; font-family: var(--body); font-weight: 600; }
+
+  /* Transcript */
+  .turns { display: grid; gap: 10px; }
+  .turn { display: grid; grid-template-columns: 52px 1fr; gap: 10px; font-size: 0.9rem; line-height: 1.5; }
+  .turn time { font-family: var(--mono); font-size: 0.78rem; color: var(--muted); padding-top: 2px; font-variant-numeric: tabular-nums; }
+  .spk { font-weight: 600; font-size: 0.8rem; margin-right: 6px; white-space: nowrap; }
+  .spk.s1 { color: var(--primary); }
+  .spk.s2 { color: var(--accent-ink); }
+  details > summary { cursor: pointer; font-size: 0.88rem; color: var(--primary); font-weight: 500; }
+  details[open] > summary { margin-bottom: 10px; }
+
+  /* Ingest */
+  .bars { display: grid; gap: 12px; }
+  .barrow { display: grid; grid-template-columns: 90px 1fr 36px; gap: 12px; align-items: center; font-size: 0.88rem; }
+  .barrow .track { height: 14px; background: var(--surface); border-radius: 999px; overflow: hidden; }
+  .barrow .fill { height: 100%; border-radius: 999px; background: var(--primary); }
+  .barrow b { font-variant-numeric: tabular-nums; text-align: right; }
+  .note { font-size: 0.88rem; color: var(--muted); }
+  .error-demo { display: grid; gap: 8px; border-top: 1px solid var(--line); padding-top: 14px; }
+
+  /* Search */
+  .queries { display: flex; flex-wrap: wrap; gap: 8px; }
+  .query {
+    border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px;
+    padding: 7px 14px; font-size: 0.88rem; cursor: pointer; text-align: left; line-height: 1.35;
+  }
+  .query:hover { border-color: var(--primary); }
+  .query[aria-pressed="true"] { background: var(--primary); border-color: var(--primary); color: var(--surface); }
+  .query small { display: block; font-size: 0.72rem; opacity: 0.75; }
+  .search-meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; font-size: 0.88rem; color: var(--muted); }
+  .search-meta code { color: var(--ink); background: var(--surface-2); padding: 2px 8px; border-radius: 6px; font-size: 0.8rem; }
+  .results { display: grid; gap: 14px; }
+  .result { border: 1px solid var(--line); border-radius: 14px; padding: 18px; display: grid; gap: 12px; background: var(--surface); }
+  .result.top { border-color: var(--primary); box-shadow: 0 0 0 1px var(--primary) inset; }
+  .result-head { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: baseline; }
+  .rank { font-family: var(--display); font-weight: 700; font-size: 1.3rem; color: var(--primary); }
+  .rec { font-weight: 600; }
+  .file { font-family: var(--mono); font-size: 0.78rem; color: var(--muted); }
+  .when { font-family: var(--mono); font-size: 0.95rem; font-weight: 500; margin-left: auto; font-variant-numeric: tabular-nums; }
+  .badges { display: flex; flex-wrap: wrap; gap: 6px; }
+  .badge { font-size: 0.75rem; padding: 2px 9px; border-radius: 999px; background: var(--surface-2); color: var(--muted); white-space: nowrap; }
+  .badge.score { background: var(--primary-soft); color: var(--primary); font-family: var(--mono); }
+  .timeline { display: grid; gap: 4px; }
+  .timeline .track { position: relative; height: 8px; border-radius: 999px; background: var(--surface-2); }
+  .timeline .hit { position: absolute; top: 0; bottom: 0; border-radius: 999px; background: var(--hot); min-width: 4px; }
+  .timeline .ends { display: flex; justify-content: space-between; font-family: var(--mono); font-size: 0.7rem; color: var(--muted); }
+  .passage { display: grid; gap: 6px; font-size: 0.9rem; line-height: 1.55; }
+  .passage.clamped { max-height: 7.8em; overflow: hidden; -webkit-mask-image: linear-gradient(#000 60%, transparent); mask-image: linear-gradient(#000 60%, transparent); }
+  .passage mark { background: var(--mark); color: inherit; border-radius: 3px; padding: 0 1px; }
+  .more { justify-self: start; border: 0; background: none; color: var(--primary); cursor: pointer; padding: 0; font-size: 0.85rem; font-weight: 500; }
+
+  /* Eval */
+  .eval { display: grid; grid-template-columns: 1fr 1.2fr; gap: 36px; align-items: center; }
+  .recall { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; align-items: end; height: 190px; }
+  .col { display: grid; grid-template-rows: auto 1fr auto; height: 100%; gap: 6px; text-align: center; }
+  .col b { font-family: var(--display); font-size: 1.25rem; font-variant-numeric: tabular-nums; }
+  .col .pillar { align-self: end; border-radius: 10px 10px 4px 4px; background: var(--primary); }
+  .col span { font-family: var(--mono); font-size: 0.8rem; color: var(--muted); }
+
+  footer { border-top: 1px solid var(--line); padding-top: 24px; display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 0.88rem; color: var(--muted); }
+  footer b { color: var(--ink); font-weight: 600; }
+
+  @media (max-width: 880px) {
+    .hero { grid-template-columns: 1fr; padding-top: 40px; }
+    .io-grid, .eval { grid-template-columns: 1fr; }
+    .ideas { grid-template-columns: 1fr; }
+    .lane { grid-template-columns: 1fr; }
+    .lane ol { grid-template-columns: repeat(2, 1fr); }
+    .lane li:not(:last-child)::after { display: none; }
+  }
+  @media (max-width: 520px) {
+    .api { padding: 18px; }
+    .lane ol { grid-template-columns: 1fr; }
+    .when { margin-left: 0; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .fill, .pillar { transition: width 0.5s ease, height 0.5s ease; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">G2 AI Engineering Hackathon · Working prototype</p>
+      <h1>Effective retrieval from audio transcripts</h1>
+      <p class="lede">Ask a question in plain language and land on the exact moment in a two-speaker recording that answers it. Every response on this page was captured from the running service.</p>
+      <div class="stats" id="stats"></div>
+    </div>
+    <div class="wave-wrap">
+      <svg class="wave" viewBox="0 -12 401 184" role="img" aria-label="Audio waveform with a highlighted stretch standing for a retrieved moment"><rect class="span" x="215.0" y="-6" width="85.6" height="172" rx="9"/><rect class="bar" x="0.0" y="57.5" width="5.2" height="45.0" rx="2.6"/><rect class="bar" x="8.8" y="39.1" width="5.2" height="81.9" rx="2.6"/><rect class="bar" x="17.6" y="27.5" width="5.2" height="104.9" rx="2.6"/><rect class="bar" x="26.4" y="21.6" width="5.2" height="116.8" rx="2.6"/><rect class="bar" x="35.2" y="5.4" width="5.2" height="149.1" rx="2.6"/><rect class="bar" x="44.0" y="24.7" width="5.2" height="110.7" rx="2.6"/><rect class="bar" x="52.8" y="18.8" width="5.2" height="122.4" rx="2.6"/><rect class="bar" x="61.6" y="32.3" width="5.2" height="95.3" rx="2.6"/><rect class="bar" x="70.4" y="51.2" width="5.2" height="57.7" rx="2.6"/><rect class="bar" x="79.2" y="47.7" width="5.2" height="64.6" rx="2.6"/><rect class="bar" x="88.0" y="36.8" width="5.2" height="86.5" rx="2.6"/><rect class="bar" x="96.8" y="21.3" width="5.2" height="117.3" rx="2.6"/><rect class="bar" x="105.6" y="8.7" width="5.2" height="142.5" rx="2.6"/><rect class="bar" x="114.4" y="27.8" width="5.2" height="104.5" rx="2.6"/><rect class="bar" x="123.2" y="11.7" width="5.2" height="136.6" rx="2.6"/><rect class="bar" x="132.0" y="28.3" width="5.2" height="103.4" rx="2.6"/><rect class="bar" x="140.8" y="43.0" width="5.2" height="74.1" rx="2.6"/><rect class="bar" x="149.6" y="57.1" width="5.2" height="45.7" rx="2.6"/><rect class="bar" x="158.4" y="45.3" width="5.2" height="69.4" rx="2.6"/><rect class="bar" x="167.2" y="24.1" width="5.2" height="111.7" rx="2.6"/><rect class="bar" x="176.0" y="14.9" width="5.2" height="130.2" rx="2.6"/><rect class="bar" x="184.8" y="21.5" width="5.2" height="116.9" rx="2.6"/><rect class="bar" x="193.6" y="7.2" width="5.2" height="145.7" rx="2.6"/><rect class="bar" x="202.4" y="27.2" width="5.2" height="105.6" rx="2.6"/><rect class="bar" x="211.2" y="33.7" width="5.2" height="92.6" rx="2.6"/><rect class="hot" x="220.0" y="48.8" width="5.2" height="62.5" rx="2.6"/><rect class="hot" x="228.8" y="51.5" width="5.2" height="57.0" rx="2.6"/><rect class="hot" x="237.6" y="29.9" width="5.2" height="100.3" rx="2.6"/><rect class="hot" x="246.4" y="23.0" width="5.2" height="114.0" rx="2.6"/><rect class="hot" x="255.2" y="17.2" width="5.2" height="125.7" rx="2.6"/><rect class="hot" x="264.0" y="5.8" width="5.2" height="148.3" rx="2.6"/><rect class="hot" x="272.8" y="28.9" width="5.2" height="102.2" rx="2.6"/><rect class="hot" x="281.6" y="24.5" width="5.2" height="110.9" rx="2.6"/><rect class="hot" x="290.4" y="41.2" width="5.2" height="77.6" rx="2.6"/><rect class="bar" x="299.2" y="57.0" width="5.2" height="46.0" rx="2.6"/><rect class="bar" x="308.0" y="37.9" width="5.2" height="84.3" rx="2.6"/><rect class="bar" x="316.8" y="32.0" width="5.2" height="96.1" rx="2.6"/><rect class="bar" x="325.6" y="15.5" width="5.2" height="129.0" rx="2.6"/><rect class="bar" x="334.4" y="7.9" width="5.2" height="144.2" rx="2.6"/><rect class="bar" x="343.2" y="27.0" width="5.2" height="106.1" rx="2.6"/><rect class="bar" x="352.0" y="16.6" width="5.2" height="126.8" rx="2.6"/><rect class="bar" x="360.8" y="36.0" width="5.2" height="88.1" rx="2.6"/><rect class="bar" x="369.6" y="50.4" width="5.2" height="59.3" rx="2.6"/><rect class="bar" x="378.4" y="47.1" width="5.2" height="65.7" rx="2.6"/><rect class="bar" x="387.2" y="40.6" width="5.2" height="78.7" rx="2.6"/><rect class="bar" x="396.0" y="17.0" width="5.2" height="126.0" rx="2.6"/><text class="span-label" x="257.8" y="-16" text-anchor="middle">4:02 – 5:44</text></svg>
+      <p class="wave-caption"><q>Why did NVIDIA choose video games as its first market?</q> → AI podcast, 4:02 to 5:44</p>
+    </div>
+  </header>
+
+  <section id="approach">
+    <div class="section-head">
+      <p class="eyebrow">The approach</p>
+      <h2>Index once, then search three window lengths at a time</h2>
+      <p class="lede">Conversations range from rapid back-and-forth to twenty-minute monologues, so recordings are sliced by time rather than by speaker turn.</p>
+    </div>
+    <div class="flow">
+      <div class="lane">
+        <p class="lane-name">Per recording</p>
+        <ol>
+          <li><b>Transcribe</b><span>Two speakers and the time of every word</span></li>
+          <li><b>Slice</b><span>30, 60 and 120 s windows, each overlapping the next by half</span></li>
+          <li><b>Embed</b><span>768 numbers describing each window's meaning</span></li>
+          <li><b>Store</b><span>Postgres with a keyword index and a vector index</span></li>
+        </ol>
+      </div>
+      <div class="lane search">
+        <p class="lane-name">Per question</p>
+        <ol>
+          <li><b>Hybrid search</b><span>Keyword 60% and meaning 40%, at every window length</span></li>
+          <li><b>Join</b><span>Overlapping matches become one passage</span></li>
+          <li><b>Rerank</b><span>A local ColBERT model scores passages from all lengths together</span></li>
+          <li><b>Answer</b><span>Repeats dropped; distinct moments with timestamps</span></li>
+        </ol>
+      </div>
+    </div>
+    <div class="ideas">
+      <div class="idea">
+        <span class="tag">30 s · 60 s · 120 s</span>
+        <h3>Several window lengths</h3>
+        <p>Long windows add noise around the answer, and short ones can cut an idea in half. Indexing all three gives every question a window that fits.</p>
+      </div>
+      <div class="idea">
+        <span class="tag">keyword 60 / meaning 40</span>
+        <h3>Tilted towards exact words</h3>
+        <p>Names, jargon and numbers win through keyword search, while meaning search catches questions phrased differently from how the speakers said it.</p>
+      </div>
+      <div class="idea">
+        <span class="tag">GTE-ModernColBERT-v1</span>
+        <h3>One moment, shown once</h3>
+        <p>A ColBERT reranker compares the question with each passage word by word, so a 30-second answer and a two-minute passage compete fairly.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="apis" class="apis">
+    <div class="section-head">
+      <p class="eyebrow">The API, captured</p>
+      <h2>Three endpoints, in the order a recording flows through them</h2>
+      <p class="lede" id="captured"></p>
+    </div>
+
+    <article class="api" id="transcribe">
+      <div class="api-head">
+        <span class="step" aria-hidden="true">1</span>
+        <div class="endpoint"><span class="method">POST</span><span class="path">/transcribe</span><h3>Transcribe a recording</h3></div>
+        <p>Gemini transcribes the audio with speaker separation and a timestamp for every word, and the service saves the result as a transcript file.</p>
+      </div>
+      <div class="io-grid">
+        <div class="io">
+          <div><div class="label-row"><span class="label">Request</span></div><pre class="code" id="transcribe-request"></pre></div>
+          <div><div class="label-row"><span class="label">Response</span><span class="chip ok" id="transcribe-status"></span></div><pre class="code" id="transcribe-response"></pre></div>
+        </div>
+        <div class="view">
+          <h4>The transcript it produced, first turns</h4>
+          <div class="turns" id="turns"></div>
+          <details>
+            <summary>Transcript file format</summary>
+            <pre class="code tall" id="file-snippet"></pre>
+          </details>
+        </div>
+      </div>
+    </article>
+
+    <article class="api" id="ingest">
+      <div class="api-head">
+        <span class="step" aria-hidden="true">2</span>
+        <div class="endpoint"><span class="method">POST</span><span class="path">/ingest</span><h3>Index a transcript</h3></div>
+        <p>The transcript is cut into overlapping windows at three lengths, every window is embedded, and everything is written to Postgres in one transaction.</p>
+      </div>
+      <div class="io-grid">
+        <div class="io">
+          <div><div class="label-row"><span class="label">Request</span></div><pre class="code" id="ingest-request"></pre></div>
+          <div><div class="label-row"><span class="label">Response</span><span class="chip ok" id="ingest-status"></span></div><pre class="code" id="ingest-response"></pre></div>
+        </div>
+        <div class="view">
+          <h4>Windows indexed for the finance podcast</h4>
+          <div class="bars" id="bars"></div>
+          <p class="note" id="ingest-note"></p>
+          <div class="error-demo">
+            <div class="label-row"><span class="label">Clear errors</span><span class="chip err" id="error-status"></span></div>
+            <pre class="code" id="error-response"></pre>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="api" id="search">
+      <div class="api-head">
+        <span class="step" aria-hidden="true">3</span>
+        <div class="endpoint"><span class="method">POST</span><span class="path">/search</span><h3>Search every recording</h3></div>
+        <p>Each question runs keyword and meaning search at every window length, joins overlapping matches, reranks everything with ColBERT and drops repeats of the same moment. Pick a question to see what came back.</p>
+      </div>
+      <div class="queries" id="queries" role="group" aria-label="Captured questions"></div>
+      <div class="search-meta" id="search-meta"></div>
+      <div class="results" id="results"></div>
+      <details>
+        <summary>Raw JSON response</summary>
+        <pre class="code tall" id="search-response"></pre>
+      </details>
+    </article>
+  </section>
+
+  <section id="eval">
+    <div class="eval">
+      <div class="section-head">
+        <p class="eyebrow">Evaluation</p>
+        <h2>Recall on the labelled questions</h2>
+        <p class="lede" id="eval-note"></p>
+      </div>
+      <div class="recall" id="recall"></div>
+    </div>
+  </section>
+
+  <footer>
+    <span><b>Service</b> FastAPI, fully async</span>
+    <span><b>Storage</b> Postgres with pgvector</span>
+    <span><b>Transcription and embeddings</b> Gemini</span>
+    <span><b>Reranker</b> GTE-ModernColBERT-v1 on GPU</span>
+  </footer>
+</div>
+
+<script type="application/json" id="data">{"captured": "26 September 2026", "recordings": {"audios/ai_podcast.wav": {"name": "AI podcast", "duration": 344.3}, "audios/quantum_podcast_1.wav": {"name": "Quantum computing podcast", "duration": 411.9}, "audios/finance_podcast_1.wav": {"name": "Finance podcast", "duration": 403.9}}, "stats": {"recordings": 3, "minutes": 19.3, "windows": 129, "searchSeconds": 1.3}, "transcribe": {"request": {"audio_path": "audios/finance_podcast_1.wav"}, "status": 200, "seconds": 33.97, "response": {"transcript_path": "outputs/finance_podcast_1.json", "speakers": {"Speaker 1": "spk:0", "Speaker 2": "spk:1"}, "segments": 14, "words": 1408}, "excerpt": [{"speaker": "Speaker 1", "start": 0.2, "end": 3.6, "text": "Morgan Housel, welcome to the Mel Robbins Podcast."}, {"speaker": "Speaker 2", "start": 3.7, "end": 4.9, "text": "Thanks for having me, Mel. Happy to be here."}, {"speaker": "Speaker 1", "start": 5.0, "end": 49.3, "text": "I am so glad you're here. Thank you for jumping on a plane. I'm a huge fan. I got to give a shout out to my husband Christopher Robbins because he was the one who first introduced me to your work. The Psychology of Money changed my life. I am so excited for your new blockbuster, The Art of Spending Money. And we're going to get into all the takeaways from your mega bestsellers, but I wanted to start by asking you Morgan, if you could speak directly to the person who is here spending time together with us right now and share with them what could be different about their life or the life of somebody that they care about that they share this episode with. If they take everything to heart that you're about to share with us and teach us today and apply it to their life."}, {"speaker": "Speaker 2", "start": 50.2, "end": 81.4, "text": "I think it would be that your ability to feel wealthy, to feel rich, to be financially independent is absolutely in your control. It doesn't matter who you are, where you're from, how much money you make, what your job is, you can do it. And we I think we've told ourselves for generations that in order to become rich, you have to have the right educational background, you have to have the right career, you have to come from the right family. And I don't think it's it's true. It's not about how smart you are, it's about how you think about money. It's about how you behave. And behavior is in everybody's control."}, {"speaker": "Speaker 1", "start": 81.5, "end": 109.4, "text": "I don't know why I believe you, but I do. Like I no matter how in debt you are, no matter how old you are, you can learn. And that's kind of one of the big lessons I'm going to talk about that I've distilled from your work that has changed my life and my relationship with money and the way I think about money, the way I save it, the way I spend it. It doesn't matter the starting point at all. Lesson number one that I've learned from you is you can get good with money. You believe that."}, {"speaker": "Speaker 2", "start": 109.7, "end": 182.9, "text": "I've seen it time and time again and there are so many examples of it. Let me give you this example here. An ordinary person doesn't have a good education. Maybe they didn't even graduate high school, let's say, but they have good financial behavior. They can think long-term. They can keep their expectations in check. They're patient. They have those behavioral qualities. That person can do very well. But the person who went to Harvard and got an MBA and went to work on Wall Street has the best education, the best connections, the best experience. That person can easily go broke and they do. Not uncommon for that to happen. And that is not true in other fields. It is impossible to think of an ordinary person who didn't go to high school, didn't go to college performing open heart surgery better than a Harvard trained doctor. That's impossible. That will never happen. But it does happen with money because it's not about what you know. You don't need to know the secret formulas. You don't need to have secret connections. If you just get your behavior right and your thinking right, you can do well. Patience, keeping your expectations in check, not comparing yourself to other people, using money as a tool to live a better life instead of a yardstick to measure yourself against others by It's very simple stuff and it's all in your head. And it's I think it's it's 99% of what people need to know to do well with money is in your control."}, {"speaker": "Speaker 1", "start": 183.2, "end": 211.7, "text": "Well, I think one of the mistakes that I made for a very long time, particularly before I bumped into your work, is I believed that there was some secret formula, that there was some private club for rich people, that it was about who you know, where you went to school. And what I love about your work is that you basically say, no, no, no, no, you're focusing on the wrong stuff. There are actual behaviors that we can learn that will help you get good with money."}], "fileSnippet": {"audio_file": "audios/finance_podcast_1.wav", "model": "gemini-3.5-transcribe", "speakers": {"Speaker 1": "spk:0", "Speaker 2": "spk:1"}, "segments": [{"speaker": "Speaker 1", "start": 0.2, "end": 3.6, "text": "Morgan Housel, welcome to the Mel Robbins Podcast.", "words": [{"text": "Morgan", "start": 0.2, "end": 0.6}, {"text": "Housel,", "start": 0.6, "end": 1.1}]}]}, "duration": 403.9}, "ingest": {"request": {"transcript_path": "outputs/finance_podcast_1.json"}, "status": 200, "seconds": 2.51, "response": {"audio_file": "audios/finance_podcast_1.wav", "chunks_per_window": {"30": 26, "60": 13, "120": 6}}}, "error": {"request": {"transcript_path": "outputs/missing.json"}, "status": 404, "response": {"detail": "Transcript not found: outputs/missing.json"}}, "searches": [{"query": "What did the MythBusters paintball robots demonstrate?", "request": {"query": "What did the MythBusters paintball robots demonstrate?", "top_k": 3}, "status": 200, "seconds": 1.65, "response": [{"chunk_ids": [180, 181, 182, 183, 184], "transcript_id": 5, "audio_file": "audios/ai_podcast.wav", "window_seconds": 60, "start_seconds": 150.4, "end_seconds": 329.8, "speakers": ["Speaker 1", "Speaker 2"], "text": "Speaker 1: came up with a solution that would change not just games, but computing itself. Could you take us back there and explain what was happening and what were the insights that led you and the NVIDIA team to create the first modern GPU?\nSpeaker 2: So in the early '90s when we first started the company, we observed that in a software program inside it, there are just a few lines of code, maybe 10% of the code does 99% of the processing. And that 99% of the processing could be done in parallel. However, the other 90% of the code has to be done sequentially. It turns out that the proper computer, the perfect computer is one that could do sequential processing and parallel processing, not just one or the other. That was the big observation. And we set out to build a company to solve computer problems that normal computers can't. And that's really the beginning of NVIDIA.\nSpeaker 1: My favorite visual of why a CPU versus a GPU really matters so much is a 15-year-old video on the NVIDIA YouTube channel where the mythbusters, they use a little robot shooting paintballs one by one to show solving problems one at a time or sequential processing on a CPU. But then they roll out this huge robot that shoots all of the paintballs at once, doing smaller problems all at the same time or parallel processing on a GPU. 3 2 1 So NVIDIA unlocks all of this new power for video games. Why gaming first?\nSpeaker 2: The video games requires parallel processing for processing 3D graphics. And we chose video games because one, we loved the application. It's a simulation of virtual worlds. And who doesn't want to go to virtual worlds? And And we had the good observation that video games has potential to be the largest market for for entertainment ever. And it turned out to be true. And having it being a large market is important because the technology is complicated. And if we had a large market, our R&D budget could be large. We could create new technology. And that flywheel between technology and market and greater technology was was really the flywheel that got NVIDIA to become one of the most important technology companies in the world. And it was all because of video games.\nSpeaker 1: I've heard you say that GPUs were a time machine.\nSpeaker 2: Yeah.\nSpeaker 1: Could you tell me more about what you meant by that?\nSpeaker 2: A GPU is like a time machine because it lets you see the future sooner. One of the most amazing things anybody's ever said to me was a quantum chemistry scientist. He said, Jensen, because of NVIDIA's work, I can do my life's work in my lifetime. That's time travel. He was able to do something that was beyond his lifetime within his lifetime. And And this because we make applications run so much faster. And you get to see the future.", "score": 0.016393442622950817, "rerank_score": 12.875}, {"chunk_ids": [231, 232, 233, 234], "transcript_id": 6, "audio_file": "audios/quantum_podcast_1.wav", "window_seconds": 120, "start_seconds": 1.0, "end_seconds": 300.1, "speakers": ["Speaker 1", "Speaker 2"], "text": "Speaker 1: Quantum computing is a somehow a very new subject for my show after 270 plus episodes, but before we get into the field itself, Really? I'm wondering what originally drew you to it as a as a research area? Was it in the physics or the computer science side or the conceptual weirdness?\nSpeaker 2: Yeah, so so I mean my background is in computer science and math. Uh it's not at all physics. Uh you know the the physics that I've learned I've sort of picked up on the streets so to speak, but I first heard about quantum computing when I was a teenager in the the the mid 1990s. So you know Shor's algorithm for factoring I think had just recently been discovered and I read a popular article about it that said you know well that this this mathematician has shown that a a quantum computer could factor you know huge numbers by just trying every possible divisor in a different parallel universe, right? And I remember my reaction at the time which is you know this sounds like garbage. This sounds like you know the physicists just do not understand what they're up against, right? Um you know like it it can't work that way, right? You know that would be too good to be true and and and and if that was true then you know why would you even need to work hard to figure that out, you know? You know then then that just seems right and so then but then you know I I had to read read more about it to be sure, so I I um um um over a summer that I spent at Bell Labs in I I I think 1998 I did my my my my my boss was nice enough to to say you know sure spend a month to just you know read up on quantum computing and you know do a report about it and you know there were there were already then websites explaining it and I remember just being amazed that you know when when you when you actually learn what quantum computing is you know it's just linear algebra, right? It's just vectors. It's just you know you don't even need to know just about anything about physics, right? You need to know you need to understand the certain generalization of the rules of probability themselves that involves complex numbers and you know once you once you learn that then you can understand how the basic quantum algorithms work. So I learned about Shor's algorithm, I learned about Grover's algorithm for searching giant databases which had also recently been discovered. You know and then I realized that Lov Grover worked in the same building as me that he was the discoverer of Grover's algorithm, right? And so I went to talk to him and you know and I had ideas for how to improve Grover's algorithm that were just complete nonsense. They just didn't work at all. Okay, but Grover was very very nice and he said well why don't you do an internship with me next summer. So I did that and and that was where I I met students of of Umesh Vazirani at Berkeley who were then kind of at the forefront of figuring out what quantum computers could or couldn't do, you know not just for one or two specific problems but for like you know whole whole classes of problems. And and I really wanted to learn whatever these people knew, right? I you know I wasn't sure that I could do anything original in quantum computing and at the time I was also very interested in AI. So I wasn't I wasn't sure what I would go into you know and actually when I applied to grad school I did get into Berkeley, but it was the AI people who recruited me there. And so I so I I went there thinking that maybe I would do AI, maybe I would combine AI with quantum computing somehow. Then it was only after my first year at Berkeley that I really fell in with the quantum computing people and that was that was 25 years ago. But I mean what what attracted me was first of all you know that that this was relatively new. There was this low hanging fruit, you know there were like very very basic questions that still weren't answered that I thought you know maybe I could answer. And secondly that you know you you could actually answer these questions using math, right? We had you know a very", "score": 0.00625, "rerank_score": 12.5390625}, {"chunk_ids": [321, 322, 323], "transcript_id": 8, "audio_file": "audios/finance_podcast_1.wav", "window_seconds": 120, "start_seconds": 0.2, "end_seconds": 240.0, "speakers": ["Speaker 1", "Speaker 2"], "text": "Speaker 1: Morgan Housel, welcome to the Mel Robbins Podcast.\nSpeaker 2: Thanks for having me, Mel. Happy to be here.\nSpeaker 1: I am so glad you're here. Thank you for jumping on a plane. I'm a huge fan. I got to give a shout out to my husband Christopher Robbins because he was the one who first introduced me to your work. The Psychology of Money changed my life. I am so excited for your new blockbuster, The Art of Spending Money. And we're going to get into all the takeaways from your mega bestsellers, but I wanted to start by asking you Morgan, if you could speak directly to the person who is here spending time together with us right now and share with them what could be different about their life or the life of somebody that they care about that they share this episode with. If they take everything to heart that you're about to share with us and teach us today and apply it to their life.\nSpeaker 2: I think it would be that your ability to feel wealthy, to feel rich, to be financially independent is absolutely in your control. It doesn't matter who you are, where you're from, how much money you make, what your job is, you can do it. And we I think we've told ourselves for generations that in order to become rich, you have to have the right educational background, you have to have the right career, you have to come from the right family. And I don't think it's it's true. It's not about how smart you are, it's about how you think about money. It's about how you behave. And behavior is in everybody's control.\nSpeaker 1: I don't know why I believe you, but I do. Like I no matter how in debt you are, no matter how old you are, you can learn. And that's kind of one of the big lessons I'm going to talk about that I've distilled from your work that has changed my life and my relationship with money and the way I think about money, the way I save it, the way I spend it. It doesn't matter the starting point at all. Lesson number one that I've learned from you is you can get good with money. You believe that.\nSpeaker 2: I've seen it time and time again and there are so many examples of it. Let me give you this example here. An ordinary person doesn't have a good education. Maybe they didn't even graduate high school, let's say, but they have good financial behavior. They can think long-term. They can keep their expectations in check. They're patient. They have those behavioral qualities. That person can do very well. But the person who went to Harvard and got an MBA and went to work on Wall Street has the best education, the best connections, the best experience. That person can easily go broke and they do. Not uncommon for that to happen. And that is not true in other fields. It is impossible to think of an ordinary person who didn't go to high school, didn't go to college performing open heart surgery better than a Harvard trained doctor. That's impossible. That will never happen. But it does happen with money because it's not about what you know. You don't need to know the secret formulas. You don't need to have secret connections. If you just get your behavior right and your thinking right, you can do well. Patience, keeping your expectations in check, not comparing yourself to other people, using money as a tool to live a better life instead of a yardstick to measure yourself against others by It's very simple stuff and it's all in your head. And it's I think it's it's 99% of what people need to know to do well with money is in your control.\nSpeaker 1: Well, I think one of the mistakes that I made for a very long time, particularly before I bumped into your work, is I believed that there was some secret formula, that there was some private club for rich people, that it was about who you know, where you went to school. And what I love about your work is that you basically say, no, no, no, no, you're focusing on the wrong stuff. There are actual behaviors that we can learn that will help you get good with money.\nSpeaker 2: Exactly. And they're not that difficult either. They're in your control. It's not to say that they're easy, but they're simple. And so just just a couple of the behaviors, if you have an ability to focus internally on your own goals rather than constantly comparing yourself against others. If you can save a little bit of your money, live even slightly below your means, invest that money and be patient. Just those things, just those very that's a kindergarten list of topics that I just gave you. That's", "score": 0.005555555555555556, "rerank_score": 12.5078125}]}, {"query": "Why did NVIDIA choose video games as its first market?", "request": {"query": "Why did NVIDIA choose video games as its first market?", "top_k": 3}, "status": 200, "seconds": 1.32, "response": [{"chunk_ids": [190], "transcript_id": 5, "audio_file": "audios/ai_podcast.wav", "window_seconds": 120, "start_seconds": 242.4, "end_seconds": 344.3, "speakers": ["Speaker 1", "Speaker 2"], "text": "Speaker 1: So NVIDIA unlocks all of this new power for video games. Why gaming first?\nSpeaker 2: The video games requires parallel processing for processing 3D graphics. And we chose video games because one, we loved the application. It's a simulation of virtual worlds. And who doesn't want to go to virtual worlds? And And we had the good observation that video games has potential to be the largest market for for entertainment ever. And it turned out to be true. And having it being a large market is important because the technology is complicated. And if we had a large market, our R&D budget could be large. We could create new technology. And that flywheel between technology and market and greater technology was was really the flywheel that got NVIDIA to become one of the most important technology companies in the world. And it was all because of video games.\nSpeaker 1: I've heard you say that GPUs were a time machine.\nSpeaker 2: Yeah.\nSpeaker 1: Could you tell me more about what you meant by that?\nSpeaker 2: A GPU is like a time machine because it lets you see the future sooner. One of the most amazing things anybody's ever said to me was a quantum chemistry scientist. He said, Jensen, because of NVIDIA's work, I can do my life's work in my lifetime. That's time travel. He was able to do something that was beyond his lifetime within his lifetime. And And this because we make applications run so much faster. And you get to see the future. And so when you're doing weather prediction, for example, you're seeing the future. When you're doing a simulation of virtual city with virtual traffic and we're simulating our self-driving car through that virtual city, we're doing time travel.", "score": 0.016234796404019036, "rerank_score": 15.2890625}, {"chunk_ids": [175, 176, 177, 178, 179], "transcript_id": 5, "audio_file": "audios/ai_podcast.wav", "window_seconds": 60, "start_seconds": 4.1, "end_seconds": 180.0, "speakers": ["Speaker 1", "Speaker 2"], "text": "Speaker 1: Thank you so much for doing this.\nSpeaker 2: I'm so happy to do it.\nSpeaker 1: Before we dive in, I wanted to tell you how this interview is going to be a little bit different than other interviews I've seen you do or something.\nSpeaker 2: Okay. Okay.\nSpeaker 1: I'm not going to ask you any questions about\nSpeaker 2: You could ask me anything you want.\nSpeaker 1: company finances. Thank you. I'm not going to ask you questions about your management style or why you don't like one-on-ones. I'm not going to ask you about regulations or politics. I think all of those things are important, but I think that our audience can get them well covered elsewhere.\nSpeaker 2: Okay.\nSpeaker 1: What we do on Huge If True is we make optimistic explainer videos.\nSpeaker 2: Mhm.\nSpeaker 1: And we've covered\nSpeaker 2: Kind of. I'm the worst person to be an explainer video.\nSpeaker 1: I think you might be the best. And I think I'm that's what I'm really hoping that we can do together is make a joint explainer video about how can we actually use technology to make the future better.\nSpeaker 2: Yeah. Yeah.\nSpeaker 1: And we do it because we believe that when people see those better futures, they help build them. So the people that you're going to be talking to are awesome. They are optimists who want to build those better features. But because we cover so many different topics, we've covered supersonic planes and quantum computers and particle colliders, it means that millions of people come into every episode without any prior knowledge whatsoever. You might be talking to an expert in their field who doesn't know the difference between a CPU and a GPU.\nSpeaker 2: Big trouble. Yeah.\nSpeaker 1: Yeah. Or a 12-year-old who might grow up one day to be you, but is just starting to learn. Um for my part, I've now been preparing for this interview for several months. I've including doing background conversations with many members of your team, but I'm not an engineer. So my goal is to help that audience see the future that you see. So I'm going to ask about three areas. The first is how did we get here? What were the key insights that led to this big fundamental shift in computing that we're in now? The second is what's actually happening right now? How did those insights lead to the world that we're now living in that seems like so much is going on all at once? And the third is what is the vision for what you see coming next? In order to talk about this big moment we're in with AI, I think we need to go back to video games in the '90s. At the time, I know game developers wanted to create more realistic-looking graphics, but the hardware couldn't keep up with all of that necessary math.\nSpeaker 2: Not enough math.\nSpeaker 1: NVIDIA came up with a solution that would change not just games, but computing itself. Could you take us back there and explain what was happening and what were the insights that led you and the NVIDIA team to create the first modern GPU?\nSpeaker 2: So in the early '90s when we first started the company, we observed that in a software program inside it, there are just a few lines of code, maybe 10% of the code does 99% of the processing. And that 99% of the", "score": 0.015584415584415583, "rerank_score": 14.9296875}, {"chunk_ids": [235, 236], "transcript_id": 6, "audio_file": "audios/quantum_podcast_1.wav", "window_seconds": 120, "start_seconds": 240.0, "end_seconds": 411.9, "speakers": ["Speaker 2"], "text": "Speaker 2: also very interested in AI. So I wasn't I wasn't sure what I would go into you know and actually when I applied to grad school I did get into Berkeley, but it was the AI people who recruited me there. And so I so I I went there thinking that maybe I would do AI, maybe I would combine AI with quantum computing somehow. Then it was only after my first year at Berkeley that I really fell in with the quantum computing people and that was that was 25 years ago. But I mean what what attracted me was first of all you know that that this was relatively new. There was this low hanging fruit, you know there were like very very basic questions that still weren't answered that I thought you know maybe I could answer. And secondly that you know you you could actually answer these questions using math, right? We had you know a very well defined model of what a quantum computer is. I mean you know this was decades ahead of you know the experiment catching up, but you know now today you know the experiments finally are catching up to the theory, but in some sense they are merely you know confirming the theory in every particular, right? They're not you know you know they're they're we haven't had any surprises about the basic physics of it. And so so you know because we knew the mathematical model of what a quantum computer is you know we could prove theorems, you know you don't you know about what quantum computers would and wouldn't be able to do. And so that was that was appealing to me. You know and then and then also just the fact that the like the most basic questions of computer science like what are the limitations of efficient algorithms, you know does P equal NP, you know things like that were somehow coming together with you know the most basic some of the most basic questions in physics right you know what is quantum mechanics actually saying about reality, right? And you know and that and and it seemed like well something interesting has to come out from that from that intersection. So you know those were the things that drew me to it you know more than 25 years ago. I think those are those are the things that you know are still appealing to me about it today. And you know you might notice what I didn't mention is sort of the the practical prospect of solving you know problems faster, you know which which is never been the main motivation for me, right? If if we do manage to you know get quantum computers that we can use for practical applications I mean to me that's just icing on the cake.", "score": 0.015151515151515152, "rerank_score": 14.5078125}]}, {"query": "How did the guest meet Lov Grover?", "request": {"query": "How did the guest meet Lov Grover?", "top_k": 3}, "status": 200, "seconds": 1.26, "response": [{"chunk_ids": [223, 224, 225, 226, 227], "transcript_id": 6, "audio_file": "audios/quantum_podcast_1.wav", "window_seconds": 60, "start_seconds": 150.1, "end_seconds": 330.0, "speakers": ["Speaker 2"], "text": "Speaker 2: algebra, right? It's just vectors. It's just you know you don't even need to know just about anything about physics, right? You need to know you need to understand the certain generalization of the rules of probability themselves that involves complex numbers and you know once you once you learn that then you can understand how the basic quantum algorithms work. So I learned about Shor's algorithm, I learned about Grover's algorithm for searching giant databases which had also recently been discovered. You know and then I realized that Lov Grover worked in the same building as me that he was the discoverer of Grover's algorithm, right? And so I went to talk to him and you know and I had ideas for how to improve Grover's algorithm that were just complete nonsense. They just didn't work at all. Okay, but Grover was very very nice and he said well why don't you do an internship with me next summer. So I did that and and that was where I I met students of of Umesh Vazirani at Berkeley who were then kind of at the forefront of figuring out what quantum computers could or couldn't do, you know not just for one or two specific problems but for like you know whole whole classes of problems. And and I really wanted to learn whatever these people knew, right? I you know I wasn't sure that I could do anything original in quantum computing and at the time I was also very interested in AI. So I wasn't I wasn't sure what I would go into you know and actually when I applied to grad school I did get into Berkeley, but it was the AI people who recruited me there. And so I so I I went there thinking that maybe I would do AI, maybe I would combine AI with quantum computing somehow. Then it was only after my first year at Berkeley that I really fell in with the quantum computing people and that was that was 25 years ago. But I mean what what attracted me was first of all you know that that this was relatively new. There was this low hanging fruit, you know there were like very very basic questions that still weren't answered that I thought you know maybe I could answer. And secondly that you know you you could actually answer these questions using math, right? We had you know a very well defined model of what a quantum computer is. I mean you know this was decades ahead of you know the experiment catching up, but you know now today you know the experiments finally are catching up to the theory, but in some sense they are merely you know confirming the theory in every particular, right? They're not you know you know they're they're we haven't had any surprises about the basic", "score": 0.016393442622950817, "rerank_score": 11.1171875}, {"chunk_ids": [186, 187, 188, 189], "transcript_id": 5, "audio_file": "audios/ai_podcast.wav", "window_seconds": 120, "start_seconds": 4.1, "end_seconds": 300.0, "speakers": ["Speaker 1", "Speaker 2"], "text": "Speaker 1: Thank you so much for doing this.\nSpeaker 2: I'm so happy to do it.\nSpeaker 1: Before we dive in, I wanted to tell you how this interview is going to be a little bit different than other interviews I've seen you do or something.\nSpeaker 2: Okay. Okay.\nSpeaker 1: I'm not going to ask you any questions about\nSpeaker 2: You could ask me anything you want.\nSpeaker 1: company finances. Thank you. I'm not going to ask you questions about your management style or why you don't like one-on-ones. I'm not going to ask you about regulations or politics. I think all of those things are important, but I think that our audience can get them well covered elsewhere.\nSpeaker 2: Okay.\nSpeaker 1: What we do on Huge If True is we make optimistic explainer videos.\nSpeaker 2: Mhm.\nSpeaker 1: And we've covered\nSpeaker 2: Kind of. I'm the worst person to be an explainer video.\nSpeaker 1: I think you might be the best. And I think I'm that's what I'm really hoping that we can do together is make a joint explainer video about how can we actually use technology to make the future better.\nSpeaker 2: Yeah. Yeah.\nSpeaker 1: And we do it because we believe that when people see those better futures, they help build them. So the people that you're going to be talking to are awesome. They are optimists who want to build those better features. But because we cover so many different topics, we've covered supersonic planes and quantum computers and particle colliders, it means that millions of people come into every episode without any prior knowledge whatsoever. You might be talking to an expert in their field who doesn't know the difference between a CPU and a GPU.\nSpeaker 2: Big trouble. Yeah.\nSpeaker 1: Yeah. Or a 12-year-old who might grow up one day to be you, but is just starting to learn. Um for my part, I've now been preparing for this interview for several months. I've including doing background conversations with many members of your team, but I'm not an engineer. So my goal is to help that audience see the future that you see. So I'm going to ask about three areas. The first is how did we get here? What were the key insights that led to this big fundamental shift in computing that we're in now? The second is what's actually happening right now? How did those insights lead to the world that we're now living in that seems like so much is going on all at once? And the third is what is the vision for what you see coming next? In order to talk about this big moment we're in with AI, I think we need to go back to video games in the '90s. At the time, I know game developers wanted to create more realistic-looking graphics, but the hardware couldn't keep up with all of that necessary math.\nSpeaker 2: Not enough math.\nSpeaker 1: NVIDIA came up with a solution that would change not just games, but computing itself. Could you take us back there and explain what was happening and what were the insights that led you and the NVIDIA team to create the first modern GPU?\nSpeaker 2: So in the early '90s when we first started the company, we observed that in a software program inside it, there are just a few lines of code, maybe 10% of the code does 99% of the processing. And that 99% of the processing could be done in parallel. However, the other 90% of the code has to be done sequentially. It turns out that the proper computer, the perfect computer is one that could do sequential processing and parallel processing, not just one or the other. That was the big observation. And we set out to build a company to solve computer problems that normal computers can't. And that's really the beginning of NVIDIA.\nSpeaker 1: My favorite visual of why a CPU versus a GPU really matters so much is a 15-year-old video on the NVIDIA YouTube channel where the mythbusters, they use a little robot shooting paintballs one by one to show solving problems one at a time or sequential processing on a CPU. But then they roll out this huge robot that shoots all of the paintballs at once, doing smaller problems all at the same time or parallel processing on a GPU. 3 2 1 So NVIDIA unlocks all of this new power for video games. Why gaming first?\nSpeaker 2: The video games requires parallel processing for processing 3D graphics. And we chose video games because one, we loved the application. It's a simulation of virtual worlds. And who doesn't want to go to virtual worlds? And And we had the good observation that video games has potential to be the largest market for for entertainment ever. And it turned out to be true. And having it being a large market is important because the technology is complicated. And if we had a large market, our R&D budget could be large. We could create new technology. And that flywheel between technology and market and greater technology was was really the flywheel that got NVIDIA to become one of the most important technology companies in the world. And it was all because of video games.\nSpeaker 1: I've heard you say that GPUs were a time machine.\nSpeaker 2: Yeah.\nSpeaker 1: Could you tell me more about what you meant by that?\nSpeaker 2: A GPU is like a time machine", "score": 0.006349206349206349, "rerank_score": 10.7109375}, {"chunk_ids": [321, 322, 323], "transcript_id": 8, "audio_file": "audios/finance_podcast_1.wav", "window_seconds": 120, "start_seconds": 0.2, "end_seconds": 240.0, "speakers": ["Speaker 1", "Speaker 2"], "text": "Speaker 1: Morgan Housel, welcome to the Mel Robbins Podcast.\nSpeaker 2: Thanks for having me, Mel. Happy to be here.\nSpeaker 1: I am so glad you're here. Thank you for jumping on a plane. I'm a huge fan. I got to give a shout out to my husband Christopher Robbins because he was the one who first introduced me to your work. The Psychology of Money changed my life. I am so excited for your new blockbuster, The Art of Spending Money. And we're going to get into all the takeaways from your mega bestsellers, but I wanted to start by asking you Morgan, if you could speak directly to the person who is here spending time together with us right now and share with them what could be different about their life or the life of somebody that they care about that they share this episode with. If they take everything to heart that you're about to share with us and teach us today and apply it to their life.\nSpeaker 2: I think it would be that your ability to feel wealthy, to feel rich, to be financially independent is absolutely in your control. It doesn't matter who you are, where you're from, how much money you make, what your job is, you can do it. And we I think we've told ourselves for generations that in order to become rich, you have to have the right educational background, you have to have the right career, you have to come from the right family. And I don't think it's it's true. It's not about how smart you are, it's about how you think about money. It's about how you behave. And behavior is in everybody's control.\nSpeaker 1: I don't know why I believe you, but I do. Like I no matter how in debt you are, no matter how old you are, you can learn. And that's kind of one of the big lessons I'm going to talk about that I've distilled from your work that has changed my life and my relationship with money and the way I think about money, the way I save it, the way I spend it. It doesn't matter the starting point at all. Lesson number one that I've learned from you is you can get good with money. You believe that.\nSpeaker 2: I've seen it time and time again and there are so many examples of it. Let me give you this example here. An ordinary person doesn't have a good education. Maybe they didn't even graduate high school, let's say, but they have good financial behavior. They can think long-term. They can keep their expectations in check. They're patient. They have those behavioral qualities. That person can do very well. But the person who went to Harvard and got an MBA and went to work on Wall Street has the best education, the best connections, the best experience. That person can easily go broke and they do. Not uncommon for that to happen. And that is not true in other fields. It is impossible to think of an ordinary person who didn't go to high school, didn't go to college performing open heart surgery better than a Harvard trained doctor. That's impossible. That will never happen. But it does happen with money because it's not about what you know. You don't need to know the secret formulas. You don't need to have secret connections. If you just get your behavior right and your thinking right, you can do well. Patience, keeping your expectations in check, not comparing yourself to other people, using money as a tool to live a better life instead of a yardstick to measure yourself against others by It's very simple stuff and it's all in your head. And it's I think it's it's 99% of what people need to know to do well with money is in your control.\nSpeaker 1: Well, I think one of the mistakes that I made for a very long time, particularly before I bumped into your work, is I believed that there was some secret formula, that there was some private club for rich people, that it was about who you know, where you went to school. And what I love about your work is that you basically say, no, no, no, no, you're focusing on the wrong stuff. There are actual behaviors that we can learn that will help you get good with money.\nSpeaker 2: Exactly. And they're not that difficult either. They're in your control. It's not to say that they're easy, but they're simple. And so just just a couple of the behaviors, if you have an ability to focus internally on your own goals rather than constantly comparing yourself against others. If you can save a little bit of your money, live even slightly below your means, invest that money and be patient. Just those things, just those very that's a kindergarten list of topics that I just gave you. That's", "score": 0.005555555555555556, "rerank_score": 10.7109375}]}, {"query": "What first got the guest interested in quantum computing as a teenager?", "request": {"query": "What first got the guest interested in quantum computing as a teenager?", "top_k": 3}, "status": 200, "seconds": 1.24, "response": [{"chunk_ids": [231, 232, 233, 234], "transcript_id": 6, "audio_file": "audios/quantum_podcast_1.wav", "window_seconds": 120, "start_seconds": 1.0, "end_seconds": 300.1, "speakers": ["Speaker 1", "Speaker 2"], "text": "Speaker 1: Quantum computing is a somehow a very new subject for my show after 270 plus episodes, but before we get into the field itself, Really? I'm wondering what originally drew you to it as a as a research area? Was it in the physics or the computer science side or the conceptual weirdness?\nSpeaker 2: Yeah, so so I mean my background is in computer science and math. Uh it's not at all physics. Uh you know the the physics that I've learned I've sort of picked up on the streets so to speak, but I first heard about quantum computing when I was a teenager in the the the mid 1990s. So you know Shor's algorithm for factoring I think had just recently been discovered and I read a popular article about it that said you know well that this this mathematician has shown that a a quantum computer could factor you know huge numbers by just trying every possible divisor in a different parallel universe, right? And I remember my reaction at the time which is you know this sounds like garbage. This sounds like you know the physicists just do not understand what they're up against, right? Um you know like it it can't work that way, right? You know that would be too good to be true and and and and if that was true then you know why would you even need to work hard to figure that out, you know? You know then then that just seems right and so then but then you know I I had to read read more about it to be sure, so I I um um um over a summer that I spent at Bell Labs in I I I think 1998 I did my my my my my boss was nice enough to to say you know sure spend a month to just you know read up on quantum computing and you know do a report about it and you know there were there were already then websites explaining it and I remember just being amazed that you know when when you when you actually learn what quantum computing is you know it's just linear algebra, right? It's just vectors. It's just you know you don't even need to know just about anything about physics, right? You need to know you need to understand the certain generalization of the rules of probability themselves that involves complex numbers and you know once you once you learn that then you can understand how the basic quantum algorithms work. So I learned about Shor's algorithm, I learned about Grover's algorithm for searching giant databases which had also recently been discovered. You know and then I realized that Lov Grover worked in the same building as me that he was the discoverer of Grover's algorithm, right? And so I went to talk to him and you know and I had ideas for how to improve Grover's algorithm that were just complete nonsense. They just didn't work at all. Okay, but Grover was very very nice and he said well why don't you do an internship with me next summer. So I did that and and that was where I I met students of of Umesh Vazirani at Berkeley who were then kind of at the forefront of figuring out what quantum computers could or couldn't do, you know not just for one or two specific problems but for like you know whole whole classes of problems. And and I really wanted to learn whatever these people knew, right? I you know I wasn't sure that I could do anything original in quantum computing and at the time I was also very interested in AI. So I wasn't I wasn't sure what I would go into you know and actually when I applied to grad school I did get into Berkeley, but it was the AI people who recruited me there. And so I so I I went there thinking that maybe I would do AI, maybe I would combine AI with quantum computing somehow. Then it was only after my first year at Berkeley that I really fell in with the quantum computing people and that was that was 25 years ago. But I mean what what attracted me was first of all you know that that this was relatively new. There was this low hanging fruit, you know there were like very very basic questions that still weren't answered that I thought you know maybe I could answer. And secondly that you know you you could actually answer these questions using math, right? We had you know a very", "score": 0.01608118657298985, "rerank_score": 15.125}, {"chunk_ids": [186, 187, 188, 189], "transcript_id": 5, "audio_file": "audios/ai_podcast.wav", "window_seconds": 120, "start_seconds": 4.1, "end_seconds": 300.0, "speakers": ["Speaker 1", "Speaker 2"], "text": "Speaker 1: Thank you so much for doing this.\nSpeaker 2: I'm so happy to do it.\nSpeaker 1: Before we dive in, I wanted to tell you how this interview is going to be a little bit different than other interviews I've seen you do or something.\nSpeaker 2: Okay. Okay.\nSpeaker 1: I'm not going to ask you any questions about\nSpeaker 2: You could ask me anything you want.\nSpeaker 1: company finances. Thank you. I'm not going to ask you questions about your management style or why you don't like one-on-ones. I'm not going to ask you about regulations or politics. I think all of those things are important, but I think that our audience can get them well covered elsewhere.\nSpeaker 2: Okay.\nSpeaker 1: What we do on Huge If True is we make optimistic explainer videos.\nSpeaker 2: Mhm.\nSpeaker 1: And we've covered\nSpeaker 2: Kind of. I'm the worst person to be an explainer video.\nSpeaker 1: I think you might be the best. And I think I'm that's what I'm really hoping that we can do together is make a joint explainer video about how can we actually use technology to make the future better.\nSpeaker 2: Yeah. Yeah.\nSpeaker 1: And we do it because we believe that when people see those better futures, they help build them. So the people that you're going to be talking to are awesome. They are optimists who want to build those better features. But because we cover so many different topics, we've covered supersonic planes and quantum computers and particle colliders, it means that millions of people come into every episode without any prior knowledge whatsoever. You might be talking to an expert in their field who doesn't know the difference between a CPU and a GPU.\nSpeaker 2: Big trouble. Yeah.\nSpeaker 1: Yeah. Or a 12-year-old who might grow up one day to be you, but is just starting to learn. Um for my part, I've now been preparing for this interview for several months. I've including doing background conversations with many members of your team, but I'm not an engineer. So my goal is to help that audience see the future that you see. So I'm going to ask about three areas. The first is how did we get here? What were the key insights that led to this big fundamental shift in computing that we're in now? The second is what's actually happening right now? How did those insights lead to the world that we're now living in that seems like so much is going on all at once? And the third is what is the vision for what you see coming next? In order to talk about this big moment we're in with AI, I think we need to go back to video games in the '90s. At the time, I know game developers wanted to create more realistic-looking graphics, but the hardware couldn't keep up with all of that necessary math.\nSpeaker 2: Not enough math.\nSpeaker 1: NVIDIA came up with a solution that would change not just games, but computing itself. Could you take us back there and explain what was happening and what were the insights that led you and the NVIDIA team to create the first modern GPU?\nSpeaker 2: So in the early '90s when we first started the company, we observed that in a software program inside it, there are just a few lines of code, maybe 10% of the code does 99% of the processing. And that 99% of the processing could be done in parallel. However, the other 90% of the code has to be done sequentially. It turns out that the proper computer, the perfect computer is one that could do sequential processing and parallel processing, not just one or the other. That was the big observation. And we set out to build a company to solve computer problems that normal computers can't. And that's really the beginning of NVIDIA.\nSpeaker 1: My favorite visual of why a CPU versus a GPU really matters so much is a 15-year-old video on the NVIDIA YouTube channel where the mythbusters, they use a little robot shooting paintballs one by one to show solving problems one at a time or sequential processing on a CPU. But then they roll out this huge robot that shoots all of the paintballs at once, doing smaller problems all at the same time or parallel processing on a GPU. 3 2 1 So NVIDIA unlocks all of this new power for video games. Why gaming first?\nSpeaker 2: The video games requires parallel processing for processing 3D graphics. And we chose video games because one, we loved the application. It's a simulation of virtual worlds. And who doesn't want to go to virtual worlds? And And we had the good observation that video games has potential to be the largest market for for entertainment ever. And it turned out to be true. And having it being a large market is important because the technology is complicated. And if we had a large market, our R&D budget could be large. We could create new technology. And that flywheel between technology and market and greater technology was was really the flywheel that got NVIDIA to become one of the most important technology companies in the world. And it was all because of video games.\nSpeaker 1: I've heard you say that GPUs were a time machine.\nSpeaker 2: Yeah.\nSpeaker 1: Could you tell me more about what you meant by that?\nSpeaker 2: A GPU is like a time machine", "score": 0.015200918484500572, "rerank_score": 14.7578125}, {"chunk_ids": [228, 229, 230], "transcript_id": 6, "audio_file": "audios/quantum_podcast_1.wav", "window_seconds": 60, "start_seconds": 300.1, "end_seconds": 411.9, "speakers": ["Speaker 2"], "text": "Speaker 2: well defined model of what a quantum computer is. I mean you know this was decades ahead of you know the experiment catching up, but you know now today you know the experiments finally are catching up to the theory, but in some sense they are merely you know confirming the theory in every particular, right? They're not you know you know they're they're we haven't had any surprises about the basic physics of it. And so so you know because we knew the mathematical model of what a quantum computer is you know we could prove theorems, you know you don't you know about what quantum computers would and wouldn't be able to do. And so that was that was appealing to me. You know and then and then also just the fact that the like the most basic questions of computer science like what are the limitations of efficient algorithms, you know does P equal NP, you know things like that were somehow coming together with you know the most basic some of the most basic questions in physics right you know what is quantum mechanics actually saying about reality, right? And you know and that and and it seemed like well something interesting has to come out from that from that intersection. So you know those were the things that drew me to it you know more than 25 years ago. I think those are those are the things that you know are still appealing to me about it today. And you know you might notice what I didn't mention is sort of the the practical prospect of solving you know problems faster, you know which which is never been the main motivation for me, right? If if we do manage to you know get quantum computers that we can use for practical applications I mean to me that's just icing on the cake.", "score": 0.015579975579975579, "rerank_score": 14.703125}]}, {"query": "Why can a Harvard MBA still go broke?", "request": {"query": "Why can a Harvard MBA still go broke?", "top_k": 3}, "status": 200, "seconds": 1.32, "response": [{"chunk_ids": [287, 288, 289, 290, 291], "transcript_id": 8, "audio_file": "audios/finance_podcast_1.wav", "window_seconds": 30, "start_seconds": 75.1, "end_seconds": 165.1, "speakers": ["Speaker 2", "Speaker 1"], "text": "Speaker 2: It's not about how smart you are, it's about how you think about money. It's about how you behave. And behavior is in everybody's control.\nSpeaker 1: I don't know why I believe you, but I do. Like I no matter how in debt you are, no matter how old you are, you can learn. And that's kind of one of the big lessons I'm going to talk about that I've distilled from your work that has changed my life and my relationship with money and the way I think about money, the way I save it, the way I spend it. It doesn't matter the starting point at all. Lesson number one that I've learned from you is you can get good with money. You believe that.\nSpeaker 2: I've seen it time and time again and there are so many examples of it. Let me give you this example here. An ordinary person doesn't have a good education. Maybe they didn't even graduate high school, let's say, but they have good financial behavior. They can think long-term. They can keep their expectations in check. They're patient. They have those behavioral qualities. That person can do very well. But the person who went to Harvard and got an MBA and went to work on Wall Street has the best education, the best connections, the best experience. That person can easily go broke and they do. Not uncommon for that to happen. And that is not true in other fields. It is impossible to think of an ordinary person who didn't go to high school, didn't go to college performing open heart surgery better than a Harvard trained doctor. That's impossible. That will never happen. But it does happen with money because it's not about what you know. You don't need to know the secret formulas. You don't need to have secret connections. If you just get your behavior right and your thinking right, you can do well. Patience,", "score": 0.016393442622950817, "rerank_score": 12.0703125}, {"chunk_ids": [324, 325, 326], "transcript_id": 8, "audio_file": "audios/finance_podcast_1.wav", "window_seconds": 120, "start_seconds": 180.7, "end_seconds": 403.9, "speakers": ["Speaker 2", "Speaker 1"], "text": "Speaker 2: to do well with money is in your control.\nSpeaker 1: Well, I think one of the mistakes that I made for a very long time, particularly before I bumped into your work, is I believed that there was some secret formula, that there was some private club for rich people, that it was about who you know, where you went to school. And what I love about your work is that you basically say, no, no, no, no, you're focusing on the wrong stuff. There are actual behaviors that we can learn that will help you get good with money.\nSpeaker 2: Exactly. And they're not that difficult either. They're in your control. It's not to say that they're easy, but they're simple. And so just just a couple of the behaviors, if you have an ability to focus internally on your own goals rather than constantly comparing yourself against others. If you can save a little bit of your money, live even slightly below your means, invest that money and be patient. Just those things, just those very that's a kindergarten list of topics that I just gave you. That's not a bunch of great formulas. It's not a bunch of Wall Street gibberish. It's not a bunch of acronyms. These are very simple things. And that's it. Part of this too is redefining what what I mean by financially successful. I'm not talking private islands and private jets, but for most people, what they actually want If you said, what is your ultimate financial goal, they would say, I want to have a stable housing for myself and my family. I want to have a little bit of cushion to fall back onto if I were to get laid off or have a medical emergency. I want to be able to have a dignified retirement someday. I want to be able to spend time with my kids. Those are very good financial goals and that level of wealth and success I think is in within everybody's control.\nSpeaker 1: Well, you said you wanted to teach us how to use money as a tool\nSpeaker 2: Yes.\nSpeaker 1: to live a better life versus using it as a yardstick\nSpeaker 2: to measure yourself against others by\nSpeaker 1: Correct. And that's one of the core things you're going to teach us how to do and why this is so important today.\nSpeaker 2: Of course. And it's easier said than done. It is so natural for everybody to compare yourself against others. For me to measure my level of success by not saying what do I have but but but by saying what do I have relative to that guy. Not how not how good not how comfortable is my house, but by saying how big is my house relative to that person over there, to my neighbor, to my coworker, to my siblings. And one of the problems that makes it more difficult today than it's ever been is that it used to be for my parents' generation, my grandparents' generation, when they compared themselves to other people, it was relative to their neighbors or their coworkers. It was a pretty small group of people. Maybe a couple people who you saw on TV or heard about on the radio. But now today just everybody, including myself, their comparison group is the most sophisticated algorithm on Instagram or TikTok. And so no matter how well you're doing, no matter how great your house is, no matter how much money you're making, you turn on Instagram 100 times a day like everybody else, you open it up and there is somebody out there who looks better, happier, more successful, more beautiful than you are. And so this topic I think has always been true. It's always been important. It is more important today than it's ever been. The idea of keeping your expectations in check because it's easier today than it's ever been to let your expectations just spiral out of control. I see this with my own kids, my nine year old son. His when I was growing up, normal people drove old pickup trucks and rich people drove new pickup trucks. That was that was like the definition in my head. Like if you had a new pickup truck, like oh there's there's a rich person. My son who's nine, his definition of rich is like a private jet and a private island because he watches Mr. Beast and it's like, oh sit in the circle and you win a million bucks kind of thing. It's a completely different level of expectations than even I had 20 or 30 years ago.", "score": 0.014849498327759197, "rerank_score": 11.6015625}, {"chunk_ids": [235, 236], "transcript_id": 6, "audio_file": "audios/quantum_podcast_1.wav", "window_seconds": 120, "start_seconds": 240.0, "end_seconds": 411.9, "speakers": ["Speaker 2"], "text": "Speaker 2: also very interested in AI. So I wasn't I wasn't sure what I would go into you know and actually when I applied to grad school I did get into Berkeley, but it was the AI people who recruited me there. And so I so I I went there thinking that maybe I would do AI, maybe I would combine AI with quantum computing somehow. Then it was only after my first year at Berkeley that I really fell in with the quantum computing people and that was that was 25 years ago. But I mean what what attracted me was first of all you know that that this was relatively new. There was this low hanging fruit, you know there were like very very basic questions that still weren't answered that I thought you know maybe I could answer. And secondly that you know you you could actually answer these questions using math, right? We had you know a very well defined model of what a quantum computer is. I mean you know this was decades ahead of you know the experiment catching up, but you know now today you know the experiments finally are catching up to the theory, but in some sense they are merely you know confirming the theory in every particular, right? They're not you know you know they're they're we haven't had any surprises about the basic physics of it. And so so you know because we knew the mathematical model of what a quantum computer is you know we could prove theorems, you know you don't you know about what quantum computers would and wouldn't be able to do. And so that was that was appealing to me. You know and then and then also just the fact that the like the most basic questions of computer science like what are the limitations of efficient algorithms, you know does P equal NP, you know things like that were somehow coming together with you know the most basic some of the most basic questions in physics right you know what is quantum mechanics actually saying about reality, right? And you know and that and and it seemed like well something interesting has to come out from that from that intersection. So you know those were the things that drew me to it you know more than 25 years ago. I think those are those are the things that you know are still appealing to me about it today. And you know you might notice what I didn't mention is sort of the the practical prospect of solving you know problems faster, you know which which is never been the main motivation for me, right? If if we do manage to you know get quantum computers that we can use for practical applications I mean to me that's just icing on the cake.", "score": 0.014930555555555555, "rerank_score": 11.546875}]}, {"query": "How has social media changed who people compare themselves to?", "request": {"query": "How has social media changed who people compare themselves to?", "top_k": 3}, "status": 200, "seconds": 1.27, "response": [{"chunk_ids": [301, 302, 303, 304, 305], "transcript_id": 8, "audio_file": "audios/finance_podcast_1.wav", "window_seconds": 30, "start_seconds": 285.7, "end_seconds": 375.0, "speakers": ["Speaker 1", "Speaker 2"], "text": "Speaker 1: using it as a yardstick\nSpeaker 2: to measure yourself against others by\nSpeaker 1: Correct. And that's one of the core things you're going to teach us how to do and why this is so important today.\nSpeaker 2: Of course. And it's easier said than done. It is so natural for everybody to compare yourself against others. For me to measure my level of success by not saying what do I have but but but by saying what do I have relative to that guy. Not how not how good not how comfortable is my house, but by saying how big is my house relative to that person over there, to my neighbor, to my coworker, to my siblings. And one of the problems that makes it more difficult today than it's ever been is that it used to be for my parents' generation, my grandparents' generation, when they compared themselves to other people, it was relative to their neighbors or their coworkers. It was a pretty small group of people. Maybe a couple people who you saw on TV or heard about on the radio. But now today just everybody, including myself, their comparison group is the most sophisticated algorithm on Instagram or TikTok. And so no matter how well you're doing, no matter how great your house is, no matter how much money you're making, you turn on Instagram 100 times a day like everybody else, you open it up and there is somebody out there who looks better, happier, more successful, more beautiful than you are. And so this topic I think has always been true. It's always been important. It is more important today than it's ever been. The idea of keeping your expectations in check because it's easier today than it's ever been to let your expectations just spiral", "score": 0.016287678476996297, "rerank_score": 13.046875}, {"chunk_ids": [321, 322, 323], "transcript_id": 8, "audio_file": "audios/finance_podcast_1.wav", "window_seconds": 120, "start_seconds": 0.2, "end_seconds": 240.0, "speakers": ["Speaker 1", "Speaker 2"], "text": "Speaker 1: Morgan Housel, welcome to the Mel Robbins Podcast.\nSpeaker 2: Thanks for having me, Mel. Happy to be here.\nSpeaker 1: I am so glad you're here. Thank you for jumping on a plane. I'm a huge fan. I got to give a shout out to my husband Christopher Robbins because he was the one who first introduced me to your work. The Psychology of Money changed my life. I am so excited for your new blockbuster, The Art of Spending Money. And we're going to get into all the takeaways from your mega bestsellers, but I wanted to start by asking you Morgan, if you could speak directly to the person who is here spending time together with us right now and share with them what could be different about their life or the life of somebody that they care about that they share this episode with. If they take everything to heart that you're about to share with us and teach us today and apply it to their life.\nSpeaker 2: I think it would be that your ability to feel wealthy, to feel rich, to be financially independent is absolutely in your control. It doesn't matter who you are, where you're from, how much money you make, what your job is, you can do it. And we I think we've told ourselves for generations that in order to become rich, you have to have the right educational background, you have to have the right career, you have to come from the right family. And I don't think it's it's true. It's not about how smart you are, it's about how you think about money. It's about how you behave. And behavior is in everybody's control.\nSpeaker 1: I don't know why I believe you, but I do. Like I no matter how in debt you are, no matter how old you are, you can learn. And that's kind of one of the big lessons I'm going to talk about that I've distilled from your work that has changed my life and my relationship with money and the way I think about money, the way I save it, the way I spend it. It doesn't matter the starting point at all. Lesson number one that I've learned from you is you can get good with money. You believe that.\nSpeaker 2: I've seen it time and time again and there are so many examples of it. Let me give you this example here. An ordinary person doesn't have a good education. Maybe they didn't even graduate high school, let's say, but they have good financial behavior. They can think long-term. They can keep their expectations in check. They're patient. They have those behavioral qualities. That person can do very well. But the person who went to Harvard and got an MBA and went to work on Wall Street has the best education, the best connections, the best experience. That person can easily go broke and they do. Not uncommon for that to happen. And that is not true in other fields. It is impossible to think of an ordinary person who didn't go to high school, didn't go to college performing open heart surgery better than a Harvard trained doctor. That's impossible. That will never happen. But it does happen with money because it's not about what you know. You don't need to know the secret formulas. You don't need to have secret connections. If you just get your behavior right and your thinking right, you can do well. Patience, keeping your expectations in check, not comparing yourself to other people, using money as a tool to live a better life instead of a yardstick to measure yourself against others by It's very simple stuff and it's all in your head. And it's I think it's it's 99% of what people need to know to do well with money is in your control.\nSpeaker 1: Well, I think one of the mistakes that I made for a very long time, particularly before I bumped into your work, is I believed that there was some secret formula, that there was some private club for rich people, that it was about who you know, where you went to school. And what I love about your work is that you basically say, no, no, no, no, you're focusing on the wrong stuff. There are actual behaviors that we can learn that will help you get good with money.\nSpeaker 2: Exactly. And they're not that difficult either. They're in your control. It's not to say that they're easy, but they're simple. And so just just a couple of the behaviors, if you have an ability to focus internally on your own goals rather than constantly comparing yourself against others. If you can save a little bit of your money, live even slightly below your means, invest that money and be patient. Just those things, just those very that's a kindergarten list of topics that I just gave you. That's", "score": 0.015989911727616643, "rerank_score": 12.890625}, {"chunk_ids": [186, 187, 188, 189], "transcript_id": 5, "audio_file": "audios/ai_podcast.wav", "window_seconds": 120, "start_seconds": 4.1, "end_seconds": 300.0, "speakers": ["Speaker 1", "Speaker 2"], "text": "Speaker 1: Thank you so much for doing this.\nSpeaker 2: I'm so happy to do it.\nSpeaker 1: Before we dive in, I wanted to tell you how this interview is going to be a little bit different than other interviews I've seen you do or something.\nSpeaker 2: Okay. Okay.\nSpeaker 1: I'm not going to ask you any questions about\nSpeaker 2: You could ask me anything you want.\nSpeaker 1: company finances. Thank you. I'm not going to ask you questions about your management style or why you don't like one-on-ones. I'm not going to ask you about regulations or politics. I think all of those things are important, but I think that our audience can get them well covered elsewhere.\nSpeaker 2: Okay.\nSpeaker 1: What we do on Huge If True is we make optimistic explainer videos.\nSpeaker 2: Mhm.\nSpeaker 1: And we've covered\nSpeaker 2: Kind of. I'm the worst person to be an explainer video.\nSpeaker 1: I think you might be the best. And I think I'm that's what I'm really hoping that we can do together is make a joint explainer video about how can we actually use technology to make the future better.\nSpeaker 2: Yeah. Yeah.\nSpeaker 1: And we do it because we believe that when people see those better futures, they help build them. So the people that you're going to be talking to are awesome. They are optimists who want to build those better features. But because we cover so many different topics, we've covered supersonic planes and quantum computers and particle colliders, it means that millions of people come into every episode without any prior knowledge whatsoever. You might be talking to an expert in their field who doesn't know the difference between a CPU and a GPU.\nSpeaker 2: Big trouble. Yeah.\nSpeaker 1: Yeah. Or a 12-year-old who might grow up one day to be you, but is just starting to learn. Um for my part, I've now been preparing for this interview for several months. I've including doing background conversations with many members of your team, but I'm not an engineer. So my goal is to help that audience see the future that you see. So I'm going to ask about three areas. The first is how did we get here? What were the key insights that led to this big fundamental shift in computing that we're in now? The second is what's actually happening right now? How did those insights lead to the world that we're now living in that seems like so much is going on all at once? And the third is what is the vision for what you see coming next? In order to talk about this big moment we're in with AI, I think we need to go back to video games in the '90s. At the time, I know game developers wanted to create more realistic-looking graphics, but the hardware couldn't keep up with all of that necessary math.\nSpeaker 2: Not enough math.\nSpeaker 1: NVIDIA came up with a solution that would change not just games, but computing itself. Could you take us back there and explain what was happening and what were the insights that led you and the NVIDIA team to create the first modern GPU?\nSpeaker 2: So in the early '90s when we first started the company, we observed that in a software program inside it, there are just a few lines of code, maybe 10% of the code does 99% of the processing. And that 99% of the processing could be done in parallel. However, the other 90% of the code has to be done sequentially. It turns out that the proper computer, the perfect computer is one that could do sequential processing and parallel processing, not just one or the other. That was the big observation. And we set out to build a company to solve computer problems that normal computers can't. And that's really the beginning of NVIDIA.\nSpeaker 1: My favorite visual of why a CPU versus a GPU really matters so much is a 15-year-old video on the NVIDIA YouTube channel where the mythbusters, they use a little robot shooting paintballs one by one to show solving problems one at a time or sequential processing on a CPU. But then they roll out this huge robot that shoots all of the paintballs at once, doing smaller problems all at the same time or parallel processing on a GPU. 3 2 1 So NVIDIA unlocks all of this new power for video games. Why gaming first?\nSpeaker 2: The video games requires parallel processing for processing 3D graphics. And we chose video games because one, we loved the application. It's a simulation of virtual worlds. And who doesn't want to go to virtual worlds? And And we had the good observation that video games has potential to be the largest market for for entertainment ever. And it turned out to be true. And having it being a large market is important because the technology is complicated. And if we had a large market, our R&D budget could be large. We could create new technology. And that flywheel between technology and market and greater technology was was really the flywheel that got NVIDIA to become one of the most important technology companies in the world. And it was all because of video games.\nSpeaker 1: I've heard you say that GPUs were a time machine.\nSpeaker 2: Yeah.\nSpeaker 1: Could you tell me more about what you meant by that?\nSpeaker 2: A GPU is like a time machine", "score": 0.015200918484500572, "rerank_score": 12.65625}]}], "eval": {"recall": {"1": 1.0, "3": 1.0, "5": 1.0, "10": 1.0}, "evaluated": 24, "total": 24}}</script>
+<script>
+  const DATA = JSON.parse(document.getElementById("data").textContent);
+  const $ = (id) => document.getElementById(id);
+
+  function esc(text) {
+    return String(text).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
+  function clock(seconds) {
+    const s = Math.round(seconds);
+    return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
+  }
+  function pretty(value) {
+    return esc(JSON.stringify(value, null, 2))
+      .replace(/(&quot;|")((?:[^"\\]|\\.)*)"(\s*:)/g, '<span class="k">"$2"</span>$3')
+      .replace(/:\s"((?:[^"\\]|\\.)*)"/g, ': <span class="s">"$1"</span>')
+      .replace(/^(\s*)"((?:[^"\\]|\\.)*)"(,?)$/gm, '$1<span class="s">"$2"</span>$3')
+      .replace(/:\s(-?\d+(?:\.\d+)?(?:e-?\d+)?)/g, ': <span class="n">$1</span>');
+  }
+  function speakerClass(name) {
+    return name.endsWith("2") ? "s2" : "s1";
+  }
+
+  function renderStats() {
+    const s = DATA.stats;
+    const items = [
+      [s.recordings, "recordings indexed"],
+      [s.minutes, "minutes of audio"],
+      [s.windows, "searchable windows"],
+      [`${s.searchSeconds} s`, "average search, with reranking"],
+    ];
+    $("stats").innerHTML = items.map(([v, l]) => `<div class="stat"><b>${esc(v)}</b><span>${esc(l)}</span></div>`).join("");
+    $("captured").textContent = `Captured from the local service on ${DATA.captured}. The finance podcast was transcribed and indexed for this page; the other two recordings were indexed earlier.`;
+  }
+
+  function renderTranscribe() {
+    const t = DATA.transcribe;
+    $("transcribe-request").innerHTML = pretty(t.request);
+    $("transcribe-status").textContent = `${t.status} OK · ${t.seconds} s`;
+    $("transcribe-response").innerHTML = pretty(t.response);
+    $("turns").innerHTML = t.excerpt.map((turn) => {
+      const text = turn.text.length > 230 ? turn.text.slice(0, 227).trimEnd() + "…" : turn.text;
+      return `<div class="turn"><time>${clock(turn.start)}</time><p><span class="spk ${speakerClass(turn.speaker)}">${esc(turn.speaker)}</span>${esc(text)}</p></div>`;
+    }).join("");
+    $("file-snippet").innerHTML = pretty(t.fileSnippet) + '\n<span class="c">// first segment and its first two words shown</span>';
+  }
+
+  function renderIngest() {
+    const i = DATA.ingest;
+    $("ingest-request").innerHTML = pretty(i.request);
+    $("ingest-status").textContent = `${i.status} OK · ${i.seconds} s`;
+    $("ingest-response").innerHTML = pretty(i.response);
+    const counts = Object.entries(i.response.chunks_per_window);
+    const max = Math.max(...counts.map(([, n]) => n));
+    const total = counts.reduce((sum, [, n]) => sum + n, 0);
+    $("bars").innerHTML = counts.map(([len, n]) => `
+      <div class="barrow"><span>${esc(len)} s windows</span>
+        <div class="track"><div class="fill" style="width:${(n / max) * 100}%"></div></div><b>${n}</b></div>`).join("");
+    $("ingest-note").textContent = `${total} windows across ${clock(DATA.transcribe.duration)} of audio, embedded and written in ${i.seconds} s. Ingesting the same recording again replaces its windows.`;
+    const e = DATA.error;
+    $("error-status").textContent = `${e.status} Not Found`;
+    $("error-response").innerHTML = `<span class="c">// POST /ingest ${esc(JSON.stringify(e.request))}</span>\n` + pretty(e.response);
+  }
+
+  const STOP = new Set(["what", "when", "where", "which", "does", "did", "have", "with", "from", "that", "this", "their", "them", "they", "your", "about", "into", "still", "first", "people", "guest", "choose"]);
+  function highlighter(query) {
+    const stems = query.toLowerCase().replace(/[^a-z0-9\s']/g, " ").split(/\s+/)
+      .filter((w) => w.length >= 4 && !STOP.has(w))
+      .map((w) => w.replace(/'s$/, "").slice(0, Math.max(4, w.length - 2)));
+    if (!stems.length) return esc;
+    const pattern = new RegExp(`\\b(${stems.map((s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")})[a-z']*`, "gi");
+    return (text) => esc(text).replace(pattern, "<mark>$&</mark>");
+  }
+
+  function renderResult(result, index, mark) {
+    const rec = DATA.recordings[result.audio_file] || { name: result.audio_file, duration: result.end_seconds };
+    const left = (result.start_seconds / rec.duration) * 100;
+    const width = ((result.end_seconds - result.start_seconds) / rec.duration) * 100;
+    const merged = result.chunk_ids.length;
+    const lines = result.text.split("\n").map((line) => {
+      const m = line.match(/^(Speaker \d+):\s?(.*)$/);
+      return m ? `<p><span class="spk ${speakerClass(m[1])}">${esc(m[1])}</span>${mark(m[2])}</p>` : `<p>${mark(line)}</p>`;
+    }).join("");
+    return `
+      <article class="result${index === 0 ? " top" : ""}">
+        <div class="result-head">
+          <span class="rank">#${index + 1}</span>
+          <span class="rec">${esc(rec.name)}</span>
+          <span class="file">${esc(result.audio_file)}</span>
+          <span class="when">${clock(result.start_seconds)} – ${clock(result.end_seconds)}</span>
+        </div>
+        <div class="badges">
+          <span class="badge">${result.window_seconds} s windows</span>
+          <span class="badge">${merged === 1 ? "single window" : `joined from ${merged} windows`}</span>
+          <span class="badge">${esc(result.speakers.join(" and "))}</span>
+          <span class="badge score">ColBERT ${result.rerank_score.toFixed(2)}</span>
+        </div>
+        <div class="timeline" aria-label="Position in the recording">
+          <div class="track"><div class="hit" style="left:${left}%;width:${width}%"></div></div>
+          <div class="ends"><span>0:00</span><span>${clock(rec.duration)}</span></div>
+        </div>
+        <div class="passage clamped" id="passage-${index}">${lines}</div>
+        <button class="more" type="button" aria-expanded="false" aria-controls="passage-${index}">Show full passage</button>
+      </article>`;
+  }
+
+  function renderSearch(active) {
+    const q = DATA.searches[active];
+    document.querySelectorAll(".query").forEach((b, i) => b.setAttribute("aria-pressed", String(i === active)));
+    $("search-meta").innerHTML = `<code>${esc(JSON.stringify(q.request))}</code><span class="chip ok">${q.status} OK · ${q.seconds} s</span><span>Top ${q.response.length} results, matching words highlighted</span>`;
+    const mark = highlighter(q.query);
+    $("results").innerHTML = q.response.map((r, i) => renderResult(r, i, mark)).join("");
+    $("search-response").innerHTML = pretty(q.response);
+    document.querySelectorAll(".more").forEach((button) => {
+      button.addEventListener("click", () => {
+        const passage = document.getElementById(button.getAttribute("aria-controls"));
+        const open = passage.classList.toggle("clamped") === false;
+        button.setAttribute("aria-expanded", String(open));
+        button.textContent = open ? "Show less" : "Show full passage";
+      });
+    });
+  }
+
+  function renderQueries() {
+    const tag = { "AI podcast": "AI", "Quantum computing podcast": "Quantum", "Finance podcast": "Finance" };
+    $("queries").innerHTML = DATA.searches.map((s, i) => {
+      const top = DATA.recordings[s.response[0].audio_file];
+      return `<button class="query" type="button" id="query-${i}" aria-pressed="false">${esc(s.query)}<small>Top hit: ${esc(tag[top.name] || top.name)}</small></button>`;
+    }).join("");
+    document.querySelectorAll(".query").forEach((b, i) => b.addEventListener("click", () => renderSearch(i)));
+  }
+
+  function renderEval() {
+    const e = DATA.eval;
+    $("recall").innerHTML = Object.entries(e.recall).map(([k, v]) => `
+      <div class="col"><b>${v.toFixed(2)}</b><div class="pillar" style="height:${Math.max(4, v * 100)}%"></div><span>recall@${esc(k)}</span></div>`).join("");
+    $("eval-note").textContent = `${e.evaluated} hand-labelled questions on the AI and quantum recordings, re-run with the ColBERT reranker. A result counts as a hit when it covers at least half of the answer's span. This is a small starter set, and many returned passages run one to five minutes, so treat these numbers as an upper bound.`;
+  }
+
+  renderStats();
+  renderTranscribe();
+  renderIngest();
+  renderQueries();
+  renderSearch(0);
+  renderEval();
+</script>
+
+</body>
+</html>

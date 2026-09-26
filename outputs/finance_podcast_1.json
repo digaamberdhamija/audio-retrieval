@@ -1,0 +1,7162 @@
+{
+  "audio_file": "audios/finance_podcast_1.wav",
+  "model": "gemini-3.5-transcribe",
+  "speakers": {
+    "Speaker 1": "spk:0",
+    "Speaker 2": "spk:1"
+  },
+  "segments": [
+    {
+      "speaker": "Speaker 1",
+      "start": 0.2,
+      "end": 3.6,
+      "text": "Morgan Housel, welcome to the Mel Robbins Podcast.",
+      "words": [
+        {
+          "text": "Morgan",
+          "start": 0.2,
+          "end": 0.6
+        },
+        {
+          "text": "Housel,",
+          "start": 0.6,
+          "end": 1.1
+        },
+        {
+          "text": "welcome",
+          "start": 1.6,
+          "end": 2.4
+        },
+        {
+          "text": "to",
+          "start": 2.4,
+          "end": 2.5
+        },
+        {
+          "text": "the",
+          "start": 2.5,
+          "end": 2.6
+        },
+        {
+          "text": "Mel",
+          "start": 2.6,
+          "end": 2.8
+        },
+        {
+          "text": "Robbins",
+          "start": 2.8,
+          "end": 3.1
+        },
+        {
+          "text": "Podcast.",
+          "start": 3.1,
+          "end": 3.6
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 2",
+      "start": 3.7,
+      "end": 4.9,
+      "text": "Thanks for having me, Mel. Happy to be here.",
+      "words": [
+        {
+          "text": "Thanks",
+          "start": 3.7,
+          "end": 3.8
+        },
+        {
+          "text": "for",
+          "start": 3.8,
+          "end": 3.8
+        },
+        {
+          "text": "having",
+          "start": 3.8,
+          "end": 3.9
+        },
+        {
+          "text": "me,",
+          "start": 3.9,
+          "end": 4.0
+        },
+        {
+          "text": "Mel.",
+          "start": 4.0,
+          "end": 4.3
+        },
+        {
+          "text": "Happy",
+          "start": 4.4,
+          "end": 4.5
+        },
+        {
+          "text": "to",
+          "start": 4.5,
+          "end": 4.6
+        },
+        {
+          "text": "be",
+          "start": 4.6,
+          "end": 4.7
+        },
+        {
+          "text": "here.",
+          "start": 4.7,
+          "end": 4.9
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 1",
+      "start": 5.0,
+      "end": 49.3,
+      "text": "I am so glad you're here. Thank you for jumping on a plane. I'm a huge fan. I got to give a shout out to my husband Christopher Robbins because he was the one who first introduced me to your work. The Psychology of Money changed my life. I am so excited for your new blockbuster, The Art of Spending Money. And we're going to get into all the takeaways from your mega bestsellers, but I wanted to start by asking you Morgan, if you could speak directly to the person who is here spending time together with us right now and share with them what could be different about their life or the life of somebody that they care about that they share this episode with. If they take everything to heart that you're about to share with us and teach us today and apply it to their life.",
+      "words": [
+        {
+          "text": "I",
+          "start": 5.0,
+          "end": 5.2
+        },
+        {
+          "text": "am",
+          "start": 5.2,
+          "end": 5.3
+        },
+        {
+          "text": "so",
+          "start": 5.3,
+          "end": 5.6
+        },
+        {
+          "text": "glad",
+          "start": 5.6,
+          "end": 5.8
+        },
+        {
+          "text": "you're",
+          "start": 5.8,
+          "end": 5.9
+        },
+        {
+          "text": "here.",
+          "start": 5.9,
+          "end": 6.1
+        },
+        {
+          "text": "Thank",
+          "start": 6.1,
+          "end": 6.4
+        },
+        {
+          "text": "you",
+          "start": 6.4,
+          "end": 6.5
+        },
+        {
+          "text": "for",
+          "start": 6.5,
+          "end": 6.6
+        },
+        {
+          "text": "jumping",
+          "start": 6.6,
+          "end": 6.8
+        },
+        {
+          "text": "on",
+          "start": 6.8,
+          "end": 6.9
+        },
+        {
+          "text": "a",
+          "start": 6.9,
+          "end": 7.0
+        },
+        {
+          "text": "plane.",
+          "start": 7.0,
+          "end": 7.5
+        },
+        {
+          "text": "I'm",
+          "start": 7.5,
+          "end": 7.6
+        },
+        {
+          "text": "a",
+          "start": 7.6,
+          "end": 7.6
+        },
+        {
+          "text": "huge",
+          "start": 7.6,
+          "end": 8.0
+        },
+        {
+          "text": "fan.",
+          "start": 8.0,
+          "end": 8.4
+        },
+        {
+          "text": "I",
+          "start": 8.4,
+          "end": 8.5
+        },
+        {
+          "text": "got",
+          "start": 8.5,
+          "end": 8.6
+        },
+        {
+          "text": "to",
+          "start": 8.6,
+          "end": 8.6
+        },
+        {
+          "text": "give",
+          "start": 8.6,
+          "end": 8.8
+        },
+        {
+          "text": "a",
+          "start": 8.8,
+          "end": 8.8
+        },
+        {
+          "text": "shout",
+          "start": 8.8,
+          "end": 9.2
+        },
+        {
+          "text": "out",
+          "start": 9.2,
+          "end": 9.3
+        },
+        {
+          "text": "to",
+          "start": 9.3,
+          "end": 9.4
+        },
+        {
+          "text": "my",
+          "start": 9.4,
+          "end": 9.5
+        },
+        {
+          "text": "husband",
+          "start": 9.5,
+          "end": 9.8
+        },
+        {
+          "text": "Christopher",
+          "start": 9.8,
+          "end": 10.3
+        },
+        {
+          "text": "Robbins",
+          "start": 10.3,
+          "end": 10.7
+        },
+        {
+          "text": "because",
+          "start": 10.7,
+          "end": 11.3
+        },
+        {
+          "text": "he",
+          "start": 11.4,
+          "end": 11.8
+        },
+        {
+          "text": "was",
+          "start": 11.8,
+          "end": 12.1
+        },
+        {
+          "text": "the",
+          "start": 12.1,
+          "end": 12.2
+        },
+        {
+          "text": "one",
+          "start": 12.2,
+          "end": 12.7
+        },
+        {
+          "text": "who",
+          "start": 12.7,
+          "end": 12.9
+        },
+        {
+          "text": "first",
+          "start": 12.9,
+          "end": 13.3
+        },
+        {
+          "text": "introduced",
+          "start": 13.3,
+          "end": 13.9
+        },
+        {
+          "text": "me",
+          "start": 13.9,
+          "end": 14.3
+        },
+        {
+          "text": "to",
+          "start": 14.4,
+          "end": 14.8
+        },
+        {
+          "text": "your",
+          "start": 14.8,
+          "end": 15.1
+        },
+        {
+          "text": "work.",
+          "start": 15.1,
+          "end": 15.4
+        },
+        {
+          "text": "The",
+          "start": 15.4,
+          "end": 15.5
+        },
+        {
+          "text": "Psychology",
+          "start": 15.5,
+          "end": 16.3
+        },
+        {
+          "text": "of",
+          "start": 16.3,
+          "end": 16.5
+        },
+        {
+          "text": "Money",
+          "start": 16.5,
+          "end": 16.8
+        },
+        {
+          "text": "changed",
+          "start": 16.8,
+          "end": 17.1
+        },
+        {
+          "text": "my",
+          "start": 17.1,
+          "end": 17.2
+        },
+        {
+          "text": "life.",
+          "start": 17.2,
+          "end": 17.9
+        },
+        {
+          "text": "I",
+          "start": 18.2,
+          "end": 18.3
+        },
+        {
+          "text": "am",
+          "start": 18.3,
+          "end": 18.4
+        },
+        {
+          "text": "so",
+          "start": 18.4,
+          "end": 18.8
+        },
+        {
+          "text": "excited",
+          "start": 18.8,
+          "end": 19.4
+        },
+        {
+          "text": "for",
+          "start": 19.4,
+          "end": 19.6
+        },
+        {
+          "text": "your",
+          "start": 19.6,
+          "end": 19.8
+        },
+        {
+          "text": "new",
+          "start": 19.8,
+          "end": 20.3
+        },
+        {
+          "text": "blockbuster,",
+          "start": 20.3,
+          "end": 21.2
+        },
+        {
+          "text": "The",
+          "start": 21.2,
+          "end": 21.5
+        },
+        {
+          "text": "Art",
+          "start": 21.5,
+          "end": 21.8
+        },
+        {
+          "text": "of",
+          "start": 21.8,
+          "end": 21.9
+        },
+        {
+          "text": "Spending",
+          "start": 21.9,
+          "end": 22.4
+        },
+        {
+          "text": "Money.",
+          "start": 22.4,
+          "end": 22.8
+        },
+        {
+          "text": "And",
+          "start": 23.2,
+          "end": 23.6
+        },
+        {
+          "text": "we're",
+          "start": 23.6,
+          "end": 23.7
+        },
+        {
+          "text": "going",
+          "start": 23.7,
+          "end": 23.8
+        },
+        {
+          "text": "to",
+          "start": 23.8,
+          "end": 23.9
+        },
+        {
+          "text": "get",
+          "start": 23.9,
+          "end": 24.0
+        },
+        {
+          "text": "into",
+          "start": 24.0,
+          "end": 24.4
+        },
+        {
+          "text": "all",
+          "start": 24.4,
+          "end": 24.6
+        },
+        {
+          "text": "the",
+          "start": 24.6,
+          "end": 24.7
+        },
+        {
+          "text": "takeaways",
+          "start": 24.7,
+          "end": 25.4
+        },
+        {
+          "text": "from",
+          "start": 25.4,
+          "end": 25.9
+        },
+        {
+          "text": "your",
+          "start": 25.9,
+          "end": 26.4
+        },
+        {
+          "text": "mega",
+          "start": 26.4,
+          "end": 26.8
+        },
+        {
+          "text": "bestsellers,",
+          "start": 26.8,
+          "end": 27.5
+        },
+        {
+          "text": "but",
+          "start": 27.5,
+          "end": 27.6
+        },
+        {
+          "text": "I",
+          "start": 27.6,
+          "end": 27.7
+        },
+        {
+          "text": "wanted",
+          "start": 27.7,
+          "end": 28.0
+        },
+        {
+          "text": "to",
+          "start": 28.0,
+          "end": 28.1
+        },
+        {
+          "text": "start",
+          "start": 28.1,
+          "end": 28.7
+        },
+        {
+          "text": "by",
+          "start": 29.0,
+          "end": 29.1
+        },
+        {
+          "text": "asking",
+          "start": 29.1,
+          "end": 29.6
+        },
+        {
+          "text": "you",
+          "start": 29.6,
+          "end": 29.7
+        },
+        {
+          "text": "Morgan,",
+          "start": 29.7,
+          "end": 30.1
+        },
+        {
+          "text": "if",
+          "start": 30.1,
+          "end": 30.3
+        },
+        {
+          "text": "you",
+          "start": 30.3,
+          "end": 30.4
+        },
+        {
+          "text": "could",
+          "start": 30.4,
+          "end": 30.7
+        },
+        {
+          "text": "speak",
+          "start": 30.7,
+          "end": 31.1
+        },
+        {
+          "text": "directly",
+          "start": 31.1,
+          "end": 31.7
+        },
+        {
+          "text": "to",
+          "start": 31.7,
+          "end": 31.9
+        },
+        {
+          "text": "the",
+          "start": 31.9,
+          "end": 32.0
+        },
+        {
+          "text": "person",
+          "start": 32.0,
+          "end": 32.7
+        },
+        {
+          "text": "who",
+          "start": 32.9,
+          "end": 33.1
+        },
+        {
+          "text": "is",
+          "start": 33.1,
+          "end": 33.3
+        },
+        {
+          "text": "here",
+          "start": 33.3,
+          "end": 33.7
+        },
+        {
+          "text": "spending",
+          "start": 33.7,
+          "end": 34.2
+        },
+        {
+          "text": "time",
+          "start": 34.2,
+          "end": 34.4
+        },
+        {
+          "text": "together",
+          "start": 34.4,
+          "end": 34.8
+        },
+        {
+          "text": "with",
+          "start": 34.8,
+          "end": 34.9
+        },
+        {
+          "text": "us",
+          "start": 34.9,
+          "end": 35.1
+        },
+        {
+          "text": "right",
+          "start": 35.1,
+          "end": 35.3
+        },
+        {
+          "text": "now",
+          "start": 35.3,
+          "end": 35.6
+        },
+        {
+          "text": "and",
+          "start": 36.2,
+          "end": 36.4
+        },
+        {
+          "text": "share",
+          "start": 36.4,
+          "end": 36.6
+        },
+        {
+          "text": "with",
+          "start": 36.6,
+          "end": 36.8
+        },
+        {
+          "text": "them",
+          "start": 36.8,
+          "end": 37.2
+        },
+        {
+          "text": "what",
+          "start": 37.2,
+          "end": 37.9
+        },
+        {
+          "text": "could",
+          "start": 37.9,
+          "end": 38.1
+        },
+        {
+          "text": "be",
+          "start": 38.1,
+          "end": 38.4
+        },
+        {
+          "text": "different",
+          "start": 38.4,
+          "end": 38.9
+        },
+        {
+          "text": "about",
+          "start": 38.9,
+          "end": 39.3
+        },
+        {
+          "text": "their",
+          "start": 39.3,
+          "end": 39.5
+        },
+        {
+          "text": "life",
+          "start": 39.5,
+          "end": 40.1
+        },
+        {
+          "text": "or",
+          "start": 40.2,
+          "end": 40.3
+        },
+        {
+          "text": "the",
+          "start": 40.3,
+          "end": 40.4
+        },
+        {
+          "text": "life",
+          "start": 40.4,
+          "end": 40.9
+        },
+        {
+          "text": "of",
+          "start": 40.9,
+          "end": 41.1
+        },
+        {
+          "text": "somebody",
+          "start": 41.1,
+          "end": 41.5
+        },
+        {
+          "text": "that",
+          "start": 41.5,
+          "end": 41.7
+        },
+        {
+          "text": "they",
+          "start": 41.7,
+          "end": 41.9
+        },
+        {
+          "text": "care",
+          "start": 41.9,
+          "end": 42.1
+        },
+        {
+          "text": "about",
+          "start": 42.1,
+          "end": 42.6
+        },
+        {
+          "text": "that",
+          "start": 42.6,
+          "end": 42.8
+        },
+        {
+          "text": "they",
+          "start": 42.8,
+          "end": 42.9
+        },
+        {
+          "text": "share",
+          "start": 42.9,
+          "end": 43.1
+        },
+        {
+          "text": "this",
+          "start": 43.1,
+          "end": 43.3
+        },
+        {
+          "text": "episode",
+          "start": 43.3,
+          "end": 43.8
+        },
+        {
+          "text": "with.",
+          "start": 43.8,
+          "end": 44.1
+        },
+        {
+          "text": "If",
+          "start": 44.5,
+          "end": 44.6
+        },
+        {
+          "text": "they",
+          "start": 44.6,
+          "end": 44.7
+        },
+        {
+          "text": "take",
+          "start": 44.7,
+          "end": 44.9
+        },
+        {
+          "text": "everything",
+          "start": 44.9,
+          "end": 45.7
+        },
+        {
+          "text": "to",
+          "start": 45.8,
+          "end": 45.9
+        },
+        {
+          "text": "heart",
+          "start": 45.9,
+          "end": 46.1
+        },
+        {
+          "text": "that",
+          "start": 46.1,
+          "end": 46.2
+        },
+        {
+          "text": "you're",
+          "start": 46.2,
+          "end": 46.3
+        },
+        {
+          "text": "about",
+          "start": 46.3,
+          "end": 46.6
+        },
+        {
+          "text": "to",
+          "start": 46.6,
+          "end": 46.7
+        },
+        {
+          "text": "share",
+          "start": 46.7,
+          "end": 46.9
+        },
+        {
+          "text": "with",
+          "start": 46.9,
+          "end": 47.0
+        },
+        {
+          "text": "us",
+          "start": 47.0,
+          "end": 47.2
+        },
+        {
+          "text": "and",
+          "start": 47.2,
+          "end": 47.3
+        },
+        {
+          "text": "teach",
+          "start": 47.3,
+          "end": 47.5
+        },
+        {
+          "text": "us",
+          "start": 47.5,
+          "end": 47.7
+        },
+        {
+          "text": "today",
+          "start": 47.7,
+          "end": 48.2
+        },
+        {
+          "text": "and",
+          "start": 48.4,
+          "end": 48.5
+        },
+        {
+          "text": "apply",
+          "start": 48.5,
+          "end": 48.7
+        },
+        {
+          "text": "it",
+          "start": 48.7,
+          "end": 48.8
+        },
+        {
+          "text": "to",
+          "start": 48.8,
+          "end": 48.9
+        },
+        {
+          "text": "their",
+          "start": 48.9,
+          "end": 49.1
+        },
+        {
+          "text": "life.",
+          "start": 49.1,
+          "end": 49.3
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 2",
+      "start": 50.2,
+      "end": 81.4,
+      "text": "I think it would be that your ability to feel wealthy, to feel rich, to be financially independent is absolutely in your control. It doesn't matter who you are, where you're from, how much money you make, what your job is, you can do it. And we I think we've told ourselves for generations that in order to become rich, you have to have the right educational background, you have to have the right career, you have to come from the right family. And I don't think it's it's true. It's not about how smart you are, it's about how you think about money. It's about how you behave. And behavior is in everybody's control.",
+      "words": [
+        {
+          "text": "I",
+          "start": 50.2,
+          "end": 50.3
+        },
+        {
+          "text": "think",
+          "start": 50.3,
+          "end": 50.4
+        },
+        {
+          "text": "it",
+          "start": 50.4,
+          "end": 50.4
+        },
+        {
+          "text": "would",
+          "start": 50.4,
+          "end": 50.5
+        },
+        {
+          "text": "be",
+          "start": 50.5,
+          "end": 50.9
+        },
+        {
+          "text": "that",
+          "start": 50.9,
+          "end": 51.2
+        },
+        {
+          "text": "your",
+          "start": 51.2,
+          "end": 51.4
+        },
+        {
+          "text": "ability",
+          "start": 51.4,
+          "end": 52.1
+        },
+        {
+          "text": "to",
+          "start": 52.7,
+          "end": 52.8
+        },
+        {
+          "text": "feel",
+          "start": 52.8,
+          "end": 53.2
+        },
+        {
+          "text": "wealthy,",
+          "start": 53.2,
+          "end": 53.7
+        },
+        {
+          "text": "to",
+          "start": 54.1,
+          "end": 54.2
+        },
+        {
+          "text": "feel",
+          "start": 54.2,
+          "end": 54.4
+        },
+        {
+          "text": "rich,",
+          "start": 54.4,
+          "end": 55.0
+        },
+        {
+          "text": "to",
+          "start": 55.3,
+          "end": 55.4
+        },
+        {
+          "text": "be",
+          "start": 55.4,
+          "end": 55.6
+        },
+        {
+          "text": "financially",
+          "start": 55.6,
+          "end": 56.0
+        },
+        {
+          "text": "independent",
+          "start": 56.0,
+          "end": 56.5
+        },
+        {
+          "text": "is",
+          "start": 56.5,
+          "end": 56.8
+        },
+        {
+          "text": "absolutely",
+          "start": 56.8,
+          "end": 57.3
+        },
+        {
+          "text": "in",
+          "start": 57.3,
+          "end": 57.4
+        },
+        {
+          "text": "your",
+          "start": 57.4,
+          "end": 57.6
+        },
+        {
+          "text": "control.",
+          "start": 57.6,
+          "end": 58.0
+        },
+        {
+          "text": "It",
+          "start": 58.4,
+          "end": 58.4
+        },
+        {
+          "text": "doesn't",
+          "start": 58.4,
+          "end": 58.6
+        },
+        {
+          "text": "matter",
+          "start": 58.6,
+          "end": 59.1
+        },
+        {
+          "text": "who",
+          "start": 59.2,
+          "end": 59.3
+        },
+        {
+          "text": "you",
+          "start": 59.3,
+          "end": 59.5
+        },
+        {
+          "text": "are,",
+          "start": 59.5,
+          "end": 59.9
+        },
+        {
+          "text": "where",
+          "start": 60.0,
+          "end": 60.2
+        },
+        {
+          "text": "you're",
+          "start": 60.2,
+          "end": 60.4
+        },
+        {
+          "text": "from,",
+          "start": 60.4,
+          "end": 60.8
+        },
+        {
+          "text": "how",
+          "start": 60.9,
+          "end": 61.0
+        },
+        {
+          "text": "much",
+          "start": 61.0,
+          "end": 61.2
+        },
+        {
+          "text": "money",
+          "start": 61.2,
+          "end": 61.4
+        },
+        {
+          "text": "you",
+          "start": 61.4,
+          "end": 61.5
+        },
+        {
+          "text": "make,",
+          "start": 61.5,
+          "end": 61.9
+        },
+        {
+          "text": "what",
+          "start": 61.9,
+          "end": 62.2
+        },
+        {
+          "text": "your",
+          "start": 62.2,
+          "end": 62.4
+        },
+        {
+          "text": "job",
+          "start": 62.4,
+          "end": 62.7
+        },
+        {
+          "text": "is,",
+          "start": 62.7,
+          "end": 63.1
+        },
+        {
+          "text": "you",
+          "start": 63.4,
+          "end": 63.7
+        },
+        {
+          "text": "can",
+          "start": 63.7,
+          "end": 63.9
+        },
+        {
+          "text": "do",
+          "start": 63.9,
+          "end": 64.1
+        },
+        {
+          "text": "it.",
+          "start": 64.1,
+          "end": 64.4
+        },
+        {
+          "text": "And",
+          "start": 64.6,
+          "end": 64.8
+        },
+        {
+          "text": "we",
+          "start": 64.8,
+          "end": 65.1
+        },
+        {
+          "text": "I",
+          "start": 65.1,
+          "end": 65.2
+        },
+        {
+          "text": "think",
+          "start": 65.2,
+          "end": 65.3
+        },
+        {
+          "text": "we've",
+          "start": 65.3,
+          "end": 65.5
+        },
+        {
+          "text": "told",
+          "start": 65.5,
+          "end": 65.8
+        },
+        {
+          "text": "ourselves",
+          "start": 65.8,
+          "end": 66.3
+        },
+        {
+          "text": "for",
+          "start": 66.3,
+          "end": 66.5
+        },
+        {
+          "text": "generations",
+          "start": 66.5,
+          "end": 67.4
+        },
+        {
+          "text": "that",
+          "start": 67.5,
+          "end": 67.6
+        },
+        {
+          "text": "in",
+          "start": 67.6,
+          "end": 67.8
+        },
+        {
+          "text": "order",
+          "start": 67.8,
+          "end": 68.0
+        },
+        {
+          "text": "to",
+          "start": 68.0,
+          "end": 68.1
+        },
+        {
+          "text": "become",
+          "start": 68.1,
+          "end": 68.4
+        },
+        {
+          "text": "rich,",
+          "start": 68.4,
+          "end": 68.7
+        },
+        {
+          "text": "you",
+          "start": 68.7,
+          "end": 68.8
+        },
+        {
+          "text": "have",
+          "start": 68.8,
+          "end": 69.0
+        },
+        {
+          "text": "to",
+          "start": 69.0,
+          "end": 69.1
+        },
+        {
+          "text": "have",
+          "start": 69.1,
+          "end": 69.3
+        },
+        {
+          "text": "the",
+          "start": 69.3,
+          "end": 69.4
+        },
+        {
+          "text": "right",
+          "start": 69.4,
+          "end": 69.6
+        },
+        {
+          "text": "educational",
+          "start": 69.6,
+          "end": 70.1
+        },
+        {
+          "text": "background,",
+          "start": 70.1,
+          "end": 70.6
+        },
+        {
+          "text": "you",
+          "start": 70.6,
+          "end": 70.7
+        },
+        {
+          "text": "have",
+          "start": 70.7,
+          "end": 70.8
+        },
+        {
+          "text": "to",
+          "start": 70.8,
+          "end": 70.8
+        },
+        {
+          "text": "have",
+          "start": 70.8,
+          "end": 71.0
+        },
+        {
+          "text": "the",
+          "start": 71.0,
+          "end": 71.1
+        },
+        {
+          "text": "right",
+          "start": 71.1,
+          "end": 71.3
+        },
+        {
+          "text": "career,",
+          "start": 71.3,
+          "end": 71.8
+        },
+        {
+          "text": "you",
+          "start": 71.8,
+          "end": 71.9
+        },
+        {
+          "text": "have",
+          "start": 71.9,
+          "end": 72.0
+        },
+        {
+          "text": "to",
+          "start": 72.0,
+          "end": 72.1
+        },
+        {
+          "text": "come",
+          "start": 72.1,
+          "end": 72.3
+        },
+        {
+          "text": "from",
+          "start": 72.3,
+          "end": 72.4
+        },
+        {
+          "text": "the",
+          "start": 72.4,
+          "end": 72.5
+        },
+        {
+          "text": "right",
+          "start": 72.5,
+          "end": 72.8
+        },
+        {
+          "text": "family.",
+          "start": 72.8,
+          "end": 73.3
+        },
+        {
+          "text": "And",
+          "start": 73.6,
+          "end": 73.7
+        },
+        {
+          "text": "I",
+          "start": 73.7,
+          "end": 73.8
+        },
+        {
+          "text": "don't",
+          "start": 73.8,
+          "end": 73.9
+        },
+        {
+          "text": "think",
+          "start": 73.9,
+          "end": 74.1
+        },
+        {
+          "text": "it's",
+          "start": 74.1,
+          "end": 74.4
+        },
+        {
+          "text": "it's",
+          "start": 74.4,
+          "end": 74.6
+        },
+        {
+          "text": "true.",
+          "start": 74.6,
+          "end": 75.0
+        },
+        {
+          "text": "It's",
+          "start": 75.1,
+          "end": 75.3
+        },
+        {
+          "text": "not",
+          "start": 75.3,
+          "end": 75.4
+        },
+        {
+          "text": "about",
+          "start": 75.4,
+          "end": 75.6
+        },
+        {
+          "text": "how",
+          "start": 75.6,
+          "end": 75.8
+        },
+        {
+          "text": "smart",
+          "start": 75.8,
+          "end": 76.1
+        },
+        {
+          "text": "you",
+          "start": 76.1,
+          "end": 76.2
+        },
+        {
+          "text": "are,",
+          "start": 76.2,
+          "end": 76.6
+        },
+        {
+          "text": "it's",
+          "start": 76.9,
+          "end": 77.1
+        },
+        {
+          "text": "about",
+          "start": 77.1,
+          "end": 77.3
+        },
+        {
+          "text": "how",
+          "start": 77.3,
+          "end": 77.4
+        },
+        {
+          "text": "you",
+          "start": 77.4,
+          "end": 77.6
+        },
+        {
+          "text": "think",
+          "start": 77.6,
+          "end": 77.7
+        },
+        {
+          "text": "about",
+          "start": 77.7,
+          "end": 78.0
+        },
+        {
+          "text": "money.",
+          "start": 78.0,
+          "end": 78.2
+        },
+        {
+          "text": "It's",
+          "start": 78.2,
+          "end": 78.2
+        },
+        {
+          "text": "about",
+          "start": 78.2,
+          "end": 78.4
+        },
+        {
+          "text": "how",
+          "start": 78.4,
+          "end": 78.5
+        },
+        {
+          "text": "you",
+          "start": 78.5,
+          "end": 78.7
+        },
+        {
+          "text": "behave.",
+          "start": 78.7,
+          "end": 79.4
+        },
+        {
+          "text": "And",
+          "start": 79.4,
+          "end": 79.5
+        },
+        {
+          "text": "behavior",
+          "start": 79.5,
+          "end": 80.0
+        },
+        {
+          "text": "is",
+          "start": 80.0,
+          "end": 80.1
+        },
+        {
+          "text": "in",
+          "start": 80.1,
+          "end": 80.3
+        },
+        {
+          "text": "everybody's",
+          "start": 80.3,
+          "end": 80.9
+        },
+        {
+          "text": "control.",
+          "start": 80.9,
+          "end": 81.4
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 1",
+      "start": 81.5,
+      "end": 109.4,
+      "text": "I don't know why I believe you, but I do. Like I no matter how in debt you are, no matter how old you are, you can learn. And that's kind of one of the big lessons I'm going to talk about that I've distilled from your work that has changed my life and my relationship with money and the way I think about money, the way I save it, the way I spend it. It doesn't matter the starting point at all. Lesson number one that I've learned from you is you can get good with money. You believe that.",
+      "words": [
+        {
+          "text": "I",
+          "start": 81.5,
+          "end": 81.6
+        },
+        {
+          "text": "don't",
+          "start": 81.6,
+          "end": 81.8
+        },
+        {
+          "text": "know",
+          "start": 81.8,
+          "end": 81.9
+        },
+        {
+          "text": "why",
+          "start": 81.9,
+          "end": 82.1
+        },
+        {
+          "text": "I",
+          "start": 82.1,
+          "end": 82.1
+        },
+        {
+          "text": "believe",
+          "start": 82.1,
+          "end": 82.5
+        },
+        {
+          "text": "you,",
+          "start": 82.5,
+          "end": 82.6
+        },
+        {
+          "text": "but",
+          "start": 82.6,
+          "end": 82.8
+        },
+        {
+          "text": "I",
+          "start": 82.8,
+          "end": 82.9
+        },
+        {
+          "text": "do.",
+          "start": 82.9,
+          "end": 83.3
+        },
+        {
+          "text": "Like",
+          "start": 83.3,
+          "end": 83.5
+        },
+        {
+          "text": "I",
+          "start": 83.5,
+          "end": 83.6
+        },
+        {
+          "text": "no",
+          "start": 86.2,
+          "end": 86.4
+        },
+        {
+          "text": "matter",
+          "start": 86.4,
+          "end": 86.7
+        },
+        {
+          "text": "how",
+          "start": 86.7,
+          "end": 87.0
+        },
+        {
+          "text": "in",
+          "start": 87.0,
+          "end": 87.1
+        },
+        {
+          "text": "debt",
+          "start": 87.1,
+          "end": 87.3
+        },
+        {
+          "text": "you",
+          "start": 87.3,
+          "end": 87.4
+        },
+        {
+          "text": "are,",
+          "start": 87.4,
+          "end": 87.5
+        },
+        {
+          "text": "no",
+          "start": 88.2,
+          "end": 88.3
+        },
+        {
+          "text": "matter",
+          "start": 88.3,
+          "end": 88.5
+        },
+        {
+          "text": "how",
+          "start": 88.5,
+          "end": 88.7
+        },
+        {
+          "text": "old",
+          "start": 88.7,
+          "end": 88.8
+        },
+        {
+          "text": "you",
+          "start": 88.8,
+          "end": 88.9
+        },
+        {
+          "text": "are,",
+          "start": 88.9,
+          "end": 89.0
+        },
+        {
+          "text": "you",
+          "start": 89.0,
+          "end": 89.2
+        },
+        {
+          "text": "can",
+          "start": 89.2,
+          "end": 89.5
+        },
+        {
+          "text": "learn.",
+          "start": 89.5,
+          "end": 89.9
+        },
+        {
+          "text": "And",
+          "start": 89.9,
+          "end": 90.0
+        },
+        {
+          "text": "that's",
+          "start": 90.0,
+          "end": 90.3
+        },
+        {
+          "text": "kind",
+          "start": 90.3,
+          "end": 90.4
+        },
+        {
+          "text": "of",
+          "start": 90.4,
+          "end": 90.5
+        },
+        {
+          "text": "one",
+          "start": 90.5,
+          "end": 90.6
+        },
+        {
+          "text": "of",
+          "start": 90.6,
+          "end": 90.7
+        },
+        {
+          "text": "the",
+          "start": 90.7,
+          "end": 90.8
+        },
+        {
+          "text": "big",
+          "start": 90.8,
+          "end": 91.1
+        },
+        {
+          "text": "lessons",
+          "start": 91.1,
+          "end": 91.6
+        },
+        {
+          "text": "I'm",
+          "start": 91.6,
+          "end": 91.7
+        },
+        {
+          "text": "going",
+          "start": 91.7,
+          "end": 91.8
+        },
+        {
+          "text": "to",
+          "start": 91.8,
+          "end": 91.9
+        },
+        {
+          "text": "talk",
+          "start": 91.9,
+          "end": 92.2
+        },
+        {
+          "text": "about",
+          "start": 92.2,
+          "end": 92.3
+        },
+        {
+          "text": "that",
+          "start": 92.3,
+          "end": 92.4
+        },
+        {
+          "text": "I've",
+          "start": 92.4,
+          "end": 92.6
+        },
+        {
+          "text": "distilled",
+          "start": 92.6,
+          "end": 93.2
+        },
+        {
+          "text": "from",
+          "start": 93.2,
+          "end": 93.4
+        },
+        {
+          "text": "your",
+          "start": 93.4,
+          "end": 93.8
+        },
+        {
+          "text": "work",
+          "start": 93.8,
+          "end": 94.4
+        },
+        {
+          "text": "that",
+          "start": 94.6,
+          "end": 95.0
+        },
+        {
+          "text": "has",
+          "start": 95.0,
+          "end": 95.4
+        },
+        {
+          "text": "changed",
+          "start": 95.4,
+          "end": 95.9
+        },
+        {
+          "text": "my",
+          "start": 95.9,
+          "end": 96.1
+        },
+        {
+          "text": "life",
+          "start": 96.1,
+          "end": 96.5
+        },
+        {
+          "text": "and",
+          "start": 96.5,
+          "end": 96.6
+        },
+        {
+          "text": "my",
+          "start": 96.6,
+          "end": 96.8
+        },
+        {
+          "text": "relationship",
+          "start": 96.8,
+          "end": 97.5
+        },
+        {
+          "text": "with",
+          "start": 97.5,
+          "end": 97.7
+        },
+        {
+          "text": "money",
+          "start": 97.7,
+          "end": 97.9
+        },
+        {
+          "text": "and",
+          "start": 97.9,
+          "end": 98.0
+        },
+        {
+          "text": "the",
+          "start": 98.0,
+          "end": 98.1
+        },
+        {
+          "text": "way",
+          "start": 98.1,
+          "end": 98.2
+        },
+        {
+          "text": "I",
+          "start": 98.2,
+          "end": 98.3
+        },
+        {
+          "text": "think",
+          "start": 98.3,
+          "end": 98.5
+        },
+        {
+          "text": "about",
+          "start": 98.5,
+          "end": 98.8
+        },
+        {
+          "text": "money,",
+          "start": 98.8,
+          "end": 99.2
+        },
+        {
+          "text": "the",
+          "start": 99.2,
+          "end": 99.3
+        },
+        {
+          "text": "way",
+          "start": 99.3,
+          "end": 99.5
+        },
+        {
+          "text": "I",
+          "start": 99.5,
+          "end": 99.6
+        },
+        {
+          "text": "save",
+          "start": 99.6,
+          "end": 99.9
+        },
+        {
+          "text": "it,",
+          "start": 99.9,
+          "end": 100.0
+        },
+        {
+          "text": "the",
+          "start": 100.0,
+          "end": 100.0
+        },
+        {
+          "text": "way",
+          "start": 100.0,
+          "end": 100.2
+        },
+        {
+          "text": "I",
+          "start": 100.2,
+          "end": 100.3
+        },
+        {
+          "text": "spend",
+          "start": 100.3,
+          "end": 100.7
+        },
+        {
+          "text": "it.",
+          "start": 100.7,
+          "end": 100.8
+        },
+        {
+          "text": "It",
+          "start": 102.1,
+          "end": 102.2
+        },
+        {
+          "text": "doesn't",
+          "start": 102.2,
+          "end": 102.6
+        },
+        {
+          "text": "matter",
+          "start": 102.6,
+          "end": 103.1
+        },
+        {
+          "text": "the",
+          "start": 103.1,
+          "end": 103.2
+        },
+        {
+          "text": "starting",
+          "start": 103.2,
+          "end": 103.6
+        },
+        {
+          "text": "point",
+          "start": 103.6,
+          "end": 104.0
+        },
+        {
+          "text": "at",
+          "start": 104.7,
+          "end": 104.8
+        },
+        {
+          "text": "all.",
+          "start": 104.8,
+          "end": 105.1
+        },
+        {
+          "text": "Lesson",
+          "start": 105.2,
+          "end": 105.6
+        },
+        {
+          "text": "number",
+          "start": 105.6,
+          "end": 105.8
+        },
+        {
+          "text": "one",
+          "start": 105.8,
+          "end": 106.1
+        },
+        {
+          "text": "that",
+          "start": 106.1,
+          "end": 106.3
+        },
+        {
+          "text": "I've",
+          "start": 106.3,
+          "end": 106.4
+        },
+        {
+          "text": "learned",
+          "start": 106.4,
+          "end": 106.7
+        },
+        {
+          "text": "from",
+          "start": 106.7,
+          "end": 106.8
+        },
+        {
+          "text": "you",
+          "start": 106.8,
+          "end": 107.0
+        },
+        {
+          "text": "is",
+          "start": 107.0,
+          "end": 107.2
+        },
+        {
+          "text": "you",
+          "start": 107.2,
+          "end": 107.5
+        },
+        {
+          "text": "can",
+          "start": 107.5,
+          "end": 108.0
+        },
+        {
+          "text": "get",
+          "start": 108.0,
+          "end": 108.2
+        },
+        {
+          "text": "good",
+          "start": 108.2,
+          "end": 108.4
+        },
+        {
+          "text": "with",
+          "start": 108.4,
+          "end": 108.5
+        },
+        {
+          "text": "money.",
+          "start": 108.5,
+          "end": 108.8
+        },
+        {
+          "text": "You",
+          "start": 108.8,
+          "end": 108.9
+        },
+        {
+          "text": "believe",
+          "start": 108.9,
+          "end": 109.2
+        },
+        {
+          "text": "that.",
+          "start": 109.2,
+          "end": 109.4
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 2",
+      "start": 109.7,
+      "end": 182.9,
+      "text": "I've seen it time and time again and there are so many examples of it. Let me give you this example here. An ordinary person doesn't have a good education. Maybe they didn't even graduate high school, let's say, but they have good financial behavior. They can think long-term. They can keep their expectations in check. They're patient. They have those behavioral qualities. That person can do very well. But the person who went to Harvard and got an MBA and went to work on Wall Street has the best education, the best connections, the best experience. That person can easily go broke and they do. Not uncommon for that to happen. And that is not true in other fields. It is impossible to think of an ordinary person who didn't go to high school, didn't go to college performing open heart surgery better than a Harvard trained doctor. That's impossible. That will never happen. But it does happen with money because it's not about what you know. You don't need to know the secret formulas. You don't need to have secret connections. If you just get your behavior right and your thinking right, you can do well. Patience, keeping your expectations in check, not comparing yourself to other people, using money as a tool to live a better life instead of a yardstick to measure yourself against others by It's very simple stuff and it's all in your head. And it's I think it's it's 99% of what people need to know to do well with money is in your control.",
+      "words": [
+        {
+          "text": "I've",
+          "start": 109.7,
+          "end": 109.8
+        },
+        {
+          "text": "seen",
+          "start": 109.8,
+          "end": 110.1
+        },
+        {
+          "text": "it",
+          "start": 110.1,
+          "end": 110.4
+        },
+        {
+          "text": "time",
+          "start": 110.4,
+          "end": 110.7
+        },
+        {
+          "text": "and",
+          "start": 110.7,
+          "end": 110.8
+        },
+        {
+          "text": "time",
+          "start": 110.8,
+          "end": 111.1
+        },
+        {
+          "text": "again",
+          "start": 111.1,
+          "end": 111.6
+        },
+        {
+          "text": "and",
+          "start": 111.7,
+          "end": 111.8
+        },
+        {
+          "text": "there",
+          "start": 111.8,
+          "end": 111.9
+        },
+        {
+          "text": "are",
+          "start": 111.9,
+          "end": 112.0
+        },
+        {
+          "text": "so",
+          "start": 112.0,
+          "end": 112.2
+        },
+        {
+          "text": "many",
+          "start": 112.2,
+          "end": 112.4
+        },
+        {
+          "text": "examples",
+          "start": 112.4,
+          "end": 112.8
+        },
+        {
+          "text": "of",
+          "start": 112.8,
+          "end": 112.9
+        },
+        {
+          "text": "it.",
+          "start": 112.9,
+          "end": 113.1
+        },
+        {
+          "text": "Let",
+          "start": 113.1,
+          "end": 113.1
+        },
+        {
+          "text": "me",
+          "start": 113.1,
+          "end": 113.2
+        },
+        {
+          "text": "give",
+          "start": 113.2,
+          "end": 113.3
+        },
+        {
+          "text": "you",
+          "start": 113.3,
+          "end": 113.4
+        },
+        {
+          "text": "this",
+          "start": 113.4,
+          "end": 113.6
+        },
+        {
+          "text": "example",
+          "start": 113.6,
+          "end": 114.0
+        },
+        {
+          "text": "here.",
+          "start": 114.0,
+          "end": 114.2
+        },
+        {
+          "text": "An",
+          "start": 114.9,
+          "end": 115.0
+        },
+        {
+          "text": "ordinary",
+          "start": 115.0,
+          "end": 115.4
+        },
+        {
+          "text": "person",
+          "start": 115.4,
+          "end": 115.8
+        },
+        {
+          "text": "doesn't",
+          "start": 116.1,
+          "end": 116.4
+        },
+        {
+          "text": "have",
+          "start": 116.4,
+          "end": 116.5
+        },
+        {
+          "text": "a",
+          "start": 116.5,
+          "end": 116.6
+        },
+        {
+          "text": "good",
+          "start": 116.6,
+          "end": 116.8
+        },
+        {
+          "text": "education.",
+          "start": 116.8,
+          "end": 117.3
+        },
+        {
+          "text": "Maybe",
+          "start": 117.3,
+          "end": 117.5
+        },
+        {
+          "text": "they",
+          "start": 117.5,
+          "end": 117.6
+        },
+        {
+          "text": "didn't",
+          "start": 117.6,
+          "end": 117.8
+        },
+        {
+          "text": "even",
+          "start": 117.8,
+          "end": 117.9
+        },
+        {
+          "text": "graduate",
+          "start": 117.9,
+          "end": 118.3
+        },
+        {
+          "text": "high",
+          "start": 118.3,
+          "end": 118.4
+        },
+        {
+          "text": "school,",
+          "start": 118.4,
+          "end": 118.7
+        },
+        {
+          "text": "let's",
+          "start": 118.7,
+          "end": 118.9
+        },
+        {
+          "text": "say,",
+          "start": 118.9,
+          "end": 119.2
+        },
+        {
+          "text": "but",
+          "start": 119.5,
+          "end": 119.6
+        },
+        {
+          "text": "they",
+          "start": 119.6,
+          "end": 119.7
+        },
+        {
+          "text": "have",
+          "start": 119.7,
+          "end": 119.9
+        },
+        {
+          "text": "good",
+          "start": 119.9,
+          "end": 120.1
+        },
+        {
+          "text": "financial",
+          "start": 120.1,
+          "end": 120.4
+        },
+        {
+          "text": "behavior.",
+          "start": 120.4,
+          "end": 120.9
+        },
+        {
+          "text": "They",
+          "start": 121.0,
+          "end": 121.1
+        },
+        {
+          "text": "can",
+          "start": 121.1,
+          "end": 121.2
+        },
+        {
+          "text": "think",
+          "start": 121.2,
+          "end": 121.5
+        },
+        {
+          "text": "long-term.",
+          "start": 121.5,
+          "end": 122.3
+        },
+        {
+          "text": "They",
+          "start": 122.4,
+          "end": 122.5
+        },
+        {
+          "text": "can",
+          "start": 122.5,
+          "end": 122.6
+        },
+        {
+          "text": "keep",
+          "start": 122.6,
+          "end": 122.8
+        },
+        {
+          "text": "their",
+          "start": 122.8,
+          "end": 123.0
+        },
+        {
+          "text": "expectations",
+          "start": 123.0,
+          "end": 123.7
+        },
+        {
+          "text": "in",
+          "start": 123.7,
+          "end": 123.8
+        },
+        {
+          "text": "check.",
+          "start": 123.8,
+          "end": 124.3
+        },
+        {
+          "text": "They're",
+          "start": 124.4,
+          "end": 124.6
+        },
+        {
+          "text": "patient.",
+          "start": 124.6,
+          "end": 125.3
+        },
+        {
+          "text": "They",
+          "start": 125.4,
+          "end": 125.5
+        },
+        {
+          "text": "have",
+          "start": 125.5,
+          "end": 125.7
+        },
+        {
+          "text": "those",
+          "start": 125.7,
+          "end": 126.0
+        },
+        {
+          "text": "behavioral",
+          "start": 126.0,
+          "end": 126.5
+        },
+        {
+          "text": "qualities.",
+          "start": 126.5,
+          "end": 127.3
+        },
+        {
+          "text": "That",
+          "start": 127.4,
+          "end": 127.6
+        },
+        {
+          "text": "person",
+          "start": 127.6,
+          "end": 128.0
+        },
+        {
+          "text": "can",
+          "start": 128.0,
+          "end": 128.2
+        },
+        {
+          "text": "do",
+          "start": 128.2,
+          "end": 128.4
+        },
+        {
+          "text": "very",
+          "start": 128.4,
+          "end": 128.7
+        },
+        {
+          "text": "well.",
+          "start": 128.7,
+          "end": 129.1
+        },
+        {
+          "text": "But",
+          "start": 129.4,
+          "end": 129.6
+        },
+        {
+          "text": "the",
+          "start": 129.6,
+          "end": 129.6
+        },
+        {
+          "text": "person",
+          "start": 129.6,
+          "end": 130.0
+        },
+        {
+          "text": "who",
+          "start": 130.0,
+          "end": 130.4
+        },
+        {
+          "text": "went",
+          "start": 130.4,
+          "end": 130.8
+        },
+        {
+          "text": "to",
+          "start": 130.8,
+          "end": 131.0
+        },
+        {
+          "text": "Harvard",
+          "start": 131.0,
+          "end": 131.4
+        },
+        {
+          "text": "and",
+          "start": 131.4,
+          "end": 131.5
+        },
+        {
+          "text": "got",
+          "start": 131.5,
+          "end": 131.6
+        },
+        {
+          "text": "an",
+          "start": 131.6,
+          "end": 131.8
+        },
+        {
+          "text": "MBA",
+          "start": 131.8,
+          "end": 132.2
+        },
+        {
+          "text": "and",
+          "start": 132.2,
+          "end": 132.3
+        },
+        {
+          "text": "went",
+          "start": 132.3,
+          "end": 132.4
+        },
+        {
+          "text": "to",
+          "start": 132.4,
+          "end": 132.4
+        },
+        {
+          "text": "work",
+          "start": 132.4,
+          "end": 132.6
+        },
+        {
+          "text": "on",
+          "start": 132.6,
+          "end": 132.8
+        },
+        {
+          "text": "Wall",
+          "start": 132.8,
+          "end": 132.9
+        },
+        {
+          "text": "Street",
+          "start": 132.9,
+          "end": 133.1
+        },
+        {
+          "text": "has",
+          "start": 133.1,
+          "end": 133.3
+        },
+        {
+          "text": "the",
+          "start": 133.3,
+          "end": 133.4
+        },
+        {
+          "text": "best",
+          "start": 133.4,
+          "end": 133.7
+        },
+        {
+          "text": "education,",
+          "start": 133.7,
+          "end": 134.3
+        },
+        {
+          "text": "the",
+          "start": 134.3,
+          "end": 134.4
+        },
+        {
+          "text": "best",
+          "start": 134.4,
+          "end": 134.7
+        },
+        {
+          "text": "connections,",
+          "start": 134.7,
+          "end": 135.2
+        },
+        {
+          "text": "the",
+          "start": 135.2,
+          "end": 135.3
+        },
+        {
+          "text": "best",
+          "start": 135.3,
+          "end": 135.6
+        },
+        {
+          "text": "experience.",
+          "start": 135.6,
+          "end": 136.2
+        },
+        {
+          "text": "That",
+          "start": 136.3,
+          "end": 136.5
+        },
+        {
+          "text": "person",
+          "start": 136.5,
+          "end": 136.8
+        },
+        {
+          "text": "can",
+          "start": 136.8,
+          "end": 137.0
+        },
+        {
+          "text": "easily",
+          "start": 137.0,
+          "end": 137.3
+        },
+        {
+          "text": "go",
+          "start": 137.3,
+          "end": 137.5
+        },
+        {
+          "text": "broke",
+          "start": 137.5,
+          "end": 138.0
+        },
+        {
+          "text": "and",
+          "start": 138.1,
+          "end": 138.3
+        },
+        {
+          "text": "they",
+          "start": 138.3,
+          "end": 138.4
+        },
+        {
+          "text": "do.",
+          "start": 138.4,
+          "end": 138.8
+        },
+        {
+          "text": "Not",
+          "start": 139.3,
+          "end": 139.7
+        },
+        {
+          "text": "uncommon",
+          "start": 139.7,
+          "end": 140.2
+        },
+        {
+          "text": "for",
+          "start": 140.2,
+          "end": 140.3
+        },
+        {
+          "text": "that",
+          "start": 140.3,
+          "end": 140.5
+        },
+        {
+          "text": "to",
+          "start": 140.5,
+          "end": 140.6
+        },
+        {
+          "text": "happen.",
+          "start": 140.6,
+          "end": 141.0
+        },
+        {
+          "text": "And",
+          "start": 141.3,
+          "end": 141.5
+        },
+        {
+          "text": "that",
+          "start": 141.5,
+          "end": 141.6
+        },
+        {
+          "text": "is",
+          "start": 141.6,
+          "end": 141.7
+        },
+        {
+          "text": "not",
+          "start": 141.7,
+          "end": 142.0
+        },
+        {
+          "text": "true",
+          "start": 142.0,
+          "end": 142.3
+        },
+        {
+          "text": "in",
+          "start": 142.3,
+          "end": 142.4
+        },
+        {
+          "text": "other",
+          "start": 142.4,
+          "end": 142.6
+        },
+        {
+          "text": "fields.",
+          "start": 142.6,
+          "end": 143.3
+        },
+        {
+          "text": "It",
+          "start": 143.5,
+          "end": 143.6
+        },
+        {
+          "text": "is",
+          "start": 143.6,
+          "end": 143.6
+        },
+        {
+          "text": "impossible",
+          "start": 143.6,
+          "end": 144.3
+        },
+        {
+          "text": "to",
+          "start": 144.3,
+          "end": 144.4
+        },
+        {
+          "text": "think",
+          "start": 144.4,
+          "end": 144.7
+        },
+        {
+          "text": "of",
+          "start": 144.8,
+          "end": 144.8
+        },
+        {
+          "text": "an",
+          "start": 144.8,
+          "end": 145.1
+        },
+        {
+          "text": "ordinary",
+          "start": 145.1,
+          "end": 145.6
+        },
+        {
+          "text": "person",
+          "start": 145.6,
+          "end": 146.1
+        },
+        {
+          "text": "who",
+          "start": 146.4,
+          "end": 146.5
+        },
+        {
+          "text": "didn't",
+          "start": 146.5,
+          "end": 146.7
+        },
+        {
+          "text": "go",
+          "start": 146.7,
+          "end": 146.8
+        },
+        {
+          "text": "to",
+          "start": 146.8,
+          "end": 146.9
+        },
+        {
+          "text": "high",
+          "start": 146.9,
+          "end": 147.1
+        },
+        {
+          "text": "school,",
+          "start": 147.1,
+          "end": 147.4
+        },
+        {
+          "text": "didn't",
+          "start": 147.4,
+          "end": 147.5
+        },
+        {
+          "text": "go",
+          "start": 147.5,
+          "end": 147.6
+        },
+        {
+          "text": "to",
+          "start": 147.6,
+          "end": 147.7
+        },
+        {
+          "text": "college",
+          "start": 147.7,
+          "end": 148.4
+        },
+        {
+          "text": "performing",
+          "start": 148.6,
+          "end": 149.0
+        },
+        {
+          "text": "open",
+          "start": 149.0,
+          "end": 149.3
+        },
+        {
+          "text": "heart",
+          "start": 149.3,
+          "end": 149.5
+        },
+        {
+          "text": "surgery",
+          "start": 149.5,
+          "end": 149.9
+        },
+        {
+          "text": "better",
+          "start": 149.9,
+          "end": 150.2
+        },
+        {
+          "text": "than",
+          "start": 150.2,
+          "end": 150.4
+        },
+        {
+          "text": "a",
+          "start": 150.4,
+          "end": 150.4
+        },
+        {
+          "text": "Harvard",
+          "start": 150.4,
+          "end": 150.7
+        },
+        {
+          "text": "trained",
+          "start": 150.7,
+          "end": 151.0
+        },
+        {
+          "text": "doctor.",
+          "start": 151.0,
+          "end": 151.3
+        },
+        {
+          "text": "That's",
+          "start": 151.3,
+          "end": 151.6
+        },
+        {
+          "text": "impossible.",
+          "start": 151.6,
+          "end": 152.3
+        },
+        {
+          "text": "That",
+          "start": 152.3,
+          "end": 152.4
+        },
+        {
+          "text": "will",
+          "start": 152.4,
+          "end": 152.5
+        },
+        {
+          "text": "never",
+          "start": 152.5,
+          "end": 152.8
+        },
+        {
+          "text": "happen.",
+          "start": 152.8,
+          "end": 153.3
+        },
+        {
+          "text": "But",
+          "start": 153.6,
+          "end": 153.7
+        },
+        {
+          "text": "it",
+          "start": 153.7,
+          "end": 153.8
+        },
+        {
+          "text": "does",
+          "start": 153.8,
+          "end": 154.0
+        },
+        {
+          "text": "happen",
+          "start": 154.0,
+          "end": 154.4
+        },
+        {
+          "text": "with",
+          "start": 154.4,
+          "end": 154.5
+        },
+        {
+          "text": "money",
+          "start": 154.5,
+          "end": 154.9
+        },
+        {
+          "text": "because",
+          "start": 155.2,
+          "end": 155.4
+        },
+        {
+          "text": "it's",
+          "start": 155.4,
+          "end": 155.5
+        },
+        {
+          "text": "not",
+          "start": 155.5,
+          "end": 155.6
+        },
+        {
+          "text": "about",
+          "start": 155.6,
+          "end": 155.9
+        },
+        {
+          "text": "what",
+          "start": 155.9,
+          "end": 156.0
+        },
+        {
+          "text": "you",
+          "start": 156.0,
+          "end": 156.1
+        },
+        {
+          "text": "know.",
+          "start": 156.1,
+          "end": 156.5
+        },
+        {
+          "text": "You",
+          "start": 156.7,
+          "end": 156.8
+        },
+        {
+          "text": "don't",
+          "start": 156.8,
+          "end": 157.1
+        },
+        {
+          "text": "need",
+          "start": 157.1,
+          "end": 157.3
+        },
+        {
+          "text": "to",
+          "start": 157.3,
+          "end": 157.4
+        },
+        {
+          "text": "know",
+          "start": 157.4,
+          "end": 157.6
+        },
+        {
+          "text": "the",
+          "start": 157.6,
+          "end": 157.8
+        },
+        {
+          "text": "secret",
+          "start": 157.8,
+          "end": 158.2
+        },
+        {
+          "text": "formulas.",
+          "start": 158.2,
+          "end": 158.8
+        },
+        {
+          "text": "You",
+          "start": 158.8,
+          "end": 158.9
+        },
+        {
+          "text": "don't",
+          "start": 158.9,
+          "end": 159.1
+        },
+        {
+          "text": "need",
+          "start": 159.1,
+          "end": 159.2
+        },
+        {
+          "text": "to",
+          "start": 159.2,
+          "end": 159.3
+        },
+        {
+          "text": "have",
+          "start": 159.3,
+          "end": 159.5
+        },
+        {
+          "text": "secret",
+          "start": 159.5,
+          "end": 159.9
+        },
+        {
+          "text": "connections.",
+          "start": 159.9,
+          "end": 160.4
+        },
+        {
+          "text": "If",
+          "start": 160.4,
+          "end": 160.5
+        },
+        {
+          "text": "you",
+          "start": 160.5,
+          "end": 160.6
+        },
+        {
+          "text": "just",
+          "start": 160.6,
+          "end": 160.8
+        },
+        {
+          "text": "get",
+          "start": 160.8,
+          "end": 160.9
+        },
+        {
+          "text": "your",
+          "start": 160.9,
+          "end": 161.1
+        },
+        {
+          "text": "behavior",
+          "start": 161.1,
+          "end": 161.7
+        },
+        {
+          "text": "right",
+          "start": 161.7,
+          "end": 162.0
+        },
+        {
+          "text": "and",
+          "start": 162.1,
+          "end": 162.2
+        },
+        {
+          "text": "your",
+          "start": 162.2,
+          "end": 162.3
+        },
+        {
+          "text": "thinking",
+          "start": 162.3,
+          "end": 162.8
+        },
+        {
+          "text": "right,",
+          "start": 162.8,
+          "end": 163.3
+        },
+        {
+          "text": "you",
+          "start": 163.3,
+          "end": 163.5
+        },
+        {
+          "text": "can",
+          "start": 163.5,
+          "end": 163.6
+        },
+        {
+          "text": "do",
+          "start": 163.6,
+          "end": 163.8
+        },
+        {
+          "text": "well.",
+          "start": 163.8,
+          "end": 164.2
+        },
+        {
+          "text": "Patience,",
+          "start": 164.5,
+          "end": 165.1
+        },
+        {
+          "text": "keeping",
+          "start": 165.1,
+          "end": 165.3
+        },
+        {
+          "text": "your",
+          "start": 165.3,
+          "end": 165.4
+        },
+        {
+          "text": "expectations",
+          "start": 165.4,
+          "end": 166.2
+        },
+        {
+          "text": "in",
+          "start": 166.2,
+          "end": 166.4
+        },
+        {
+          "text": "check,",
+          "start": 166.4,
+          "end": 166.7
+        },
+        {
+          "text": "not",
+          "start": 166.7,
+          "end": 166.9
+        },
+        {
+          "text": "comparing",
+          "start": 166.9,
+          "end": 167.3
+        },
+        {
+          "text": "yourself",
+          "start": 167.3,
+          "end": 167.6
+        },
+        {
+          "text": "to",
+          "start": 167.6,
+          "end": 167.8
+        },
+        {
+          "text": "other",
+          "start": 167.8,
+          "end": 168.0
+        },
+        {
+          "text": "people,",
+          "start": 168.0,
+          "end": 168.4
+        },
+        {
+          "text": "using",
+          "start": 168.6,
+          "end": 168.8
+        },
+        {
+          "text": "money",
+          "start": 168.8,
+          "end": 169.1
+        },
+        {
+          "text": "as",
+          "start": 169.1,
+          "end": 169.2
+        },
+        {
+          "text": "a",
+          "start": 169.2,
+          "end": 169.3
+        },
+        {
+          "text": "tool",
+          "start": 169.3,
+          "end": 169.6
+        },
+        {
+          "text": "to",
+          "start": 169.6,
+          "end": 169.7
+        },
+        {
+          "text": "live",
+          "start": 169.7,
+          "end": 169.9
+        },
+        {
+          "text": "a",
+          "start": 169.9,
+          "end": 170.0
+        },
+        {
+          "text": "better",
+          "start": 170.0,
+          "end": 170.2
+        },
+        {
+          "text": "life",
+          "start": 170.2,
+          "end": 170.5
+        },
+        {
+          "text": "instead",
+          "start": 170.5,
+          "end": 171.0
+        },
+        {
+          "text": "of",
+          "start": 171.0,
+          "end": 171.4
+        },
+        {
+          "text": "a",
+          "start": 171.6,
+          "end": 171.7
+        },
+        {
+          "text": "yardstick",
+          "start": 171.7,
+          "end": 172.3
+        },
+        {
+          "text": "to",
+          "start": 172.3,
+          "end": 172.4
+        },
+        {
+          "text": "measure",
+          "start": 172.4,
+          "end": 172.8
+        },
+        {
+          "text": "yourself",
+          "start": 172.8,
+          "end": 173.4
+        },
+        {
+          "text": "against",
+          "start": 173.4,
+          "end": 173.8
+        },
+        {
+          "text": "others",
+          "start": 173.8,
+          "end": 174.2
+        },
+        {
+          "text": "by",
+          "start": 174.2,
+          "end": 174.6
+        },
+        {
+          "text": "It's",
+          "start": 174.8,
+          "end": 175.0
+        },
+        {
+          "text": "very",
+          "start": 175.0,
+          "end": 175.3
+        },
+        {
+          "text": "simple",
+          "start": 175.3,
+          "end": 175.7
+        },
+        {
+          "text": "stuff",
+          "start": 175.7,
+          "end": 176.0
+        },
+        {
+          "text": "and",
+          "start": 176.0,
+          "end": 176.1
+        },
+        {
+          "text": "it's",
+          "start": 176.1,
+          "end": 176.2
+        },
+        {
+          "text": "all",
+          "start": 176.2,
+          "end": 176.4
+        },
+        {
+          "text": "in",
+          "start": 176.4,
+          "end": 176.6
+        },
+        {
+          "text": "your",
+          "start": 176.6,
+          "end": 176.8
+        },
+        {
+          "text": "head.",
+          "start": 176.8,
+          "end": 177.2
+        },
+        {
+          "text": "And",
+          "start": 177.2,
+          "end": 177.3
+        },
+        {
+          "text": "it's",
+          "start": 177.3,
+          "end": 177.4
+        },
+        {
+          "text": "I",
+          "start": 177.4,
+          "end": 177.6
+        },
+        {
+          "text": "think",
+          "start": 177.6,
+          "end": 177.7
+        },
+        {
+          "text": "it's",
+          "start": 177.7,
+          "end": 177.9
+        },
+        {
+          "text": "it's",
+          "start": 178.0,
+          "end": 178.2
+        },
+        {
+          "text": "99%",
+          "start": 178.2,
+          "end": 179.1
+        },
+        {
+          "text": "of",
+          "start": 179.1,
+          "end": 179.2
+        },
+        {
+          "text": "what",
+          "start": 179.2,
+          "end": 179.3
+        },
+        {
+          "text": "people",
+          "start": 179.3,
+          "end": 179.5
+        },
+        {
+          "text": "need",
+          "start": 179.5,
+          "end": 179.7
+        },
+        {
+          "text": "to",
+          "start": 179.7,
+          "end": 179.8
+        },
+        {
+          "text": "know",
+          "start": 179.8,
+          "end": 180.3
+        },
+        {
+          "text": "to",
+          "start": 180.7,
+          "end": 180.8
+        },
+        {
+          "text": "do",
+          "start": 180.8,
+          "end": 181.0
+        },
+        {
+          "text": "well",
+          "start": 181.0,
+          "end": 181.2
+        },
+        {
+          "text": "with",
+          "start": 181.2,
+          "end": 181.4
+        },
+        {
+          "text": "money",
+          "start": 181.4,
+          "end": 181.7
+        },
+        {
+          "text": "is",
+          "start": 182.0,
+          "end": 182.2
+        },
+        {
+          "text": "in",
+          "start": 182.2,
+          "end": 182.3
+        },
+        {
+          "text": "your",
+          "start": 182.3,
+          "end": 182.4
+        },
+        {
+          "text": "control.",
+          "start": 182.4,
+          "end": 182.9
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 1",
+      "start": 183.2,
+      "end": 211.7,
+      "text": "Well, I think one of the mistakes that I made for a very long time, particularly before I bumped into your work, is I believed that there was some secret formula, that there was some private club for rich people, that it was about who you know, where you went to school. And what I love about your work is that you basically say, no, no, no, no, you're focusing on the wrong stuff. There are actual behaviors that we can learn that will help you get good with money.",
+      "words": [
+        {
+          "text": "Well,",
+          "start": 183.2,
+          "end": 183.4
+        },
+        {
+          "text": "I",
+          "start": 183.4,
+          "end": 183.5
+        },
+        {
+          "text": "think",
+          "start": 183.5,
+          "end": 183.7
+        },
+        {
+          "text": "one",
+          "start": 183.7,
+          "end": 183.8
+        },
+        {
+          "text": "of",
+          "start": 183.8,
+          "end": 183.9
+        },
+        {
+          "text": "the",
+          "start": 183.9,
+          "end": 184.0
+        },
+        {
+          "text": "mistakes",
+          "start": 184.0,
+          "end": 184.3
+        },
+        {
+          "text": "that",
+          "start": 184.3,
+          "end": 184.4
+        },
+        {
+          "text": "I",
+          "start": 184.4,
+          "end": 184.5
+        },
+        {
+          "text": "made",
+          "start": 184.5,
+          "end": 184.7
+        },
+        {
+          "text": "for",
+          "start": 184.7,
+          "end": 184.9
+        },
+        {
+          "text": "a",
+          "start": 184.9,
+          "end": 184.9
+        },
+        {
+          "text": "very",
+          "start": 184.9,
+          "end": 185.2
+        },
+        {
+          "text": "long",
+          "start": 185.2,
+          "end": 185.4
+        },
+        {
+          "text": "time,",
+          "start": 185.4,
+          "end": 185.9
+        },
+        {
+          "text": "particularly",
+          "start": 186.0,
+          "end": 186.8
+        },
+        {
+          "text": "before",
+          "start": 186.8,
+          "end": 187.5
+        },
+        {
+          "text": "I",
+          "start": 187.5,
+          "end": 187.6
+        },
+        {
+          "text": "bumped",
+          "start": 187.6,
+          "end": 188.0
+        },
+        {
+          "text": "into",
+          "start": 188.0,
+          "end": 188.8
+        },
+        {
+          "text": "your",
+          "start": 188.8,
+          "end": 189.1
+        },
+        {
+          "text": "work,",
+          "start": 189.1,
+          "end": 189.7
+        },
+        {
+          "text": "is",
+          "start": 189.8,
+          "end": 190.1
+        },
+        {
+          "text": "I",
+          "start": 190.1,
+          "end": 190.3
+        },
+        {
+          "text": "believed",
+          "start": 190.3,
+          "end": 191.1
+        },
+        {
+          "text": "that",
+          "start": 191.2,
+          "end": 191.4
+        },
+        {
+          "text": "there",
+          "start": 191.4,
+          "end": 191.6
+        },
+        {
+          "text": "was",
+          "start": 191.6,
+          "end": 191.8
+        },
+        {
+          "text": "some",
+          "start": 191.8,
+          "end": 192.1
+        },
+        {
+          "text": "secret",
+          "start": 192.1,
+          "end": 192.5
+        },
+        {
+          "text": "formula,",
+          "start": 192.5,
+          "end": 193.1
+        },
+        {
+          "text": "that",
+          "start": 193.1,
+          "end": 193.3
+        },
+        {
+          "text": "there",
+          "start": 193.3,
+          "end": 193.5
+        },
+        {
+          "text": "was",
+          "start": 193.5,
+          "end": 193.6
+        },
+        {
+          "text": "some",
+          "start": 193.6,
+          "end": 193.9
+        },
+        {
+          "text": "private",
+          "start": 193.9,
+          "end": 194.4
+        },
+        {
+          "text": "club",
+          "start": 194.4,
+          "end": 194.7
+        },
+        {
+          "text": "for",
+          "start": 194.7,
+          "end": 194.9
+        },
+        {
+          "text": "rich",
+          "start": 194.9,
+          "end": 195.2
+        },
+        {
+          "text": "people,",
+          "start": 195.2,
+          "end": 195.6
+        },
+        {
+          "text": "that",
+          "start": 195.6,
+          "end": 195.8
+        },
+        {
+          "text": "it",
+          "start": 195.8,
+          "end": 195.8
+        },
+        {
+          "text": "was",
+          "start": 195.8,
+          "end": 196.0
+        },
+        {
+          "text": "about",
+          "start": 196.0,
+          "end": 196.3
+        },
+        {
+          "text": "who",
+          "start": 196.3,
+          "end": 196.6
+        },
+        {
+          "text": "you",
+          "start": 196.6,
+          "end": 196.7
+        },
+        {
+          "text": "know,",
+          "start": 196.7,
+          "end": 197.1
+        },
+        {
+          "text": "where",
+          "start": 197.1,
+          "end": 197.3
+        },
+        {
+          "text": "you",
+          "start": 197.3,
+          "end": 197.4
+        },
+        {
+          "text": "went",
+          "start": 197.4,
+          "end": 197.6
+        },
+        {
+          "text": "to",
+          "start": 197.6,
+          "end": 197.7
+        },
+        {
+          "text": "school.",
+          "start": 197.7,
+          "end": 198.3
+        },
+        {
+          "text": "And",
+          "start": 198.7,
+          "end": 198.9
+        },
+        {
+          "text": "what",
+          "start": 198.9,
+          "end": 199.1
+        },
+        {
+          "text": "I",
+          "start": 199.1,
+          "end": 199.3
+        },
+        {
+          "text": "love",
+          "start": 199.3,
+          "end": 199.9
+        },
+        {
+          "text": "about",
+          "start": 199.9,
+          "end": 200.4
+        },
+        {
+          "text": "your",
+          "start": 200.4,
+          "end": 200.6
+        },
+        {
+          "text": "work",
+          "start": 200.6,
+          "end": 201.0
+        },
+        {
+          "text": "is",
+          "start": 201.0,
+          "end": 201.2
+        },
+        {
+          "text": "that",
+          "start": 201.2,
+          "end": 201.6
+        },
+        {
+          "text": "you",
+          "start": 202.0,
+          "end": 202.3
+        },
+        {
+          "text": "basically",
+          "start": 202.3,
+          "end": 203.0
+        },
+        {
+          "text": "say,",
+          "start": 203.0,
+          "end": 203.2
+        },
+        {
+          "text": "no,",
+          "start": 203.2,
+          "end": 203.3
+        },
+        {
+          "text": "no,",
+          "start": 203.3,
+          "end": 203.5
+        },
+        {
+          "text": "no,",
+          "start": 203.5,
+          "end": 203.6
+        },
+        {
+          "text": "no,",
+          "start": 203.6,
+          "end": 203.9
+        },
+        {
+          "text": "you're",
+          "start": 205.0,
+          "end": 205.2
+        },
+        {
+          "text": "focusing",
+          "start": 205.2,
+          "end": 205.6
+        },
+        {
+          "text": "on",
+          "start": 205.6,
+          "end": 205.7
+        },
+        {
+          "text": "the",
+          "start": 205.7,
+          "end": 205.8
+        },
+        {
+          "text": "wrong",
+          "start": 205.8,
+          "end": 206.0
+        },
+        {
+          "text": "stuff.",
+          "start": 206.0,
+          "end": 206.4
+        },
+        {
+          "text": "There",
+          "start": 206.8,
+          "end": 207.2
+        },
+        {
+          "text": "are",
+          "start": 207.2,
+          "end": 207.3
+        },
+        {
+          "text": "actual",
+          "start": 207.3,
+          "end": 207.8
+        },
+        {
+          "text": "behaviors",
+          "start": 207.8,
+          "end": 208.6
+        },
+        {
+          "text": "that",
+          "start": 208.6,
+          "end": 208.8
+        },
+        {
+          "text": "we",
+          "start": 208.8,
+          "end": 209.0
+        },
+        {
+          "text": "can",
+          "start": 209.0,
+          "end": 209.2
+        },
+        {
+          "text": "learn",
+          "start": 209.2,
+          "end": 209.7
+        },
+        {
+          "text": "that",
+          "start": 210.3,
+          "end": 210.5
+        },
+        {
+          "text": "will",
+          "start": 210.5,
+          "end": 210.6
+        },
+        {
+          "text": "help",
+          "start": 210.6,
+          "end": 210.8
+        },
+        {
+          "text": "you",
+          "start": 210.8,
+          "end": 210.9
+        },
+        {
+          "text": "get",
+          "start": 210.9,
+          "end": 211.1
+        },
+        {
+          "text": "good",
+          "start": 211.1,
+          "end": 211.3
+        },
+        {
+          "text": "with",
+          "start": 211.3,
+          "end": 211.4
+        },
+        {
+          "text": "money.",
+          "start": 211.4,
+          "end": 211.7
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 2",
+      "start": 211.8,
+      "end": 278.0,
+      "text": "Exactly. And they're not that difficult either. They're in your control. It's not to say that they're easy, but they're simple. And so just just a couple of the behaviors, if you have an ability to focus internally on your own goals rather than constantly comparing yourself against others. If you can save a little bit of your money, live even slightly below your means, invest that money and be patient. Just those things, just those very that's a kindergarten list of topics that I just gave you. That's not a bunch of great formulas. It's not a bunch of Wall Street gibberish. It's not a bunch of acronyms. These are very simple things. And that's it. Part of this too is redefining what what I mean by financially successful. I'm not talking private islands and private jets, but for most people, what they actually want If you said, what is your ultimate financial goal, they would say, I want to have a stable housing for myself and my family. I want to have a little bit of cushion to fall back onto if I were to get laid off or have a medical emergency. I want to be able to have a dignified retirement someday. I want to be able to spend time with my kids. Those are very good financial goals and that level of wealth and success I think is in within everybody's control.",
+      "words": [
+        {
+          "text": "Exactly.",
+          "start": 211.8,
+          "end": 212.4
+        },
+        {
+          "text": "And",
+          "start": 212.6,
+          "end": 212.7
+        },
+        {
+          "text": "they're",
+          "start": 212.7,
+          "end": 212.8
+        },
+        {
+          "text": "not",
+          "start": 212.8,
+          "end": 213.0
+        },
+        {
+          "text": "that",
+          "start": 213.0,
+          "end": 213.1
+        },
+        {
+          "text": "difficult",
+          "start": 213.1,
+          "end": 213.5
+        },
+        {
+          "text": "either.",
+          "start": 213.5,
+          "end": 213.9
+        },
+        {
+          "text": "They're",
+          "start": 214.0,
+          "end": 214.1
+        },
+        {
+          "text": "in",
+          "start": 214.1,
+          "end": 214.3
+        },
+        {
+          "text": "your",
+          "start": 214.3,
+          "end": 214.5
+        },
+        {
+          "text": "control.",
+          "start": 214.5,
+          "end": 215.0
+        },
+        {
+          "text": "It's",
+          "start": 215.1,
+          "end": 215.2
+        },
+        {
+          "text": "not",
+          "start": 215.2,
+          "end": 215.3
+        },
+        {
+          "text": "to",
+          "start": 215.3,
+          "end": 215.4
+        },
+        {
+          "text": "say",
+          "start": 215.4,
+          "end": 215.6
+        },
+        {
+          "text": "that",
+          "start": 215.6,
+          "end": 215.7
+        },
+        {
+          "text": "they're",
+          "start": 215.7,
+          "end": 216.0
+        },
+        {
+          "text": "easy,",
+          "start": 216.0,
+          "end": 216.5
+        },
+        {
+          "text": "but",
+          "start": 216.7,
+          "end": 216.8
+        },
+        {
+          "text": "they're",
+          "start": 216.8,
+          "end": 216.9
+        },
+        {
+          "text": "simple.",
+          "start": 216.9,
+          "end": 217.5
+        },
+        {
+          "text": "And",
+          "start": 218.0,
+          "end": 218.5
+        },
+        {
+          "text": "so",
+          "start": 218.5,
+          "end": 218.7
+        },
+        {
+          "text": "just",
+          "start": 218.7,
+          "end": 219.0
+        },
+        {
+          "text": "just",
+          "start": 219.0,
+          "end": 219.2
+        },
+        {
+          "text": "a",
+          "start": 219.2,
+          "end": 219.2
+        },
+        {
+          "text": "couple",
+          "start": 219.2,
+          "end": 219.5
+        },
+        {
+          "text": "of",
+          "start": 219.5,
+          "end": 219.6
+        },
+        {
+          "text": "the",
+          "start": 219.6,
+          "end": 219.7
+        },
+        {
+          "text": "behaviors,",
+          "start": 219.7,
+          "end": 220.2
+        },
+        {
+          "text": "if",
+          "start": 220.2,
+          "end": 220.4
+        },
+        {
+          "text": "you",
+          "start": 220.4,
+          "end": 220.8
+        },
+        {
+          "text": "have",
+          "start": 221.0,
+          "end": 221.2
+        },
+        {
+          "text": "an",
+          "start": 221.2,
+          "end": 221.2
+        },
+        {
+          "text": "ability",
+          "start": 221.2,
+          "end": 221.7
+        },
+        {
+          "text": "to",
+          "start": 221.7,
+          "end": 222.0
+        },
+        {
+          "text": "focus",
+          "start": 222.0,
+          "end": 222.7
+        },
+        {
+          "text": "internally",
+          "start": 223.1,
+          "end": 224.0
+        },
+        {
+          "text": "on",
+          "start": 224.1,
+          "end": 224.3
+        },
+        {
+          "text": "your",
+          "start": 224.3,
+          "end": 224.5
+        },
+        {
+          "text": "own",
+          "start": 224.5,
+          "end": 224.7
+        },
+        {
+          "text": "goals",
+          "start": 224.7,
+          "end": 225.0
+        },
+        {
+          "text": "rather",
+          "start": 225.0,
+          "end": 225.3
+        },
+        {
+          "text": "than",
+          "start": 225.3,
+          "end": 225.7
+        },
+        {
+          "text": "constantly",
+          "start": 225.7,
+          "end": 226.4
+        },
+        {
+          "text": "comparing",
+          "start": 226.4,
+          "end": 226.8
+        },
+        {
+          "text": "yourself",
+          "start": 226.8,
+          "end": 227.4
+        },
+        {
+          "text": "against",
+          "start": 227.4,
+          "end": 227.8
+        },
+        {
+          "text": "others.",
+          "start": 227.8,
+          "end": 228.2
+        },
+        {
+          "text": "If",
+          "start": 228.7,
+          "end": 228.8
+        },
+        {
+          "text": "you",
+          "start": 228.8,
+          "end": 229.0
+        },
+        {
+          "text": "can",
+          "start": 229.0,
+          "end": 229.4
+        },
+        {
+          "text": "save",
+          "start": 229.4,
+          "end": 229.8
+        },
+        {
+          "text": "a",
+          "start": 229.8,
+          "end": 229.9
+        },
+        {
+          "text": "little",
+          "start": 229.9,
+          "end": 230.1
+        },
+        {
+          "text": "bit",
+          "start": 230.1,
+          "end": 230.4
+        },
+        {
+          "text": "of",
+          "start": 230.4,
+          "end": 230.5
+        },
+        {
+          "text": "your",
+          "start": 230.5,
+          "end": 230.6
+        },
+        {
+          "text": "money,",
+          "start": 230.6,
+          "end": 230.8
+        },
+        {
+          "text": "live",
+          "start": 230.8,
+          "end": 231.0
+        },
+        {
+          "text": "even",
+          "start": 231.2,
+          "end": 231.5
+        },
+        {
+          "text": "slightly",
+          "start": 231.5,
+          "end": 232.0
+        },
+        {
+          "text": "below",
+          "start": 232.0,
+          "end": 232.3
+        },
+        {
+          "text": "your",
+          "start": 232.3,
+          "end": 232.4
+        },
+        {
+          "text": "means,",
+          "start": 232.4,
+          "end": 233.0
+        },
+        {
+          "text": "invest",
+          "start": 233.4,
+          "end": 233.8
+        },
+        {
+          "text": "that",
+          "start": 233.8,
+          "end": 234.0
+        },
+        {
+          "text": "money",
+          "start": 234.0,
+          "end": 234.4
+        },
+        {
+          "text": "and",
+          "start": 234.4,
+          "end": 234.5
+        },
+        {
+          "text": "be",
+          "start": 234.5,
+          "end": 234.6
+        },
+        {
+          "text": "patient.",
+          "start": 234.6,
+          "end": 235.2
+        },
+        {
+          "text": "Just",
+          "start": 235.6,
+          "end": 235.9
+        },
+        {
+          "text": "those",
+          "start": 235.9,
+          "end": 236.1
+        },
+        {
+          "text": "things,",
+          "start": 236.1,
+          "end": 236.4
+        },
+        {
+          "text": "just",
+          "start": 236.4,
+          "end": 236.5
+        },
+        {
+          "text": "those",
+          "start": 236.5,
+          "end": 236.7
+        },
+        {
+          "text": "very",
+          "start": 236.7,
+          "end": 236.9
+        },
+        {
+          "text": "that's",
+          "start": 236.9,
+          "end": 237.2
+        },
+        {
+          "text": "a",
+          "start": 237.2,
+          "end": 237.2
+        },
+        {
+          "text": "kindergarten",
+          "start": 237.2,
+          "end": 238.0
+        },
+        {
+          "text": "list",
+          "start": 238.0,
+          "end": 238.3
+        },
+        {
+          "text": "of",
+          "start": 238.3,
+          "end": 238.4
+        },
+        {
+          "text": "topics",
+          "start": 238.4,
+          "end": 238.8
+        },
+        {
+          "text": "that",
+          "start": 238.8,
+          "end": 238.9
+        },
+        {
+          "text": "I",
+          "start": 238.9,
+          "end": 239.0
+        },
+        {
+          "text": "just",
+          "start": 239.0,
+          "end": 239.1
+        },
+        {
+          "text": "gave",
+          "start": 239.1,
+          "end": 239.4
+        },
+        {
+          "text": "you.",
+          "start": 239.4,
+          "end": 239.6
+        },
+        {
+          "text": "That's",
+          "start": 239.8,
+          "end": 240.0
+        },
+        {
+          "text": "not",
+          "start": 240.0,
+          "end": 240.3
+        },
+        {
+          "text": "a",
+          "start": 240.3,
+          "end": 240.4
+        },
+        {
+          "text": "bunch",
+          "start": 240.4,
+          "end": 240.6
+        },
+        {
+          "text": "of",
+          "start": 240.6,
+          "end": 240.7
+        },
+        {
+          "text": "great",
+          "start": 240.7,
+          "end": 240.9
+        },
+        {
+          "text": "formulas.",
+          "start": 240.9,
+          "end": 241.5
+        },
+        {
+          "text": "It's",
+          "start": 241.5,
+          "end": 241.7
+        },
+        {
+          "text": "not",
+          "start": 241.7,
+          "end": 241.9
+        },
+        {
+          "text": "a",
+          "start": 241.9,
+          "end": 242.0
+        },
+        {
+          "text": "bunch",
+          "start": 242.0,
+          "end": 242.2
+        },
+        {
+          "text": "of",
+          "start": 242.2,
+          "end": 242.3
+        },
+        {
+          "text": "Wall",
+          "start": 242.3,
+          "end": 242.5
+        },
+        {
+          "text": "Street",
+          "start": 242.5,
+          "end": 242.8
+        },
+        {
+          "text": "gibberish.",
+          "start": 242.8,
+          "end": 243.2
+        },
+        {
+          "text": "It's",
+          "start": 243.2,
+          "end": 243.3
+        },
+        {
+          "text": "not",
+          "start": 243.3,
+          "end": 243.4
+        },
+        {
+          "text": "a",
+          "start": 243.4,
+          "end": 243.5
+        },
+        {
+          "text": "bunch",
+          "start": 243.5,
+          "end": 243.6
+        },
+        {
+          "text": "of",
+          "start": 243.6,
+          "end": 243.7
+        },
+        {
+          "text": "acronyms.",
+          "start": 243.7,
+          "end": 244.2
+        },
+        {
+          "text": "These",
+          "start": 244.2,
+          "end": 244.4
+        },
+        {
+          "text": "are",
+          "start": 244.4,
+          "end": 244.5
+        },
+        {
+          "text": "very",
+          "start": 244.5,
+          "end": 245.0
+        },
+        {
+          "text": "simple",
+          "start": 245.0,
+          "end": 245.4
+        },
+        {
+          "text": "things.",
+          "start": 245.4,
+          "end": 246.0
+        },
+        {
+          "text": "And",
+          "start": 246.4,
+          "end": 246.5
+        },
+        {
+          "text": "that's",
+          "start": 246.5,
+          "end": 246.8
+        },
+        {
+          "text": "it.",
+          "start": 246.8,
+          "end": 247.0
+        },
+        {
+          "text": "Part",
+          "start": 247.5,
+          "end": 247.7
+        },
+        {
+          "text": "of",
+          "start": 247.7,
+          "end": 247.7
+        },
+        {
+          "text": "this",
+          "start": 247.7,
+          "end": 247.9
+        },
+        {
+          "text": "too",
+          "start": 247.9,
+          "end": 248.1
+        },
+        {
+          "text": "is",
+          "start": 248.1,
+          "end": 248.3
+        },
+        {
+          "text": "redefining",
+          "start": 248.3,
+          "end": 249.0
+        },
+        {
+          "text": "what",
+          "start": 249.0,
+          "end": 249.2
+        },
+        {
+          "text": "what",
+          "start": 249.2,
+          "end": 249.3
+        },
+        {
+          "text": "I",
+          "start": 249.3,
+          "end": 249.4
+        },
+        {
+          "text": "mean",
+          "start": 249.4,
+          "end": 249.7
+        },
+        {
+          "text": "by",
+          "start": 249.7,
+          "end": 249.9
+        },
+        {
+          "text": "financially",
+          "start": 249.9,
+          "end": 250.5
+        },
+        {
+          "text": "successful.",
+          "start": 250.5,
+          "end": 251.1
+        },
+        {
+          "text": "I'm",
+          "start": 251.1,
+          "end": 251.2
+        },
+        {
+          "text": "not",
+          "start": 251.2,
+          "end": 251.4
+        },
+        {
+          "text": "talking",
+          "start": 251.4,
+          "end": 251.6
+        },
+        {
+          "text": "private",
+          "start": 251.6,
+          "end": 252.0
+        },
+        {
+          "text": "islands",
+          "start": 252.0,
+          "end": 252.3
+        },
+        {
+          "text": "and",
+          "start": 252.3,
+          "end": 252.4
+        },
+        {
+          "text": "private",
+          "start": 252.4,
+          "end": 252.7
+        },
+        {
+          "text": "jets,",
+          "start": 252.7,
+          "end": 253.1
+        },
+        {
+          "text": "but",
+          "start": 253.1,
+          "end": 253.2
+        },
+        {
+          "text": "for",
+          "start": 253.2,
+          "end": 253.3
+        },
+        {
+          "text": "most",
+          "start": 253.3,
+          "end": 253.5
+        },
+        {
+          "text": "people,",
+          "start": 253.5,
+          "end": 253.8
+        },
+        {
+          "text": "what",
+          "start": 253.8,
+          "end": 253.9
+        },
+        {
+          "text": "they",
+          "start": 253.9,
+          "end": 254.0
+        },
+        {
+          "text": "actually",
+          "start": 254.0,
+          "end": 254.5
+        },
+        {
+          "text": "want",
+          "start": 254.5,
+          "end": 255.1
+        },
+        {
+          "text": "If",
+          "start": 255.2,
+          "end": 255.3
+        },
+        {
+          "text": "you",
+          "start": 255.3,
+          "end": 255.4
+        },
+        {
+          "text": "said,",
+          "start": 255.4,
+          "end": 255.6
+        },
+        {
+          "text": "what",
+          "start": 255.6,
+          "end": 255.8
+        },
+        {
+          "text": "is",
+          "start": 255.8,
+          "end": 255.9
+        },
+        {
+          "text": "your",
+          "start": 255.9,
+          "end": 256.1
+        },
+        {
+          "text": "ultimate",
+          "start": 256.1,
+          "end": 256.5
+        },
+        {
+          "text": "financial",
+          "start": 256.5,
+          "end": 256.9
+        },
+        {
+          "text": "goal,",
+          "start": 256.9,
+          "end": 257.2
+        },
+        {
+          "text": "they",
+          "start": 257.2,
+          "end": 257.3
+        },
+        {
+          "text": "would",
+          "start": 257.3,
+          "end": 257.4
+        },
+        {
+          "text": "say,",
+          "start": 257.4,
+          "end": 257.8
+        },
+        {
+          "text": "I",
+          "start": 258.2,
+          "end": 258.2
+        },
+        {
+          "text": "want",
+          "start": 258.2,
+          "end": 258.4
+        },
+        {
+          "text": "to",
+          "start": 258.4,
+          "end": 258.6
+        },
+        {
+          "text": "have",
+          "start": 258.7,
+          "end": 259.2
+        },
+        {
+          "text": "a",
+          "start": 259.3,
+          "end": 259.5
+        },
+        {
+          "text": "stable",
+          "start": 259.8,
+          "end": 260.2
+        },
+        {
+          "text": "housing",
+          "start": 260.2,
+          "end": 260.6
+        },
+        {
+          "text": "for",
+          "start": 260.6,
+          "end": 260.8
+        },
+        {
+          "text": "myself",
+          "start": 260.8,
+          "end": 261.3
+        },
+        {
+          "text": "and",
+          "start": 261.3,
+          "end": 261.4
+        },
+        {
+          "text": "my",
+          "start": 261.4,
+          "end": 261.5
+        },
+        {
+          "text": "family.",
+          "start": 261.5,
+          "end": 262.0
+        },
+        {
+          "text": "I",
+          "start": 262.3,
+          "end": 262.4
+        },
+        {
+          "text": "want",
+          "start": 262.4,
+          "end": 262.5
+        },
+        {
+          "text": "to",
+          "start": 262.5,
+          "end": 262.6
+        },
+        {
+          "text": "have",
+          "start": 262.6,
+          "end": 262.8
+        },
+        {
+          "text": "a",
+          "start": 262.8,
+          "end": 262.9
+        },
+        {
+          "text": "little",
+          "start": 262.9,
+          "end": 263.2
+        },
+        {
+          "text": "bit",
+          "start": 263.2,
+          "end": 263.3
+        },
+        {
+          "text": "of",
+          "start": 263.3,
+          "end": 263.4
+        },
+        {
+          "text": "cushion",
+          "start": 263.4,
+          "end": 263.8
+        },
+        {
+          "text": "to",
+          "start": 263.8,
+          "end": 263.8
+        },
+        {
+          "text": "fall",
+          "start": 263.8,
+          "end": 264.0
+        },
+        {
+          "text": "back",
+          "start": 264.0,
+          "end": 264.3
+        },
+        {
+          "text": "onto",
+          "start": 264.3,
+          "end": 264.6
+        },
+        {
+          "text": "if",
+          "start": 264.6,
+          "end": 264.7
+        },
+        {
+          "text": "I",
+          "start": 264.7,
+          "end": 264.8
+        },
+        {
+          "text": "were",
+          "start": 264.8,
+          "end": 264.9
+        },
+        {
+          "text": "to",
+          "start": 264.9,
+          "end": 264.9
+        },
+        {
+          "text": "get",
+          "start": 264.9,
+          "end": 265.1
+        },
+        {
+          "text": "laid",
+          "start": 265.1,
+          "end": 265.3
+        },
+        {
+          "text": "off",
+          "start": 265.3,
+          "end": 265.7
+        },
+        {
+          "text": "or",
+          "start": 265.7,
+          "end": 265.7
+        },
+        {
+          "text": "have",
+          "start": 265.7,
+          "end": 265.9
+        },
+        {
+          "text": "a",
+          "start": 265.9,
+          "end": 266.0
+        },
+        {
+          "text": "medical",
+          "start": 266.0,
+          "end": 266.3
+        },
+        {
+          "text": "emergency.",
+          "start": 266.3,
+          "end": 267.0
+        },
+        {
+          "text": "I",
+          "start": 267.2,
+          "end": 267.3
+        },
+        {
+          "text": "want",
+          "start": 267.3,
+          "end": 267.4
+        },
+        {
+          "text": "to",
+          "start": 267.4,
+          "end": 267.4
+        },
+        {
+          "text": "be",
+          "start": 267.4,
+          "end": 267.5
+        },
+        {
+          "text": "able",
+          "start": 267.5,
+          "end": 267.6
+        },
+        {
+          "text": "to",
+          "start": 267.6,
+          "end": 267.7
+        },
+        {
+          "text": "have",
+          "start": 267.7,
+          "end": 267.9
+        },
+        {
+          "text": "a",
+          "start": 267.9,
+          "end": 267.9
+        },
+        {
+          "text": "dignified",
+          "start": 267.9,
+          "end": 268.6
+        },
+        {
+          "text": "retirement",
+          "start": 268.6,
+          "end": 269.2
+        },
+        {
+          "text": "someday.",
+          "start": 269.2,
+          "end": 269.8
+        },
+        {
+          "text": "I",
+          "start": 269.9,
+          "end": 270.0
+        },
+        {
+          "text": "want",
+          "start": 270.0,
+          "end": 270.1
+        },
+        {
+          "text": "to",
+          "start": 270.1,
+          "end": 270.1
+        },
+        {
+          "text": "be",
+          "start": 270.1,
+          "end": 270.2
+        },
+        {
+          "text": "able",
+          "start": 270.2,
+          "end": 270.3
+        },
+        {
+          "text": "to",
+          "start": 270.3,
+          "end": 270.4
+        },
+        {
+          "text": "spend",
+          "start": 270.4,
+          "end": 270.7
+        },
+        {
+          "text": "time",
+          "start": 270.7,
+          "end": 270.8
+        },
+        {
+          "text": "with",
+          "start": 270.8,
+          "end": 270.9
+        },
+        {
+          "text": "my",
+          "start": 270.9,
+          "end": 271.1
+        },
+        {
+          "text": "kids.",
+          "start": 271.1,
+          "end": 271.6
+        },
+        {
+          "text": "Those",
+          "start": 272.1,
+          "end": 272.3
+        },
+        {
+          "text": "are",
+          "start": 272.3,
+          "end": 272.4
+        },
+        {
+          "text": "very",
+          "start": 272.4,
+          "end": 273.0
+        },
+        {
+          "text": "good",
+          "start": 273.0,
+          "end": 273.3
+        },
+        {
+          "text": "financial",
+          "start": 273.3,
+          "end": 273.7
+        },
+        {
+          "text": "goals",
+          "start": 273.7,
+          "end": 274.2
+        },
+        {
+          "text": "and",
+          "start": 274.2,
+          "end": 274.4
+        },
+        {
+          "text": "that",
+          "start": 274.4,
+          "end": 274.7
+        },
+        {
+          "text": "level",
+          "start": 274.7,
+          "end": 275.0
+        },
+        {
+          "text": "of",
+          "start": 275.0,
+          "end": 275.2
+        },
+        {
+          "text": "wealth",
+          "start": 275.2,
+          "end": 275.5
+        },
+        {
+          "text": "and",
+          "start": 275.5,
+          "end": 275.6
+        },
+        {
+          "text": "success",
+          "start": 275.6,
+          "end": 276.2
+        },
+        {
+          "text": "I",
+          "start": 276.2,
+          "end": 276.3
+        },
+        {
+          "text": "think",
+          "start": 276.3,
+          "end": 276.4
+        },
+        {
+          "text": "is",
+          "start": 276.4,
+          "end": 276.6
+        },
+        {
+          "text": "in",
+          "start": 276.6,
+          "end": 276.8
+        },
+        {
+          "text": "within",
+          "start": 276.8,
+          "end": 277.1
+        },
+        {
+          "text": "everybody's",
+          "start": 277.1,
+          "end": 277.5
+        },
+        {
+          "text": "control.",
+          "start": 277.5,
+          "end": 278.0
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 1",
+      "start": 278.3,
+      "end": 281.9,
+      "text": "Well, you said you wanted to teach us how to use money as a tool",
+      "words": [
+        {
+          "text": "Well,",
+          "start": 278.3,
+          "end": 278.4
+        },
+        {
+          "text": "you",
+          "start": 278.4,
+          "end": 278.7
+        },
+        {
+          "text": "said",
+          "start": 278.7,
+          "end": 279.3
+        },
+        {
+          "text": "you",
+          "start": 279.4,
+          "end": 279.7
+        },
+        {
+          "text": "wanted",
+          "start": 279.7,
+          "end": 280.0
+        },
+        {
+          "text": "to",
+          "start": 280.0,
+          "end": 280.1
+        },
+        {
+          "text": "teach",
+          "start": 280.1,
+          "end": 280.4
+        },
+        {
+          "text": "us",
+          "start": 280.4,
+          "end": 280.5
+        },
+        {
+          "text": "how",
+          "start": 280.5,
+          "end": 280.7
+        },
+        {
+          "text": "to",
+          "start": 280.7,
+          "end": 280.7
+        },
+        {
+          "text": "use",
+          "start": 280.7,
+          "end": 281.0
+        },
+        {
+          "text": "money",
+          "start": 281.0,
+          "end": 281.2
+        },
+        {
+          "text": "as",
+          "start": 281.2,
+          "end": 281.3
+        },
+        {
+          "text": "a",
+          "start": 281.3,
+          "end": 281.4
+        },
+        {
+          "text": "tool",
+          "start": 281.4,
+          "end": 281.9
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 2",
+      "start": 281.9,
+      "end": 282.3,
+      "text": "Yes.",
+      "words": [
+        {
+          "text": "Yes.",
+          "start": 281.9,
+          "end": 282.3
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 1",
+      "start": 282.7,
+      "end": 287.7,
+      "text": "to live a better life versus using it as a yardstick",
+      "words": [
+        {
+          "text": "to",
+          "start": 282.7,
+          "end": 283.3
+        },
+        {
+          "text": "live",
+          "start": 283.4,
+          "end": 283.7
+        },
+        {
+          "text": "a",
+          "start": 283.7,
+          "end": 283.7
+        },
+        {
+          "text": "better",
+          "start": 283.7,
+          "end": 284.1
+        },
+        {
+          "text": "life",
+          "start": 284.1,
+          "end": 284.6
+        },
+        {
+          "text": "versus",
+          "start": 284.8,
+          "end": 285.7
+        },
+        {
+          "text": "using",
+          "start": 285.7,
+          "end": 286.3
+        },
+        {
+          "text": "it",
+          "start": 286.3,
+          "end": 286.5
+        },
+        {
+          "text": "as",
+          "start": 286.5,
+          "end": 286.7
+        },
+        {
+          "text": "a",
+          "start": 286.7,
+          "end": 286.8
+        },
+        {
+          "text": "yardstick",
+          "start": 286.8,
+          "end": 287.7
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 2",
+      "start": 287.7,
+      "end": 289.6,
+      "text": "to measure yourself against others by",
+      "words": [
+        {
+          "text": "to",
+          "start": 287.7,
+          "end": 287.8
+        },
+        {
+          "text": "measure",
+          "start": 287.8,
+          "end": 288.1
+        },
+        {
+          "text": "yourself",
+          "start": 288.1,
+          "end": 288.5
+        },
+        {
+          "text": "against",
+          "start": 288.5,
+          "end": 288.9
+        },
+        {
+          "text": "others",
+          "start": 288.9,
+          "end": 289.2
+        },
+        {
+          "text": "by",
+          "start": 289.2,
+          "end": 289.6
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 1",
+      "start": 289.8,
+      "end": 296.6,
+      "text": "Correct. And that's one of the core things you're going to teach us how to do and why this is so important today.",
+      "words": [
+        {
+          "text": "Correct.",
+          "start": 289.8,
+          "end": 290.5
+        },
+        {
+          "text": "And",
+          "start": 291.2,
+          "end": 291.4
+        },
+        {
+          "text": "that's",
+          "start": 291.4,
+          "end": 291.7
+        },
+        {
+          "text": "one",
+          "start": 291.7,
+          "end": 291.8
+        },
+        {
+          "text": "of",
+          "start": 291.8,
+          "end": 291.9
+        },
+        {
+          "text": "the",
+          "start": 291.9,
+          "end": 292.0
+        },
+        {
+          "text": "core",
+          "start": 292.0,
+          "end": 292.5
+        },
+        {
+          "text": "things",
+          "start": 292.5,
+          "end": 292.9
+        },
+        {
+          "text": "you're",
+          "start": 292.9,
+          "end": 293.0
+        },
+        {
+          "text": "going",
+          "start": 293.0,
+          "end": 293.1
+        },
+        {
+          "text": "to",
+          "start": 293.1,
+          "end": 293.2
+        },
+        {
+          "text": "teach",
+          "start": 293.2,
+          "end": 293.5
+        },
+        {
+          "text": "us",
+          "start": 293.5,
+          "end": 293.9
+        },
+        {
+          "text": "how",
+          "start": 294.1,
+          "end": 294.3
+        },
+        {
+          "text": "to",
+          "start": 294.3,
+          "end": 294.4
+        },
+        {
+          "text": "do",
+          "start": 294.4,
+          "end": 294.8
+        },
+        {
+          "text": "and",
+          "start": 294.8,
+          "end": 295.2
+        },
+        {
+          "text": "why",
+          "start": 295.2,
+          "end": 295.4
+        },
+        {
+          "text": "this",
+          "start": 295.4,
+          "end": 295.6
+        },
+        {
+          "text": "is",
+          "start": 295.6,
+          "end": 295.7
+        },
+        {
+          "text": "so",
+          "start": 295.7,
+          "end": 295.9
+        },
+        {
+          "text": "important",
+          "start": 295.9,
+          "end": 296.3
+        },
+        {
+          "text": "today.",
+          "start": 296.3,
+          "end": 296.6
+        }
+      ]
+    },
+    {
+      "speaker": "Speaker 2",
+      "start": 296.8,
+      "end": 403.9,
+      "text": "Of course. And it's easier said than done. It is so natural for everybody to compare yourself against others. For me to measure my level of success by not saying what do I have but but but by saying what do I have relative to that guy. Not how not how good not how comfortable is my house, but by saying how big is my house relative to that person over there, to my neighbor, to my coworker, to my siblings. And one of the problems that makes it more difficult today than it's ever been is that it used to be for my parents' generation, my grandparents' generation, when they compared themselves to other people, it was relative to their neighbors or their coworkers. It was a pretty small group of people. Maybe a couple people who you saw on TV or heard about on the radio. But now today just everybody, including myself, their comparison group is the most sophisticated algorithm on Instagram or TikTok. And so no matter how well you're doing, no matter how great your house is, no matter how much money you're making, you turn on Instagram 100 times a day like everybody else, you open it up and there is somebody out there who looks better, happier, more successful, more beautiful than you are. And so this topic I think has always been true. It's always been important. It is more important today than it's ever been. The idea of keeping your expectations in check because it's easier today than it's ever been to let your expectations just spiral out of control. I see this with my own kids, my nine year old son. His when I was growing up, normal people drove old pickup trucks and rich people drove new pickup trucks. That was that was like the definition in my head. Like if you had a new pickup truck, like oh there's there's a rich person. My son who's nine, his definition of rich is like a private jet and a private island because he watches Mr. Beast and it's like, oh sit in the circle and you win a million bucks kind of thing. It's a completely different level of expectations than even I had 20 or 30 years ago.",
+      "words": [
+        {
+          "text": "Of",
+          "start": 296.8,
+          "end": 296.8
+        },
+        {
+          "text": "course.",
+          "start": 296.8,
+          "end": 297.1
+        },
+        {
+          "text": "And",
+          "start": 297.2,
+          "end": 297.3
+        },
+        {
+          "text": "it's",
+          "start": 297.3,
+          "end": 297.4
+        },
+        {
+          "text": "easier",
+          "start": 297.4,
+          "end": 297.6
+        },
+        {
+          "text": "said",
+          "start": 297.6,
+          "end": 297.8
+        },
+        {
+          "text": "than",
+          "start": 297.8,
+          "end": 298.0
+        },
+        {
+          "text": "done.",
+          "start": 298.0,
+          "end": 298.3
+        },
+        {
+          "text": "It",
+          "start": 298.3,
+          "end": 298.4
+        },
+        {
+          "text": "is",
+          "start": 298.4,
+          "end": 298.6
+        },
+        {
+          "text": "so",
+          "start": 298.6,
+          "end": 298.8
+        },
+        {
+          "text": "natural",
+          "start": 298.8,
+          "end": 299.2
+        },
+        {
+          "text": "for",
+          "start": 299.2,
+          "end": 299.4
+        },
+        {
+          "text": "everybody",
+          "start": 299.4,
+          "end": 300.3
+        },
+        {
+          "text": "to",
+          "start": 300.5,
+          "end": 300.6
+        },
+        {
+          "text": "compare",
+          "start": 300.6,
+          "end": 300.9
+        },
+        {
+          "text": "yourself",
+          "start": 300.9,
+          "end": 301.2
+        },
+        {
+          "text": "against",
+          "start": 301.2,
+          "end": 301.6
+        },
+        {
+          "text": "others.",
+          "start": 301.6,
+          "end": 302.1
+        },
+        {
+          "text": "For",
+          "start": 302.4,
+          "end": 302.6
+        },
+        {
+          "text": "me",
+          "start": 302.6,
+          "end": 302.9
+        },
+        {
+          "text": "to",
+          "start": 302.9,
+          "end": 303.1
+        },
+        {
+          "text": "measure",
+          "start": 303.1,
+          "end": 303.6
+        },
+        {
+          "text": "my",
+          "start": 303.6,
+          "end": 304.1
+        },
+        {
+          "text": "level",
+          "start": 304.1,
+          "end": 304.5
+        },
+        {
+          "text": "of",
+          "start": 304.5,
+          "end": 304.6
+        },
+        {
+          "text": "success",
+          "start": 304.6,
+          "end": 305.1
+        },
+        {
+          "text": "by",
+          "start": 305.1,
+          "end": 305.2
+        },
+        {
+          "text": "not",
+          "start": 305.2,
+          "end": 305.5
+        },
+        {
+          "text": "saying",
+          "start": 305.5,
+          "end": 305.8
+        },
+        {
+          "text": "what",
+          "start": 305.8,
+          "end": 305.9
+        },
+        {
+          "text": "do",
+          "start": 305.9,
+          "end": 306.1
+        },
+        {
+          "text": "I",
+          "start": 306.1,
+          "end": 306.2
+        },
+        {
+          "text": "have",
+          "start": 306.2,
+          "end": 306.8
+        },
+        {
+          "text": "but",
+          "start": 307.0,
+          "end": 307.1
+        },
+        {
+          "text": "but",
+          "start": 307.1,
+          "end": 307.4
+        },
+        {
+          "text": "but",
+          "start": 307.4,
+          "end": 307.6
+        },
+        {
+          "text": "by",
+          "start": 307.6,
+          "end": 307.7
+        },
+        {
+          "text": "saying",
+          "start": 307.7,
+          "end": 308.1
+        },
+        {
+          "text": "what",
+          "start": 308.1,
+          "end": 308.2
+        },
+        {
+          "text": "do",
+          "start": 308.2,
+          "end": 308.3
+        },
+        {
+          "text": "I",
+          "start": 308.3,
+          "end": 308.4
+        },
+        {
+          "text": "have",
+          "start": 308.4,
+          "end": 308.7
+        },
+        {
+          "text": "relative",
+          "start": 308.7,
+          "end": 309.2
+        },
+        {
+          "text": "to",
+          "start": 309.2,
+          "end": 309.3
+        },
+        {
+          "text": "that",
+          "start": 309.3,
+          "end": 309.6
+        },
+        {
+          "text": "guy.",
+          "start": 309.6,
+          "end": 309.9
+        },
+        {
+          "text": "Not",
+          "start": 310.6,
+          "end": 310.8
+        },
+        {
+          "text": "how",
+          "start": 310.8,
+          "end": 311.0
+        },
+        {
+          "text": "not",
+          "start": 311.0,
+          "end": 311.4
+        },
+        {
+          "text": "how",
+          "start": 311.4,
+          "end": 311.6
+        },
+        {
+          "text": "good",
+          "start": 311.6,
+          "end": 311.8
+        },
+        {
+          "text": "not",
+          "start": 311.8,
+          "end": 312.2
+        },
+        {
+          "text": "how",
+          "start": 312.2,
+          "end": 312.3
+        },
+        {
+          "text": "comfortable",
+          "start": 312.3,
+          "end": 312.8
+        },
+        {
+          "text": "is",
+          "start": 312.8,
+          "end": 312.9
+        },
+        {
+          "text": "my",
+          "start": 312.9,
+          "end": 313.0
+        },
+        {
+          "text": "house,",
+          "start": 313.0,
+          "end": 313.5
+        },
+        {
+          "text": "but",
+          "start": 313.5,
+          "end": 313.6
+        },
+        {
+          "text": "by",
+          "start": 313.6,
+          "end": 313.8
+        },
+        {
+          "text": "saying",
+          "start": 313.8,
+          "end": 314.0
+        },
+        {
+          "text": "how",
+          "start": 314.0,
+          "end": 314.2
+        },
+        {
+          "text": "big",
+          "start": 314.2,
+          "end": 314.4
+        },
+        {
+          "text": "is",
+          "start": 314.4,
+          "end": 314.4
+        },
+        {
+          "text": "my",
+          "start": 314.4,
+          "end": 314.6
+        },
+        {
+          "text": "house",
+          "start": 314.6,
+          "end": 314.9
+        },
+        {
+          "text": "relative",
+          "start": 314.9,
+          "end": 315.4
+        },
+        {
+          "text": "to",
+          "start": 315.4,
+          "end": 315.5
+        },
+        {
+          "text": "that",
+          "start": 315.5,
+          "end": 315.8
+        },
+        {
+          "text": "person",
+          "start": 315.8,
+          "end": 316.2
+        },
+        {
+          "text": "over",
+          "start": 316.2,
+          "end": 316.3
+        },
+        {
+          "text": "there,",
+          "start": 316.3,
+          "end": 316.8
+        },
+        {
+          "text": "to",
+          "start": 317.1,
+          "end": 317.2
+        },
+        {
+          "text": "my",
+          "start": 317.2,
+          "end": 317.3
+        },
+        {
+          "text": "neighbor,",
+          "start": 317.3,
+          "end": 317.7
+        },
+        {
+          "text": "to",
+          "start": 317.7,
+          "end": 317.8
+        },
+        {
+          "text": "my",
+          "start": 317.8,
+          "end": 317.9
+        },
+        {
+          "text": "coworker,",
+          "start": 317.9,
+          "end": 318.4
+        },
+        {
+          "text": "to",
+          "start": 318.4,
+          "end": 318.5
+        },
+        {
+          "text": "my",
+          "start": 318.5,
+          "end": 318.6
+        },
+        {
+          "text": "siblings.",
+          "start": 318.6,
+          "end": 319.2
+        },
+        {
+          "text": "And",
+          "start": 319.4,
+          "end": 319.6
+        },
+        {
+          "text": "one",
+          "start": 319.6,
+          "end": 319.7
+        },
+        {
+          "text": "of",
+          "start": 319.7,
+          "end": 319.8
+        },
+        {
+          "text": "the",
+          "start": 319.8,
+          "end": 319.9
+        },
+        {
+          "text": "problems",
+          "start": 319.9,
+          "end": 320.2
+        },
+        {
+          "text": "that",
+          "start": 320.2,
+          "end": 320.3
+        },
+        {
+          "text": "makes",
+          "start": 320.3,
+          "end": 320.5
+        },
+        {
+          "text": "it",
+          "start": 320.5,
+          "end": 320.6
+        },
+        {
+          "text": "more",
+          "start": 320.6,
+          "end": 320.9
+        },
+        {
+          "text": "difficult",
+          "start": 320.9,
+          "end": 321.3
+        },
+        {
+          "text": "today",
+          "start": 321.3,
+          "end": 321.6
+        },
+        {
+          "text": "than",
+          "start": 321.6,
+          "end": 321.7
+        },
+        {
+          "text": "it's",
+          "start": 321.7,
+          "end": 321.9
+        },
+        {
+          "text": "ever",
+          "start": 321.9,
+          "end": 322.1
+        },
+        {
+          "text": "been",
+          "start": 322.1,
+          "end": 322.6
+        },
+        {
+          "text": "is",
+          "start": 322.9,
+          "end": 323.0
+        },
+        {
+          "text": "that",
+          "start": 323.0,
+          "end": 323.2
+        },
+        {
+          "text": "it",
+          "start": 323.2,
+          "end": 323.3
+        },
+        {
+          "text": "used",
+          "start": 323.3,
+          "end": 323.5
+        },
+        {
+          "text": "to",
+          "start": 323.5,
+          "end": 323.6
+        },
+        {
+          "text": "be",
+          "start": 323.6,
+          "end": 323.8
+        },
+        {
+          "text": "for",
+          "start": 323.8,
+          "end": 324.0
+        },
+        {
+          "text": "my",
+          "start": 324.0,
+          "end": 324.1
+        },
+        {
+          "text": "parents'",
+          "start": 324.1,
+          "end": 324.5
+        },
+        {
+          "text": "generation,",
+          "start": 324.5,
+          "end": 325.0
+        },
+        {
+          "text": "my",
+          "start": 325.0,
+          "end": 325.1
+        },
+        {
+          "text": "grandparents'",
+          "start": 325.1,
+          "end": 325.6
+        },
+        {
+          "text": "generation,",
+          "start": 325.6,
+          "end": 326.2
+        },
+        {
+          "text": "when",
+          "start": 326.4,
+          "end": 326.6
+        },
+        {
+          "text": "they",
+          "start": 326.6,
+          "end": 326.7
+        },
+        {
+          "text": "compared",
+          "start": 326.7,
+          "end": 327.2
+        },
+        {
+          "text": "themselves",
+          "start": 327.2,
+          "end": 327.6
+        },
+        {
+          "text": "to",
+          "start": 327.6,
+          "end": 327.7
+        },
+        {
+          "text": "other",
+          "start": 327.7,
+          "end": 327.9
+        },
+        {
+          "text": "people,",
+          "start": 327.9,
+          "end": 328.3
+        },
+        {
+          "text": "it",
+          "start": 328.9,
+          "end": 329.1
+        },
+        {
+          "text": "was",
+          "start": 329.1,
+          "end": 329.3
+        },
+        {
+          "text": "relative",
+          "start": 329.3,
+          "end": 329.8
+        },
+        {
+          "text": "to",
+          "start": 329.8,
+          "end": 329.9
+        },
+        {
+          "text": "their",
+          "start": 329.9,
+          "end": 330.1
+        },
+        {
+          "text": "neighbors",
+          "start": 330.1,
+          "end": 330.6
+        },
+        {
+          "text": "or",
+          "start": 331.0,
+          "end": 331.1
+        },
+        {
+          "text": "their",
+          "start": 331.1,
+          "end": 331.2
+        },
+        {
+          "text": "coworkers.",
+          "start": 331.2,
+          "end": 331.9
+        },
+        {
+          "text": "It",
+          "start": 331.9,
+          "end": 332.0
+        },
+        {
+          "text": "was",
+          "start": 332.0,
+          "end": 332.1
+        },
+        {
+          "text": "a",
+          "start": 332.1,
+          "end": 332.1
+        },
+        {
+          "text": "pretty",
+          "start": 332.1,
+          "end": 332.3
+        },
+        {
+          "text": "small",
+          "start": 332.3,
+          "end": 332.6
+        },
+        {
+          "text": "group",
+          "start": 332.6,
+          "end": 332.8
+        },
+        {
+          "text": "of",
+          "start": 332.8,
+          "end": 332.9
+        },
+        {
+          "text": "people.",
+          "start": 332.9,
+          "end": 333.3
+        },
+        {
+          "text": "Maybe",
+          "start": 333.4,
+          "end": 333.9
+        },
+        {
+          "text": "a",
+          "start": 333.9,
+          "end": 334.0
+        },
+        {
+          "text": "couple",
+          "start": 334.0,
+          "end": 334.2
+        },
+        {
+          "text": "people",
+          "start": 334.2,
+          "end": 334.4
+        },
+        {
+          "text": "who",
+          "start": 334.4,
+          "end": 334.5
+        },
+        {
+          "text": "you",
+          "start": 334.5,
+          "end": 334.7
+        },
+        {
+          "text": "saw",
+          "start": 334.7,
+          "end": 334.9
+        },
+        {
+          "text": "on",
+          "start": 334.9,
+          "end": 335.0
+        },
+        {
+          "text": "TV",
+          "start": 335.0,
+          "end": 335.6
+        },
+        {
+          "text": "or",
+          "start": 335.7,
+          "end": 335.8
+        },
+        {
+          "text": "heard",
+          "start": 335.8,
+          "end": 336.0
+        },
+        {
+          "text": "about",
+          "start": 336.0,
+          "end": 336.2
+        },
+        {
+          "text": "on",
+          "start": 336.2,
+          "end": 336.3
+        },
+        {
+          "text": "the",
+          "start": 336.3,
+          "end": 336.4
+        },
+        {
+          "text": "radio.",
+          "start": 336.4,
+          "end": 336.9
+        },
+        {
+          "text": "But",
+          "start": 337.1,
+          "end": 337.3
+        },
+        {
+          "text": "now",
+          "start": 337.3,
+          "end": 337.6
+        },
+        {
+          "text": "today",
+          "start": 337.6,
+          "end": 337.9
+        },
+        {
+          "text": "just",
+          "start": 337.9,
+          "end": 338.5
+        },
+        {
+          "text": "everybody,",
+          "start": 338.5,
+          "end": 339.2
+        },
+        {
+          "text": "including",
+          "start": 339.2,
+          "end": 339.4
+        },
+        {
+          "text": "myself,",
+          "start": 339.4,
+          "end": 340.0
+        },
+        {
+          "text": "their",
+          "start": 340.3,
+          "end": 340.4
+        },
+        {
+          "text": "comparison",
+          "start": 340.4,
+          "end": 341.0
+        },
+        {
+          "text": "group",
+          "start": 341.0,
+          "end": 341.3
+        },
+        {
+          "text": "is",
+          "start": 341.3,
+          "end": 341.8
+        },
+        {
+          "text": "the",
+          "start": 342.1,
+          "end": 342.3
+        },
+        {
+          "text": "most",
+          "start": 342.3,
+          "end": 342.6
+        },
+        {
+          "text": "sophisticated",
+          "start": 342.6,
+          "end": 343.4
+        },
+        {
+          "text": "algorithm",
+          "start": 343.4,
+          "end": 344.1
+        },
+        {
+          "text": "on",
+          "start": 344.3,
+          "end": 344.6
+        },
+        {
+          "text": "Instagram",
+          "start": 344.6,
+          "end": 345.3
+        },
+        {
+          "text": "or",
+          "start": 345.3,
+          "end": 345.4
+        },
+        {
+          "text": "TikTok.",
+          "start": 345.4,
+          "end": 346.1
+        },
+        {
+          "text": "And",
+          "start": 346.3,
+          "end": 346.5
+        },
+        {
+          "text": "so",
+          "start": 346.5,
+          "end": 346.6
+        },
+        {
+          "text": "no",
+          "start": 346.6,
+          "end": 346.8
+        },
+        {
+          "text": "matter",
+          "start": 346.8,
+          "end": 347.0
+        },
+        {
+          "text": "how",
+          "start": 347.0,
+          "end": 347.5
+        },
+        {
+          "text": "well",
+          "start": 347.7,
+          "end": 348.0
+        },
+        {
+          "text": "you're",
+          "start": 348.0,
+          "end": 348.2
+        },
+        {
+          "text": "doing,",
+          "start": 348.2,
+          "end": 348.7
+        },
+        {
+          "text": "no",
+          "start": 348.9,
+          "end": 349.0
+        },
+        {
+          "text": "matter",
+          "start": 349.0,
+          "end": 349.2
+        },
+        {
+          "text": "how",
+          "start": 349.2,
+          "end": 349.6
+        },
+        {
+          "text": "great",
+          "start": 349.9,
+          "end": 350.2
+        },
+        {
+          "text": "your",
+          "start": 350.2,
+          "end": 350.4
+        },
+        {
+          "text": "house",
+          "start": 350.4,
+          "end": 350.7
+        },
+        {
+          "text": "is,",
+          "start": 350.7,
+          "end": 350.8
+        },
+        {
+          "text": "no",
+          "start": 350.8,
+          "end": 350.9
+        },
+        {
+          "text": "matter",
+          "start": 350.9,
+          "end": 351.1
+        },
+        {
+          "text": "how",
+          "start": 351.1,
+          "end": 351.2
+        },
+        {
+          "text": "much",
+          "start": 351.2,
+          "end": 351.4
+        },
+        {
+          "text": "money",
+          "start": 351.4,
+          "end": 351.6
+        },
+        {
+          "text": "you're",
+          "start": 351.6,
+          "end": 351.7
+        },
+        {
+          "text": "making,",
+          "start": 351.7,
+          "end": 352.2
+        },
+        {
+          "text": "you",
+          "start": 352.4,
+          "end": 352.6
+        },
+        {
+          "text": "turn",
+          "start": 352.6,
+          "end": 352.9
+        },
+        {
+          "text": "on",
+          "start": 352.9,
+          "end": 353.0
+        },
+        {
+          "text": "Instagram",
+          "start": 353.0,
+          "end": 353.6
+        },
+        {
+          "text": "100",
+          "start": 353.7,
+          "end": 354.0
+        },
+        {
+          "text": "times",
+          "start": 354.0,
+          "end": 354.2
+        },
+        {
+          "text": "a",
+          "start": 354.2,
+          "end": 354.2
+        },
+        {
+          "text": "day",
+          "start": 354.2,
+          "end": 354.4
+        },
+        {
+          "text": "like",
+          "start": 354.4,
+          "end": 354.6
+        },
+        {
+          "text": "everybody",
+          "start": 354.6,
+          "end": 355.0
+        },
+        {
+          "text": "else,",
+          "start": 355.0,
+          "end": 355.2
+        },
+        {
+          "text": "you",
+          "start": 355.2,
+          "end": 355.3
+        },
+        {
+          "text": "open",
+          "start": 355.3,
+          "end": 355.5
+        },
+        {
+          "text": "it",
+          "start": 355.5,
+          "end": 355.6
+        },
+        {
+          "text": "up",
+          "start": 355.6,
+          "end": 355.9
+        },
+        {
+          "text": "and",
+          "start": 356.0,
+          "end": 356.1
+        },
+        {
+          "text": "there",
+          "start": 356.1,
+          "end": 356.2
+        },
+        {
+          "text": "is",
+          "start": 356.2,
+          "end": 356.4
+        },
+        {
+          "text": "somebody",
+          "start": 356.4,
+          "end": 356.7
+        },
+        {
+          "text": "out",
+          "start": 356.7,
+          "end": 356.9
+        },
+        {
+          "text": "there",
+          "start": 356.9,
+          "end": 357.1
+        },
+        {
+          "text": "who",
+          "start": 357.1,
+          "end": 357.3
+        },
+        {
+          "text": "looks",
+          "start": 357.3,
+          "end": 357.8
+        },
+        {
+          "text": "better,",
+          "start": 358.0,
+          "end": 358.5
+        },
+        {
+          "text": "happier,",
+          "start": 358.6,
+          "end": 359.2
+        },
+        {
+          "text": "more",
+          "start": 359.3,
+          "end": 359.5
+        },
+        {
+          "text": "successful,",
+          "start": 359.5,
+          "end": 360.1
+        },
+        {
+          "text": "more",
+          "start": 360.2,
+          "end": 360.4
+        },
+        {
+          "text": "beautiful",
+          "start": 360.4,
+          "end": 361.0
+        },
+        {
+          "text": "than",
+          "start": 361.3,
+          "end": 361.5
+        },
+        {
+          "text": "you",
+          "start": 361.5,
+          "end": 361.6
+        },
+        {
+          "text": "are.",
+          "start": 361.6,
+          "end": 361.8
+        },
+        {
+          "text": "And",
+          "start": 361.9,
+          "end": 362.0
+        },
+        {
+          "text": "so",
+          "start": 362.0,
+          "end": 362.2
+        },
+        {
+          "text": "this",
+          "start": 362.2,
+          "end": 362.4
+        },
+        {
+          "text": "topic",
+          "start": 362.4,
+          "end": 362.8
+        },
+        {
+          "text": "I",
+          "start": 362.8,
+          "end": 362.9
+        },
+        {
+          "text": "think",
+          "start": 362.9,
+          "end": 363.0
+        },
+        {
+          "text": "has",
+          "start": 363.0,
+          "end": 363.2
+        },
+        {
+          "text": "always",
+          "start": 363.2,
+          "end": 363.5
+        },
+        {
+          "text": "been",
+          "start": 363.5,
+          "end": 363.6
+        },
+        {
+          "text": "true.",
+          "start": 363.6,
+          "end": 363.9
+        },
+        {
+          "text": "It's",
+          "start": 363.9,
+          "end": 364.1
+        },
+        {
+          "text": "always",
+          "start": 364.1,
+          "end": 364.3
+        },
+        {
+          "text": "been",
+          "start": 364.3,
+          "end": 364.4
+        },
+        {
+          "text": "important.",
+          "start": 364.4,
+          "end": 364.9
+        },
+        {
+          "text": "It",
+          "start": 364.9,
+          "end": 365.0
+        },
+        {
+          "text": "is",
+          "start": 365.0,
+          "end": 365.1
+        },
+        {
+          "text": "more",
+          "start": 365.1,
+          "end": 365.8
+        },
+        {
+          "text": "important",
+          "start": 366.1,
+          "end": 366.6
+        },
+        {
+          "text": "today",
+          "start": 366.6,
+          "end": 367.1
+        },
+        {
+          "text": "than",
+          "start": 367.1,
+          "end": 367.2
+        },
+        {
+          "text": "it's",
+          "start": 367.2,
+          "end": 367.4
+        },
+        {
+          "text": "ever",
+          "start": 367.4,
+          "end": 367.7
+        },
+        {
+          "text": "been.",
+          "start": 367.7,
+          "end": 368.2
+        },
+        {
+          "text": "The",
+          "start": 368.4,
+          "end": 368.5
+        },
+        {
+          "text": "idea",
+          "start": 368.5,
+          "end": 368.8
+        },
+        {
+          "text": "of",
+          "start": 368.8,
+          "end": 368.9
+        },
+        {
+          "text": "keeping",
+          "start": 368.9,
+          "end": 369.1
+        },
+        {
+          "text": "your",
+          "start": 369.1,
+          "end": 369.3
+        },
+        {
+          "text": "expectations",
+          "start": 369.3,
+          "end": 369.9
+        },
+        {
+          "text": "in",
+          "start": 369.9,
+          "end": 370.0
+        },
+        {
+          "text": "check",
+          "start": 370.0,
+          "end": 370.3
+        },
+        {
+          "text": "because",
+          "start": 370.3,
+          "end": 370.5
+        },
+        {
+          "text": "it's",
+          "start": 370.5,
+          "end": 370.7
+        },
+        {
+          "text": "easier",
+          "start": 370.8,
+          "end": 371.2
+        },
+        {
+          "text": "today",
+          "start": 371.2,
+          "end": 371.7
+        },
+        {
+          "text": "than",
+          "start": 371.9,
+          "end": 372.0
+        },
+        {
+          "text": "it's",
+          "start": 372.0,
+          "end": 372.2
+        },
+        {
+          "text": "ever",
+          "start": 372.2,
+          "end": 372.5
+        },
+        {
+          "text": "been",
+          "start": 372.5,
+          "end": 372.8
+        },
+        {
+          "text": "to",
+          "start": 373.0,
+          "end": 373.1
+        },
+        {
+          "text": "let",
+          "start": 373.1,
+          "end": 373.3
+        },
+        {
+          "text": "your",
+          "start": 373.3,
+          "end": 373.4
+        },
+        {
+          "text": "expectations",
+          "start": 373.4,
+          "end": 374.3
+        },
+        {
+          "text": "just",
+          "start": 374.3,
+          "end": 374.5
+        },
+        {
+          "text": "spiral",
+          "start": 374.5,
+          "end": 375.0
+        },
+        {
+          "text": "out",
+          "start": 375.0,
+          "end": 375.2
+        },
+        {
+          "text": "of",
+          "start": 375.2,
+          "end": 375.2
+        },
+        {
+          "text": "control.",
+          "start": 375.2,
+          "end": 375.8
+        },
+        {
+          "text": "I",
+          "start": 376.1,
+          "end": 376.2
+        },
+        {
+          "text": "see",
+          "start": 376.2,
+          "end": 376.3
+        },
+        {
+          "text": "this",
+          "start": 376.3,
+          "end": 376.5
+        },
+        {
+          "text": "with",
+          "start": 376.5,
+          "end": 376.6
+        },
+        {
+          "text": "my",
+          "start": 376.6,
+          "end": 376.7
+        },
+        {
+          "text": "own",
+          "start": 376.7,
+          "end": 376.9
+        },
+        {
+          "text": "kids,",
+          "start": 376.9,
+          "end": 377.1
+        },
+        {
+          "text": "my",
+          "start": 377.1,
+          "end": 377.2
+        },
+        {
+          "text": "nine",
+          "start": 377.2,
+          "end": 377.4
+        },
+        {
+          "text": "year",
+          "start": 377.4,
+          "end": 377.5
+        },
+        {
+          "text": "old",
+          "start": 377.5,
+          "end": 377.7
+        },
+        {
+          "text": "son.",
+          "start": 377.7,
+          "end": 378.0
+        },
+        {
+          "text": "His",
+          "start": 378.5,
+          "end": 378.8
+        },
+        {
+          "text": "when",
+          "start": 379.1,
+          "end": 379.2
+        },
+        {
+          "text": "I",
+          "start": 379.2,
+          "end": 379.3
+        },
+        {
+          "text": "was",
+          "start": 379.3,
+          "end": 379.4
+        },
+        {
+          "text": "growing",
+          "start": 379.4,
+          "end": 379.7
+        },
+        {
+          "text": "up,",
+          "start": 379.7,
+          "end": 380.1
+        },
+        {
+          "text": "normal",
+          "start": 380.2,
+          "end": 380.6
+        },
+        {
+          "text": "people",
+          "start": 380.6,
+          "end": 381.0
+        },
+        {
+          "text": "drove",
+          "start": 381.0,
+          "end": 381.6
+        },
+        {
+          "text": "old",
+          "start": 381.8,
+          "end": 382.1
+        },
+        {
+          "text": "pickup",
+          "start": 382.1,
+          "end": 382.4
+        },
+        {
+          "text": "trucks",
+          "start": 382.4,
+          "end": 382.9
+        },
+        {
+          "text": "and",
+          "start": 383.2,
+          "end": 383.4
+        },
+        {
+          "text": "rich",
+          "start": 383.4,
+          "end": 383.6
+        },
+        {
+          "text": "people",
+          "start": 383.6,
+          "end": 383.8
+        },
+        {
+          "text": "drove",
+          "start": 383.8,
+          "end": 384.1
+        },
+        {
+          "text": "new",
+          "start": 384.1,
+          "end": 384.3
+        },
+        {
+          "text": "pickup",
+          "start": 384.3,
+          "end": 384.6
+        },
+        {
+          "text": "trucks.",
+          "start": 384.6,
+          "end": 385.1
+        },
+        {
+          "text": "That",
+          "start": 385.1,
+          "end": 385.2
+        },
+        {
+          "text": "was",
+          "start": 385.2,
+          "end": 385.4
+        },
+        {
+          "text": "that",
+          "start": 385.4,
+          "end": 385.5
+        },
+        {
+          "text": "was",
+          "start": 385.5,
+          "end": 385.6
+        },
+        {
+          "text": "like",
+          "start": 385.6,
+          "end": 385.8
+        },
+        {
+          "text": "the",
+          "start": 385.8,
+          "end": 385.9
+        },
+        {
+          "text": "definition",
+          "start": 385.9,
+          "end": 386.4
+        },
+        {
+          "text": "in",
+          "start": 386.4,
+          "end": 386.5
+        },
+        {
+          "text": "my",
+          "start": 386.5,
+          "end": 386.7
+        },
+        {
+          "text": "head.",
+          "start": 386.7,
+          "end": 386.9
+        },
+        {
+          "text": "Like",
+          "start": 386.9,
+          "end": 387.1
+        },
+        {
+          "text": "if",
+          "start": 387.1,
+          "end": 387.2
+        },
+        {
+          "text": "you",
+          "start": 387.2,
+          "end": 387.3
+        },
+        {
+          "text": "had",
+          "start": 387.3,
+          "end": 387.5
+        },
+        {
+          "text": "a",
+          "start": 387.5,
+          "end": 387.6
+        },
+        {
+          "text": "new",
+          "start": 387.6,
+          "end": 387.8
+        },
+        {
+          "text": "pickup",
+          "start": 387.8,
+          "end": 388.1
+        },
+        {
+          "text": "truck,",
+          "start": 388.1,
+          "end": 388.3
+        },
+        {
+          "text": "like",
+          "start": 388.3,
+          "end": 388.5
+        },
+        {
+          "text": "oh",
+          "start": 388.5,
+          "end": 388.6
+        },
+        {
+          "text": "there's",
+          "start": 388.6,
+          "end": 388.8
+        },
+        {
+          "text": "there's",
+          "start": 388.8,
+          "end": 389.0
+        },
+        {
+          "text": "a",
+          "start": 389.0,
+          "end": 389.1
+        },
+        {
+          "text": "rich",
+          "start": 389.1,
+          "end": 389.3
+        },
+        {
+          "text": "person.",
+          "start": 389.3,
+          "end": 389.6
+        },
+        {
+          "text": "My",
+          "start": 389.9,
+          "end": 390.0
+        },
+        {
+          "text": "son",
+          "start": 390.0,
+          "end": 390.3
+        },
+        {
+          "text": "who's",
+          "start": 390.3,
+          "end": 390.5
+        },
+        {
+          "text": "nine,",
+          "start": 390.5,
+          "end": 391.0
+        },
+        {
+          "text": "his",
+          "start": 391.1,
+          "end": 391.3
+        },
+        {
+          "text": "definition",
+          "start": 391.3,
+          "end": 391.8
+        },
+        {
+          "text": "of",
+          "start": 391.8,
+          "end": 391.9
+        },
+        {
+          "text": "rich",
+          "start": 391.9,
+          "end": 392.1
+        },
+        {
+          "text": "is",
+          "start": 392.1,
+          "end": 392.2
+        },
+        {
+          "text": "like",
+          "start": 392.2,
+          "end": 392.3
+        },
+        {
+          "text": "a",
+          "start": 392.3,
+          "end": 392.4
+        },
+        {
+          "text": "private",
+          "start": 392.4,
+          "end": 392.7
+        },
+        {
+          "text": "jet",
+          "start": 392.7,
+          "end": 392.9
+        },
+        {
+          "text": "and",
+          "start": 392.9,
+          "end": 393.0
+        },
+        {
+          "text": "a",
+          "start": 393.0,
+          "end": 393.0
+        },
+        {
+          "text": "private",
+          "start": 393.0,
+          "end": 393.3
+        },
+        {
+          "text": "island",
+          "start": 393.3,
+          "end": 393.7
+        },
+        {
+          "text": "because",
+          "start": 393.8,
+          "end": 393.9
+        },
+        {
+          "text": "he",
+          "start": 393.9,
+          "end": 394.0
+        },
+        {
+          "text": "watches",
+          "start": 394.0,
+          "end": 394.2
+        },
+        {
+          "text": "Mr.",
+          "start": 394.2,
+          "end": 394.5
+        },
+        {
+          "text": "Beast",
+          "start": 394.5,
+          "end": 394.8
+        },
+        {
+          "text": "and",
+          "start": 394.8,
+          "end": 394.9
+        },
+        {
+          "text": "it's",
+          "start": 394.9,
+          "end": 395.0
+        },
+        {
+          "text": "like,",
+          "start": 395.0,
+          "end": 395.3
+        },
+        {
+          "text": "oh",
+          "start": 395.3,
+          "end": 395.5
+        },
+        {
+          "text": "sit",
+          "start": 395.5,
+          "end": 396.1
+        },
+        {
+          "text": "in",
+          "start": 396.1,
+          "end": 396.1
+        },
+        {
+          "text": "the",
+          "start": 396.1,
+          "end": 396.2
+        },
+        {
+          "text": "circle",
+          "start": 396.2,
+          "end": 396.5
+        },
+        {
+          "text": "and",
+          "start": 396.5,
+          "end": 396.6
+        },
+        {
+          "text": "you",
+          "start": 396.6,
+          "end": 396.7
+        },
+        {
+          "text": "win",
+          "start": 396.7,
+          "end": 396.8
+        },
+        {
+          "text": "a",
+          "start": 396.8,
+          "end": 396.8
+        },
+        {
+          "text": "million",
+          "start": 396.8,
+          "end": 397.1
+        },
+        {
+          "text": "bucks",
+          "start": 397.1,
+          "end": 397.4
+        },
+        {
+          "text": "kind",
+          "start": 397.4,
+          "end": 397.5
+        },
+        {
+          "text": "of",
+          "start": 397.5,
+          "end": 397.6
+        },
+        {
+          "text": "thing.",
+          "start": 397.6,
+          "end": 397.7
+        },
+        {
+          "text": "It's",
+          "start": 397.8,
+          "end": 398.0
+        },
+        {
+          "text": "a",
+          "start": 398.0,
+          "end": 398.0
+        },
+        {
+          "text": "completely",
+          "start": 398.0,
+          "end": 398.7
+        },
+        {
+          "text": "different",
+          "start": 398.7,
+          "end": 399.1
+        },
+        {
+          "text": "level",
+          "start": 399.1,
+          "end": 399.5
+        },
+        {
+          "text": "of",
+          "start": 399.5,
+          "end": 399.8
+        },
+        {
+          "text": "expectations",
+          "start": 400.2,
+          "end": 401.3
+        },
+        {
+          "text": "than",
+          "start": 401.5,
+          "end": 401.7
+        },
+        {
+          "text": "even",
+          "start": 401.7,
+          "end": 401.9
+        },
+        {
+          "text": "I",
+          "start": 401.9,
+          "end": 402.0
+        },
+        {
+          "text": "had",
+          "start": 402.0,
+          "end": 402.5
+        },
+        {
+          "text": "20",
+          "start": 402.7,
+          "end": 402.9
+        },
+        {
+          "text": "or",
+          "start": 402.9,
+          "end": 403.0
+        },
+        {
+          "text": "30",
+          "start": 403.0,
+          "end": 403.3
+        },
+        {
+          "text": "years",
+          "start": 403.3,
+          "end": 403.5
+        },
+        {
+          "text": "ago.",
+          "start": 403.5,
+          "end": 403.9
+        }
+      ]
+    }
+  ]
+}
