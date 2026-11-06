@@ -1,8 +1,8 @@
-# g2-hackathon
+# audio-retrieval
 
 FastAPI service that transcribes 2-speaker audio with Gemini, then indexes the transcripts for hybrid (Postgres full-text + pgvector) retrieval over sliding windows of several lengths.
 
-All settings live in `config.yaml`; `GEMINI_API_KEY` is read from `.env`. The design, retrieval strategy and database schema are explained in [docs/engineering.md](docs/engineering.md). How AI was used on this project is documented in [docs/ai-usage.md](docs/ai-usage.md). A short slide deck of the approach is in [docs/audio-retrieval-deck.pptx](docs/audio-retrieval-deck.pptx), and [docs/prototype.html](docs/prototype.html) shows the approach with real captured responses from each API (open it in a browser).
+All settings live in `config.yaml`; `GEMINI_API_KEY` is read from `.env`. The design, retrieval strategy and database schema are explained in [docs/engineering.md](docs/engineering.md). How AI was used on this project is documented in [docs/ai-usage.md](docs/ai-usage.md). A short slide deck of the approach is in [docs/audio-retrieval-deck.pptx](docs/audio-retrieval-deck.pptx), and [docs/prototype.html](docs/prototype.html) shows the approach with real captured responses from each API (open it in a browser). [docs/presentation.html](docs/presentation.html) is the walkthrough for presenting the project: the retrieval strategies, the main settings, demo searches and recall@k results from the eval.
 
 ## Run it locally
 
@@ -87,8 +87,8 @@ curl -X POST localhost:8000/search -H "Content-Type: application/json" -d '{"que
 
 Pipeline per query:
 
-1. For each window length, run full-text and semantic search and fuse them with weighted RRF.
-2. Within each length, merge results whose time ranges overlap by at least `merge_overlap_seconds`, capped at `max_merged_seconds`.
+1. For each window length, one SQL query runs full-text and semantic search and fuses them with weighted RRF.
+2. Within each length, merge results whose time ranges overlap by at least `merge_overlap_seconds`, capped at `max_merged_seconds`. Set `search.merge_overlaps` to `false` to skip this step and rerank each window on its own.
 3. Rerank all merged results together with a local ColBERT model (`app/services/reranker.py`, `lightonai/GTE-ModernColBERT-v1` via PyLate).
 4. Drop results overlapping a higher-ranked one by at least `dedupe_overlap_seconds` and return the top k.
 
@@ -100,7 +100,7 @@ With the server running:
 uv run python -m evals.recall_at_k
 ```
 
-Queries and their answer spans live in `evals/dataset.yaml`. A retrieved chunk is a hit when it is from the same audio file and covers at least `eval.min_span_coverage` of the answer span. Queries that hit the Gemini rate limit are skipped and counted.
+Queries and their answer spans live in `evals/dataset.yaml`. Each span names its recording by the transcript's database ID, so re-ingesting a transcript (which gives it a new ID) means updating its spans. A retrieved chunk is a hit when it is from the same transcript and covers at least `eval.min_span_coverage` of the answer span. Queries that hit the Gemini rate limit are skipped and counted.
 
 ## Changing settings
 

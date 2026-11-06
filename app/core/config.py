@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+from typing import Literal
 
 import yaml
 from dotenv import load_dotenv
@@ -48,16 +49,39 @@ class SearchSettings(BaseModel):
     text_weight: float
     semantic_weight: float
     rrf_k: int
+    merge_overlaps: bool
     dedupe_overlap_seconds: float
     top_k: int
 
 
-class RerankerSettings(BaseModel):
+class ColbertRerankerSettings(BaseModel):
     model: str
     query_length: int
     document_length: int
     batch_size: int
     gpu_dtype: str
+
+
+class Qwen3RerankerSettings(BaseModel):
+    model: str
+    instruction: str
+    batch_size: int
+    dtype: str
+    max_gpu_memory: str
+    max_cpu_memory: str
+
+
+class GeminiRerankerSettings(BaseModel):
+    model: str
+    thinking_level: str
+    instruction: str
+
+
+class RerankerSettings(BaseModel):
+    strategy: Literal["colbert", "qwen3", "gemini"]
+    colbert: ColbertRerankerSettings
+    qwen3: Qwen3RerankerSettings
+    gemini: GeminiRerankerSettings
 
 
 class EvalSettings(BaseModel):

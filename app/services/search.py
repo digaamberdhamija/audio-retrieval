@@ -8,31 +8,43 @@ from app.services.chunking import render_text, speakers_in, words_between
 from app.services.embeddings import embed_texts
 from app.services.reranker import rerank_scores
 
-CHUNK_COLUMNS = """
-    c.id, c.transcript_id, t.audio_file, c.window_seconds,
-    c.start_seconds, c.end_seconds, c.speakers, c.text
-"""
-
-TEXT_SEARCH_SQL = f"""
+HYBRID_SEARCH_SQL = """
 WITH query AS (
-    SELECT replace(plainto_tsquery($4::regconfig, $1)::text, '&', '|')::tsquery AS tsquery
+    SELECT replace(plainto_tsquery($2::regconfig, $1)::text, '&', '|')::tsquery AS tsquery
+),
+keyword AS (
+    SELECT id, row_number() OVER (ORDER BY keyword_score DESC) AS rank
+    FROM (
+        SELECT c.id, ts_rank(c.text_search, query.tsquery) AS keyword_score
+        FROM chunks c
+        CROSS JOIN query
+        WHERE c.window_seconds = $4 AND c.text_search @@ query.tsquery
+        ORDER BY keyword_score DESC
+        LIMIT $5
+    ) matches
+),
+semantic AS (
+    SELECT id, row_number() OVER (ORDER BY distance) AS rank
+    FROM (
+        SELECT c.id, c.embedding <=> $3 AS distance
+        FROM chunks c
+        WHERE c.window_seconds = $4
+        ORDER BY c.embedding <=> $3
+        LIMIT $5
+    ) nearest
+),
+fused AS (
+    SELECT id,
+           coalesce($6::float8 / ($8 + keyword.rank), 0) + coalesce($7::float8 / ($8 + semantic.rank), 0) AS score
+    FROM keyword
+    FULL OUTER JOIN semantic USING (id)
 )
-SELECT {CHUNK_COLUMNS}
-FROM chunks c
+SELECT c.id, c.transcript_id, t.audio_file, c.window_seconds,
+       c.start_seconds, c.end_seconds, c.speakers, c.text, fused.score
+FROM fused
+JOIN chunks c ON c.id = fused.id
 JOIN transcripts t ON t.id = c.transcript_id
-CROSS JOIN query
-WHERE c.window_seconds = $2 AND c.text_search @@ query.tsquery
-ORDER BY ts_rank(c.text_search, query.tsquery) DESC
-LIMIT $3
-"""
-
-SEMANTIC_SEARCH_SQL = f"""
-SELECT {CHUNK_COLUMNS}
-FROM chunks c
-JOIN transcripts t ON t.id = c.transcript_id
-WHERE c.window_seconds = $2
-ORDER BY c.embedding <=> $1
-LIMIT $3
+ORDER BY fused.score DESC
 """
 
 
@@ -41,24 +53,18 @@ def overlaps(a: Chunk, b: Chunk, min_overlap_seconds: float) -> bool:
     return a.transcript_id == b.transcript_id and overlap >= min_overlap_seconds
 
 
-def fuse(text_rows: list[asyncpg.Record], semantic_rows: list[asyncpg.Record]) -> list[Chunk]:
-    config = settings.search
-    chunks: dict[int, Chunk] = {}
-    for weight, rows in ((config.text_weight, text_rows), (config.semantic_weight, semantic_rows)):
-        for rank, row in enumerate(rows, start=1):
-            if row["id"] not in chunks:
-                chunks[row["id"]] = Chunk(
-                    chunk_ids=[row["id"]],
-                    transcript_id=row["transcript_id"],
-                    audio_file=row["audio_file"],
-                    window_seconds=row["window_seconds"],
-                    start_seconds=row["start_seconds"],
-                    end_seconds=row["end_seconds"],
-                    speakers=list(row["speakers"]),
-                    text=row["text"],
-                )
-            chunks[row["id"]].score += weight / (config.rrf_k + rank)
-    return list(chunks.values())
+def to_chunk(row: asyncpg.Record) -> Chunk:
+    return Chunk(
+        chunk_ids=[row["id"]],
+        transcript_id=row["transcript_id"],
+        audio_file=row["audio_file"],
+        window_seconds=row["window_seconds"],
+        start_seconds=row["start_seconds"],
+        end_seconds=row["end_seconds"],
+        speakers=list(row["speakers"]),
+        text=row["text"],
+        score=row["score"],
+    )
 
 
 def merge_overlapping(chunks: list[Chunk], min_overlap: float, max_length: float) -> list[Chunk]:
@@ -81,14 +87,22 @@ def merge_overlapping(chunks: list[Chunk], min_overlap: float, max_length: float
 async def search_window(
     pool: asyncpg.Pool, query: str, query_embedding: list[float], window: WindowSettings
 ) -> list[Chunk]:
-    limit = settings.search.candidates_per_search
-    text_rows, semantic_rows = await asyncio.gather(
-        pool.fetch(TEXT_SEARCH_SQL, query, window.length_seconds, limit, settings.search.text_search_language),
-        pool.fetch(SEMANTIC_SEARCH_SQL, query_embedding, window.length_seconds, limit),
+    config = settings.search
+    rows = await pool.fetch(
+        HYBRID_SEARCH_SQL,
+        query,
+        config.text_search_language,
+        query_embedding,
+        window.length_seconds,
+        config.candidates_per_search,
+        config.text_weight,
+        config.semantic_weight,
+        config.rrf_k,
     )
-    return merge_overlapping(
-        fuse(text_rows, semantic_rows), window.merge_overlap_seconds, window.max_merged_seconds
-    )
+    chunks = [to_chunk(row) for row in rows]
+    if not config.merge_overlaps:
+        return chunks
+    return merge_overlapping(chunks, window.merge_overlap_seconds, window.max_merged_seconds)
 
 
 async def rebuild_merged_text(pool: asyncpg.Pool, chunks: list[Chunk]) -> None:

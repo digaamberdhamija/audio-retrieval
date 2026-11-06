@@ -53,7 +53,7 @@ Each window length is searched in two ways:
 - **Keyword search** uses Postgres full-text search. It reduces words to their root, so "finances" matches "finance". It looks for windows containing *any* of the question's words, so a naturally phrased question still matches on its key terms.
 - **Meaning search** compares embeddings of the question and of each window. An embedding is a list of numbers that captures what a piece of text is about, so this search finds paraphrases that share no words with the question.
 
-The two rankings are blended with reciprocal rank fusion. It scores each passage by its position in each list, so the two searches' very different scoring scales never need to be compared. Keyword search gets the larger share of the weight: 60% against 40%.
+The two rankings are blended with reciprocal rank fusion, inside the database. It scores each passage by its position in each list, so the two searches' very different scoring scales never need to be compared. Keyword search gets the larger share of the weight: 60% against 40%.
 
 These weights can be adjusted to prioritize one strategy over another.
 
@@ -63,6 +63,8 @@ Because windows overlap, a relevant stretch of audio usually matches several win
 
 - Longer windows need more overlap before joining: 5, 15 and 30 seconds.
 - Each length has a maximum passage length of 90, 180 and 300 seconds, so a run of matches cannot snowball into the whole recording.
+
+Joining can be switched off in the settings. Each window then goes to the reranker on its own, and the final step that removes repeats still keeps the results distinct.
 
 ### Reranking across lengths, then removing repeats
 
@@ -128,7 +130,7 @@ Everything lives in a single Postgres database, with the pgvector extension for 
 
 - **Search work happens inside the database, behind indexes.** Neither search reads the whole table. The web service holds no search state, so more copies of it can run side by side.
 - **Keywords and vectors live in one database.** There is nothing to keep in sync. A recording's windows, keyword data and embeddings are written in one transaction, so a recording is never half-indexed.
-- **Searches run in parallel.** The six searches behind each question (keyword and meaning, at three lengths) run at the same time over a pool of database connections.
+- **Searches run in parallel.** Each window length is a single database query that runs both searches and blends their rankings. The three queries behind each question run at the same time over a pool of database connections.
 - **Storage stays lean.** Word-level detail is stored once per recording rather than once per window. Embeddings use a reduced size of 768 dimensions, which the model supports natively.
 - **Growth is predictable.** Each hour of audio adds about 420 windows, so storage and index size grow in direct proportion to hours of audio.
 
@@ -214,7 +216,7 @@ Postgres handles both kinds of search well at moderate scale. For a very large l
 
 ## Alternative ideas not explored (time constraints)
 
-The hackathon's time limit meant these alternative retrieval ideas could not be explored. Each one would slot into the existing pipeline without changing the rest.
+These alternative retrieval ideas were out of scope for this version. Each one would slot into the existing pipeline without changing the rest.
 
 ### Metadata search
 

@@ -9,7 +9,7 @@ from app.core.config import PROJECT_ROOT, settings
 def is_hit(result: dict, span: dict) -> bool:
     overlap = min(result["end_seconds"], span["end"]) - max(result["start_seconds"], span["start"])
     coverage = max(overlap, 0.0) / (span["end"] - span["start"])
-    return result["audio_file"] == span["audio_file"] and coverage >= settings.eval.min_span_coverage
+    return result["transcript_id"] == span["transcript_id"] and coverage >= settings.eval.min_span_coverage
 
 
 def recall_at_k(results: list[dict], relevant_spans: list[dict], k: int) -> float:

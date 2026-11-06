@@ -222,4 +222,4 @@ __marimo__/
 ~$*
 
 # Over GitHub's 100 MB file limit
-audios/quantum_podcast_2.wav
+audios/*.wav
