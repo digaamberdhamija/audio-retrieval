@@ -1,143 +1,299 @@
-- query: "Which topics did the interviewer promise not to ask Jensen about?"
+- query: "Why do some chip architectures stay dominant even when people criticize them?"
   relevant:
-    - audio_file: audios/ai_podcast.wav
-      start: 15.2
-      end: 33.7
+    - transcript_id: 11 # NVIDIA CUDA bet part 1
+      start: 310.4
+      end: 363.3
+    - transcript_id: 42 # NVIDIA moat part 4
+      start: 1124.0
+      end: 1145.4
 
-- query: "What kind of videos does Huge If True make?"
+- query: "Which software libraries make NVIDIA hard to replace?"
   relevant:
-    - audio_file: audios/ai_podcast.wav
-      start: 34.4
-      end: 38.8
+    - transcript_id: 44 # GPU Myth part 2
+      start: 131.5
+      end: 235.6
+    - transcript_id: 13 # DeepSeek part 1
+      start: 56.9
+      end: 69.6
 
-- query: "Why does the show think showing people better futures matters?"
+- query: "Why does energy efficiency matter so much for AI data centers?"
   relevant:
-    - audio_file: audios/ai_podcast.wav
-      start: 55.7
-      end: 59.5
+    - transcript_id: 20 # Economics of AI part 6
+      start: 394.8
+      end: 462.5
+    - transcript_id: 40 # NVIDIA moat part 2
+      start: 851.1
+      end: 878.6
+    - transcript_id: 42 # NVIDIA moat part 4
+      start: 314.8
+      end: 355.5
 
-- query: "What subjects have previous episodes of the show covered?"
+- query: "What kinds of tasks is AI best at learning to automate?"
   relevant:
-    - audio_file: audios/ai_podcast.wav
-      start: 66.2
-      end: 72.8
+    - transcript_id: 15 # Economics of AI part 1
+      start: 571.5
+      end: 586.9
+    - transcript_id: 17 # Economics of AI part 3
+      start: 104.5
+      end: 159.4
+    - transcript_id: 34 # GPU Myth part 3
+      start: 1349.9
+      end: 1410.4
 
-- query: "How much background knowledge does the show's audience have?"
+- query: "Will AI take away people's jobs?"
   relevant:
-    - audio_file: audios/ai_podcast.wav
-      start: 73.5
-      end: 89.2
+    - transcript_id: 29 # Middle class part 7
+      start: 111.0
+      end: 172.4
+    - transcript_id: 39 # NVIDIA moat part 1
+      start: 790.5
+      end: 833.6
+    - transcript_id: 43 # NVIDIA moat part 5
+      start: 374.5
+      end: 414.6
 
-- query: "What three areas is the interview going to cover?"
+- query: "Where does Anthropic get its computing power, and why?"
   relevant:
-    - audio_file: audios/ai_podcast.wav
-      start: 105.7
-      end: 127.4
+    - transcript_id: 19 # Economics of AI part 5
+      start: 386.1
+      end: 402.1
+    - transcript_id: 40 # NVIDIA moat part 2
+      start: 1110.5
+      end: 1190.6
+    - transcript_id: 41 # NVIDIA moat part 3
+      start: 45.8
+      end: 121.6
 
-- query: "What was the graphics hardware problem for game developers in the 90s?"
+- query: "How profitable is it to build custom AI chips for other companies?"
   relevant:
-    - audio_file: audios/ai_podcast.wav
-      start: 134.3
-      end: 147.5
+    - transcript_id: 16 # Economics of AI part 2
+      start: 351.6
+      end: 377.4
+    - transcript_id: 40 # NVIDIA moat part 2
+      start: 1073.6
+      end: 1109.9
 
-- query: "What insight about sequential and parallel code led to founding NVIDIA?"
+- query: "Why is NVIDIA adding other accelerators to its platform, and how long was that planned?"
   relevant:
-    - audio_file: audios/ai_podcast.wav
-      start: 165.4
-      end: 206.6
+    - transcript_id: 12 # NVIDIA CUDA bet part 2
+      start: 376.9
+      end: 402.6
+    - transcript_id: 43 # NVIDIA moat part 5
+      start: 906.6
+      end: 1003.5
 
-- query: "Describe the MythBusters paintball robot demo of CPU versus GPU"
+- query: "How can you become more comfortable taking risks?"
   relevant:
-    - audio_file: audios/ai_podcast.wav
-      start: 208.0
-      end: 237.2
+    - transcript_id: 23 # Middle class part 1
+      start: 62.6
+      end: 83.7
+    - transcript_id: 27 # Middle class part 5
+      start: 409.5
+      end: 500.6
 
-- query: "Why did NVIDIA pick video games as its first market?"
+- query: "How much does knowing someone inside a company help you get hired?"
   relevant:
-    - audio_file: audios/ai_podcast.wav
+    - transcript_id: 26 # Middle class part 4
+      start: 636.6
+      end: 667.4
+    - transcript_id: 27 # Middle class part 5
+      start: 0.4
+      end: 29.9
+
+- query: "Why does being the low-cost producer matter so much in AI?"
+  relevant:
+    - transcript_id: 16 # Economics of AI part 2
+      start: 10.2
+      end: 57.2
+    - transcript_id: 19 # Economics of AI part 5
+      start: 334.8
+      end: 385.8
+
+- query: "How long do data center GPUs stay valuable?"
+  relevant:
+    - transcript_id: 32 # GPU Myth part 1
+      start: 5.5
+      end: 13.5
+    - transcript_id: 44 # GPU Myth part 2
+      start: 936.1
+      end: 1064.8
+
+- query: "Why does it matter how well a company runs its GPUs?"
+  relevant:
+    - transcript_id: 32 # GPU Myth part 1
+      start: 1043.9
+      end: 1098.0
+    - transcript_id: 19 # Economics of AI part 5
+      start: 0.1
+      end: 33.1
+
+- query: "Where do AI performance gains come from if chips are not improving as fast?"
+  relevant:
+    - transcript_id: 40 # NVIDIA moat part 2
+      start: 80.4
+      end: 148.8
+    - transcript_id: 42 # NVIDIA moat part 4
+      start: 463.9
+      end: 503.6
+    - transcript_id: 43 # NVIDIA moat part 5
+      start: 582.9
+      end: 623.5
+
+- query: "What did NVIDIA's early software bet cost the company?"
+  relevant:
+    - transcript_id: 11 # NVIDIA CUDA bet part 1
+      start: 428.5
+      end: 477.4
+    - transcript_id: 12 # NVIDIA CUDA bet part 2
+      start: 47.1
+      end: 103.5
+
+- query: "Do you really own the things you buy digitally?"
+  relevant:
+    - transcript_id: 35 # PC gaming part 1
+      start: 691.8
+      end: 735.5
+    - transcript_id: 36 # PC gaming part 2
+      start: 54.6
+      end: 152.9
+
+- query: "Are new graphics cards still much faster than older ones?"
+  relevant:
+    - transcript_id: 36 # PC gaming part 2
+      start: 850.5
+      end: 957.6
+    - transcript_id: 37 # PC gaming part 3
+      start: 356.9
+      end: 377.6
+
+- query: "Is a shortage of computing power holding back AI labs in China?"
+  relevant:
+    - transcript_id: 19 # Economics of AI part 5
+      start: 203.3
+      end: 222.4
+    - transcript_id: 42 # NVIDIA moat part 4
+      start: 168.2
+      end: 177.9
+    - transcript_id: 43 # NVIDIA moat part 5
+      start: 54.3
+      end: 62.6
+
+- query: "Can chip manufacturing keep up with demand from AI?"
+  relevant:
+    - transcript_id: 20 # Economics of AI part 6
+      start: 262.8
+      end: 344.8
+    - transcript_id: 39 # NVIDIA moat part 1
+      start: 834.1
+      end: 908.1
+
+- query: "What happens when an AI lab bets everything on one big training run?"
+  relevant:
+    - transcript_id: 14 # DeepSeek part 2
+      start: 355.7
+      end: 441.4
+
+- query: "How much heavier and more power-hungry are the newest AI server racks?"
+  relevant:
+    - transcript_id: 15 # Economics of AI part 1
+      start: 455.2
+      end: 500.5
+
+- query: "Does anyone understand why bigger AI models keep getting better?"
+  relevant:
+    - transcript_id: 15 # Economics of AI part 1
+      start: 318.4
+      end: 372.0
+
+- query: "How is AI being used in the trucking and shipping business?"
+  relevant:
+    - transcript_id: 18 # Economics of AI part 4
+      start: 182.1
+      end: 251.5
+
+- query: "Could AI running on phones reduce the need for data centers?"
+  relevant:
+    - transcript_id: 17 # Economics of AI part 3
+      start: 333.5
+      end: 395.6
+
+- query: "Will quantum computers be better than normal computers at everything?"
+  relevant:
+    - transcript_id: 22 # Economics of AI part 8
+      start: 8.6
+      end: 34.5
+
+- query: "Is a recession a good time to start a company?"
+  relevant:
+    - transcript_id: 26 # Middle class part 4
+      start: 525.0
+      end: 561.5
+
+- query: "How have college costs and admission rates changed over the years?"
+  relevant:
+    - transcript_id: 25 # Middle class part 3
+      start: 91.4
+      end: 127.9
+
+- query: "Do AI data centers use a lot of water?"
+  relevant:
+    - transcript_id: 32 # GPU Myth part 1
+      start: 778.5
+      end: 863.4
+
+- query: "Does it matter how far AI data centers are from their users?"
+  relevant:
+    - transcript_id: 44 # GPU Myth part 2
+      start: 743.7
+      end: 832.5
+
+- query: "Could AI models replace traditional software?"
+  relevant:
+    - transcript_id: 34 # GPU Myth part 3
+      start: 593.6
+      end: 707.5
+
+- query: "Are physical copies of games going away?"
+  relevant:
+    - transcript_id: 35 # PC gaming part 1
+      start: 2.5
+      end: 12.0
+    - transcript_id: 35 # PC gaming part 1
+      start: 420.7
+      end: 437.9
+
+- query: "How much money can a hit game make in a year?"
+  relevant:
+    - transcript_id: 45 # PC gaming part 4
+      start: 814.8
+      end: 839.6
+
+- query: "Why was gaming the first market for graphics chips?"
+  relevant:
+    - transcript_id: 10 # AI podcast
       start: 242.4
       end: 292.1
 
-- query: "How did a big gaming market create a flywheel for R&D?"
+- query: "How can a big market pay for a company's research?"
   relevant:
-    - audio_file: audios/ai_podcast.wav
+    - transcript_id: 10 # AI podcast
       start: 270.8
       end: 290.8
 
-- query: "Why is a GPU called a time machine?"
+- query: "How do faster computers help with forecasting and simulation?"
   relevant:
-    - audio_file: audios/ai_podcast.wav
-      start: 292.9
-      end: 302.8
-
-- query: "What did a quantum chemistry scientist tell Jensen about NVIDIA's impact?"
-  relevant:
-    - audio_file: audios/ai_podcast.wav
-      start: 303.1
-      end: 323.2
-
-- query: "How are weather forecasting and self-driving car simulation like seeing the future?"
-  relevant:
-    - audio_file: audios/ai_podcast.wav
+    - transcript_id: 10 # AI podcast
       start: 330.2
       end: 344.3
 
-- query: "Is the guest's background in physics or computer science?"
+- query: "What math do you need to understand quantum computing?"
   relevant:
-    - audio_file: audios/quantum_podcast_1.wav
-      start: 27.5
-      end: 39.4
-
-- query: "How did the guest first learn about quantum computing as a teenager?"
-  relevant:
-    - audio_file: audios/quantum_podcast_1.wav
-      start: 39.4
-      end: 71.4
-
-- query: "What was the guest's first reaction to the parallel universes explanation?"
-  relevant:
-    - audio_file: audios/quantum_podcast_1.wav
-      start: 71.4
-      end: 90.1
-
-- query: "What did the guest do during the summer at Bell Labs?"
-  relevant:
-    - audio_file: audios/quantum_podcast_1.wav
-      start: 109.7
-      end: 132.1
-
-- query: "Why can quantum computing be understood with just linear algebra?"
-  relevant:
-    - audio_file: audios/quantum_podcast_1.wav
+    - transcript_id: 6 # quantum podcast
       start: 143.2
       end: 173.7
 
-- query: "How did the guest end up working with Lov Grover?"
+- query: "What made quantum computing appealing to study early on?"
   relevant:
-    - audio_file: audios/quantum_podcast_1.wav
-      start: 176.3
-      end: 209.1
-
-- query: "Did the guest originally go to grad school for AI?"
-  relevant:
-    - audio_file: audios/quantum_podcast_1.wav
-      start: 239.2
-      end: 273.0
-
-- query: "Why was it appealing that quantum computing could be studied with math before experiments existed?"
-  relevant:
-    - audio_file: audios/quantum_podcast_1.wav
+    - transcript_id: 6 # quantum podcast
       start: 295.1
       end: 347.1
-
-- query: "How does the P versus NP question connect to the foundations of physics?"
-  relevant:
-    - audio_file: audios/quantum_podcast_1.wav
-      start: 352.2
-      end: 381.2
-
-- query: "Are practical applications the main motivation for the guest?"
-  relevant:
-    - audio_file: audios/quantum_podcast_1.wav
-      start: 391.3
-      end: 411.9

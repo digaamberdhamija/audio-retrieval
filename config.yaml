@@ -36,18 +36,34 @@ windows:
 search:
   text_search_language: english
   candidates_per_search: 20
-  text_weight: 0.6
-  semantic_weight: 0.4
+  text_weight: 0.4
+  semantic_weight: 0.6
   rrf_k: 60
-  dedupe_overlap_seconds: 10
+  merge_overlaps: true
+  dedupe_overlap_seconds: 20
   top_k: 5
 
 reranker:
-  model: lightonai/GTE-ModernColBERT-v1
-  query_length: 128
-  document_length: 2048
-  batch_size: 8
-  gpu_dtype: float16
+  strategy: gemini
+  colbert:
+    model: lightonai/GTE-ModernColBERT-v1
+    query_length: 128
+    document_length: 2048
+    batch_size: 8
+    gpu_dtype: float16
+  qwen3:
+    model: Qwen/Qwen3-Reranker-4B
+    instruction: Given a question about a recorded conversation, retrieve transcript passages that answer the question
+    batch_size: 8
+    dtype: bfloat16
+    max_gpu_memory: 4GiB
+    max_cpu_memory: 24GiB
+  gemini:
+    model: gemini-3.8-flash
+    thinking_level: LOW
+    instruction: >-
+      You judge passages from transcripts of recorded two-speaker conversations. For every passage, score from 0 to
+      100 how well it answers the question: 100 means it answers the question directly, 0 means it is unrelated.
 
 eval:
   api_url: http://localhost:8000
